@@ -1,14 +1,16 @@
-# SwiftMarket
+# Blitzstore
 
-E-Commerce solution built with SvelteKit, Pocketbase as a database and Stripe for payments, providing better performance and faster development time.
+A small and performant e-commerce system based on Svelte, Tailwind, Pocketbase and Stripe integration.
+
+You can try a demo at https://fm-felgentechnik.vercel.app
 
 ## Getting Started
 
 ### Clone the repo
 
 ```bash
-git clone https://github.com/SwiftMarket/swiftmarket-sveltekit.git
-cd swiftmarket-sveltekit
+git clone https://github.com/furkankarayel/blitzstore.git
+cd blitzstore
 ```
 
 ### Setting up SvelteKit
@@ -36,7 +38,7 @@ Download the [Pocketbase](https://pocketbase.io/docs/) file and serve it with
 
 Open the Admin UI and create an admin account.
 
-Download _[pb_schema.json](https://github.com/SwiftMarket/pocketbase_collections/blob/main/pb_schema.json)_
+Download _[pb_schema.json](https://github.com/furkankarayel/blitzstore/blob/main/pb_schema.json)_
 
 Go to **Settings/Import collections** and click **Load from JSON file** and select _pb_schema.json_
 
@@ -60,6 +62,3 @@ You can preview the production build with `pnpm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
-## Next steps
-
-For more information, please visit our documentation.
