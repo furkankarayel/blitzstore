@@ -1,6 +1,7 @@
 <script>
 	import Cart from '$lib/components/Cart.svelte';
 	import { cartItemsStore } from '$lib/stores';
+	import logo from '$lib/assets/Kastonia_neu_ohne_n_hell.png';
 
 	let cartOpened = false;
 </script>
@@ -9,12 +10,11 @@
 	<div class="max-w-7xl mx-auto">
 		<div class="flex justify-between items-center py-4">
 			<div>
-				<a class="mx-5 font-extrabold text-xl" href="/">SwiftMarket</a>
+				<a class="mx-5 font-extrabold text-xl" href="/"
+					><img style="height: 100px" alt="The project logo" src={logo} /></a
+				>
 			</div>
-			<div class="flex items-center gap-6 m-auto">
-				<a class="hover:underline underline-offset-4" href="/shop/all">Shop</a>
-				<a class="hover:underline underline-offset-4" href="#!">Blog</a>
-			</div>
+
 			<div class="flex mx-5 gap-6">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

@@ -20,16 +20,15 @@
 	<section class="text-gray-800 text-center lg:text-left lg:px-32 lg:py-5">
 		<div class="grid lg:grid-cols-2 gap-6 xl:gap-12 justify-center">
 			<div class="mb-6 lg:mb-0">
-				<h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight">This is your shop</h1>
-				<p class="mt-4 text-lg lg:pl-3">Talk about your business, your products, or yourself</p>
+				<h1 class="text-5xl md:text-6xl xl:text-7xl lg:text-right font-bold tracking-tight">
+					Beste Qualität & gutes Design
+				</h1>
 			</div>
 			<div class="mb-6 lg:mb-0 flex flex-col justify-center">
 				<p class="text-gray-500 text-lg">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum iste repudiandae nisi modi
-					placeat velit repellendus, tempore voluptates facere maiores praesentium harum deleniti
-					voluptatibus laudantium quasi quos recusandae soluta ullam maxime quaerat debitis beatae
-					accusamus reprehenderit! Eius veniam itaque numquam aliquid officiis nemo, quidem maxime,
-					maiores aliquam officia voluptatum.
+					Entdecken Sie hochwertige Outdoor- als auch Indoor Lösungen, die überzeugen.
+					Feinsteinzeugfliesen, Massivholztische, Terassenüberdachungen, Glasgeländer und noch
+					vieles mehr.
 				</p>
 			</div>
 		</div>

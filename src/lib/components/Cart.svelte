@@ -65,7 +65,7 @@
 	<div class="flex items-center justify-between mx-5 py-4">
 		<h1 class="uppercase font-bold text-xl">
 			{cartItemsValue.length}
-			{cartItemsValue.length === 1 ? 'item' : 'items'}
+			{cartItemsValue.length === 1 ? 'Produkt' : 'Produkte'}
 		</h1>
 
 		<button on:click={() => (cartOpened = !cartOpened)}>
@@ -103,7 +103,7 @@
 								on:click={() => removeFromCart(cartItem.slug)}
 								class="font-light hover:underline"
 							>
-								Remove
+								Löschen
 							</button>
 						</div>
 					</div>
@@ -129,18 +129,18 @@
 				class="w-full h-12 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow hover:bg-yellow-500"
 				on:click={() => handlePayment()}
 			>
-				Checkout ${checkoutPrice}
+				Zur Kasse ${checkoutPrice}
 			</button>
 		</div>
 	{:else}
 		<div class="flex flex-col justify-center h-full">
-			<p class="text-center">Your cart is empty</p>
+			<p class="text-center">Ihr Warenkorb ist leer</p>
 			<div class="px-10 py-10">
 				<a href="/shop/all" target="_self">
 					<button
 						class="w-full h-12 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow hover:bg-yellow-500"
 					>
-						Start shopping
+						Schauen Sie sich in unserem Shop um
 					</button>
 				</a>
 			</div>
