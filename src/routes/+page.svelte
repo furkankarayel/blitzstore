@@ -20,7 +20,9 @@
 	<section class="text-gray-800 text-center lg:text-left lg:px-32 lg:py-5">
 		<div class="grid lg:grid-cols-2 gap-6 xl:gap-12 justify-center">
 			<div class="mb-6 lg:mb-0">
-				<h1 class="text-5xl md:text-6xl xl:text-7xl lg:text-right font-bold tracking-tight">
+				<h1
+					class="text-5xl drop-shadow-lg md:text-6xl xl:text-7xl lg:text-right font-bold tracking-tight"
+				>
 					Beste Qualität & gutes Design
 				</h1>
 			</div>
@@ -35,9 +37,11 @@
 	</section>
 
 	{#each showcase as showsection}
-		<h2 class="text-center font-extrabold text-4xl pt-20 pb-12 uppercase">{showsection.name}</h2>
+		<h2 class="text-center font-extrabold text-4xl pt-20 pb-12 uppercase drop-shadow-lg">
+			{showsection.name}
+		</h2>
 
-		<div class="grid gap-12 grid-cols-2 lg:grid-cols-4">
+		<div class="grid gap-12 grid-cols-2 lg:grid-cols-4 drop-shadow-md">
 			{#each showsection.expand.products as product (product.id)}
 				<ProductItem
 					title={product.name}

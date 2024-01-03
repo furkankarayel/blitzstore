@@ -46,15 +46,15 @@
 						/>
 					{/if}
 					<div
-						class="absolute inset-0 flex flex-col justify-center gap-20 mx-0 items-center md:mx-16 md:items-start"
+						class="absolute inset-0 flex flex-col justify-center gap-20 mx-0 items-center drop-shadow-xl md:mx-16 md:items-start"
 					>
 						<h1
-							class="font-extrabold text-white uppercase center text-center xs:text-3xl sm:text-5xl sm:text-left md:text-left md:text-7xl lg:text-6xl"
+							class="font-extrabold text-white uppercase center text-center drop-shadow-xl  xs:text-xl sm:text-4xl sm:text-left md:text-left md:text-7xl lg:text-6xl"
 						>
 							{banner.heading}
 						</h1>
 						<a
-							class="bg-yellow-300 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
+							class="bg-yellow-300 hover:bg-yellow-500 drop-shadow-xl text-black font-bold py-2 px-4 rounded"
 							href={banner.link}
 						>
 							PRODUKT ANSEHEN
