@@ -11,7 +11,7 @@
 		<div class="flex justify-between items-center py-4">
 			<div>
 				<a class="mx-5 font-extrabold text-xl" href="/"
-					><img class="xs:h-20 sm:h-24" alt="The project logo" src={logo} /></a
+					><img class="xs:h-14 sm:h-14" alt="Kastonia Logo" src={logo} /></a
 				>
 			</div>
 

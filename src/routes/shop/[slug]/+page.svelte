@@ -26,17 +26,17 @@
 
 <div class="flex flex-col py-8 px-3 lg:flex-row md:px-20">
 	<div class="mg-0 basis-1/6 flex flex-col pb-5 lg:mx-10">
-		<h1 class="uppercase font-bold text-xl pb-4">FILTERS</h1>
+		<h1 class="uppercase font-bold text-xl pb-4">FILTER</h1>
 		<hr />
-		<AccordionItem name="Price">
+		<AccordionItem name="Preis">
 			<p>TODO</p>
 		</AccordionItem>
 		<hr />
-		<AccordionItem name="Product type">
+		<AccordionItem name="Produkt Typ">
 			<p>TODO</p>
 		</AccordionItem>
 		<hr />
-		<AccordionItem name="Availability">
+		<AccordionItem name="Verfügbarkeit">
 			<p>TODO</p>
 		</AccordionItem>
 		<hr />

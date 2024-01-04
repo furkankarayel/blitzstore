@@ -50,7 +50,7 @@
 				</p>
 			</div>
 			<div>
-				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Contact</h1>
+				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Kontakt</h1>
 				<p class="flex items-center justify-center md:justify-start mb-4">
 					<svg
 						aria-hidden="true"
