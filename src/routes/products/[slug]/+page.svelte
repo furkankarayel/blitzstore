@@ -5,7 +5,7 @@
 	import QuantityInput from '$lib/components/QuantityInput.svelte';
 	import ProductDetails from '$lib/components/ProductDetails.svelte';
 	import ProductItem from '$lib/components/ProductItem.svelte';
-	import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
+	import { PUBLIC_POCKETBASE_URL, PUBLIC_SHOP_MODE } from '$env/static/public';
 
 	export let data: any;
 	let original_data = data;
@@ -48,11 +48,13 @@
 	<div class="basis-1/2 flex flex-col gap-8 px-8 ">
 		<h1 class="font-extrabold text-4xl mt-3">{product.name}</h1>
 		<div class="flex items-end gap-2">
-			{#if product.sale_price === 0}
-				<span class="text-3xl">${product.price}</span>
-			{:else}
-				<span class="text-3xl text-red-600">${product.sale_price}</span>
-				<span class="text-xl text-gray-600 line-through">${product.price}</span>
+			{#if PUBLIC_SHOP_MODE != '0'}
+				{#if product.sale_price === 0}
+					<span class="text-3xl">${product.price}</span>
+				{:else}
+					<span class="text-3xl text-red-600">${product.sale_price}</span>
+					<span class="text-xl text-gray-600 line-through">${product.price}</span>
+				{/if}
 			{/if}
 		</div>
 
@@ -62,17 +64,18 @@
 				{product.description}
 			</p>
 		</div>
-
-		<div class="flex flex-col gap-2">
-			<p>Menge</p>
-			<QuantityInput bind:count={quantity} />
-		</div>
-		<button
-			class="w-full h-12 px-6 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow shadow-sm hover:bg-yellow-500"
-			on:click={() => prepareToCart()}
-		>
-			Warenkorb hinzufügen
-		</button>
+		{#if PUBLIC_SHOP_MODE != '0'}
+			<div class="flex flex-col gap-2">
+				<p>Menge</p>
+				<QuantityInput bind:count={quantity} />
+			</div>
+			<button
+				class="w-full h-12 px-6 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow shadow-sm hover:bg-yellow-500"
+				on:click={() => prepareToCart()}
+			>
+				Warenkorb hinzufügen
+			</button>
+		{/if}
 	</div>
 </div>
 
