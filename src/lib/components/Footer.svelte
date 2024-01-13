@@ -14,19 +14,19 @@
 			<div>
 				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Shop</h1>
 				<p class="mb-4">
-					<a href="/shop/iphone-cases" class="text-gray-600">Terassenüberdachungen</a>
+					<a href="/shop/terassenueberdachungen" class="text-gray-600">Terassenüberdachungen</a>
 				</p>
 				<p class="mb-4">
-					<a href="/shop/airpods-cases" class="text-gray-600">Glasgeländer</a>
+					<a href="/shop/glasgelaender" class="text-gray-600">Glasgeländer</a>
 				</p>
 				<p class="mb-4">
-					<a href="/shop/sleeves" class="text-gray-600">Aluminiumzäune</a>
+					<a href="/shop/aluminiumzaeune" class="text-gray-600">Aluminiumzäune</a>
 				</p>
 				<p class="mb-4">
-					<a href="/shop/cables" class="text-gray-600">Massivholzmöbel</a>
+					<a href="/shop/massivholzmoebel" class="text-gray-600">Massivholzmöbel</a>
 				</p>
 				<p class="mb-4">
-					<a href="/shop/chargers" class="text-gray-600">Fliesen</a>
+					<a href="/shop/fliesen" class="text-gray-600">Fliesen</a>
 				</p>
 			</div>
 			<div>

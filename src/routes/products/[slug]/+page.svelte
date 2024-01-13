@@ -38,7 +38,7 @@
 </script>
 
 <svelte:head>
-	<title>{product.name} | SwiftMarket</title>
+	<title>{product.name} | Kastonia.de</title>
 </svelte:head>
 
 <div class="flex flex-col mx-3 py-10 gap-5 lg:mx-10 lg:flex-row lg:gap-8">
@@ -57,21 +57,21 @@
 		</div>
 
 		<div class="flex flex-col gap-2">
-			<p>Description</p>
+			<p>Beschreibung</p>
 			<p class="text-gray-600">
 				{product.description}
 			</p>
 		</div>
 
 		<div class="flex flex-col gap-2">
-			<p>Quantity</p>
+			<p>Menge</p>
 			<QuantityInput bind:count={quantity} />
 		</div>
 		<button
 			class="w-full h-12 px-6 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow hover:bg-yellow-500"
 			on:click={() => prepareToCart()}
 		>
-			Add to cart
+			Warenkorb hinzufügen
 		</button>
 	</div>
 </div>
@@ -83,7 +83,7 @@
 
 	{#if product.related_products.length !== 0}
 		<div class="basis-1/2">
-			<p class="font-medium text-lg uppercase">Related</p>
+			<p class="font-medium text-lg uppercase">Ähnliche Produkte</p>
 
 			<div class="grid gap-12 pr-5 py-5 grid-cols-2">
 				{#each product.expand.related_products as relatedProduct (relatedProduct.id)}

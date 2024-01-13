@@ -8,17 +8,18 @@
 </script>
 
 <svelte:head>
-	<title>SwiftMarket Shop</title>
+	<title>Kastonia.de Shop</title>
 </svelte:head>
 
 <div class="flex justify-center items-center gap-6 m-auto p-5 flex-wrap">
 	<a class="hover:underline underline-offset-4" href="/shop/all">All</a>
-	<a class="hover:underline underline-offset-4" href="/shop/iphone-cases">iPhone Cases</a>
-	<a class="hover:underline underline-offset-4" href="/shop/airpods-cases">AirPods Cases</a>
-	<a class="hover:underline underline-offset-4" href="/shop/sleeves">Sleeves</a>
-	<a class="hover:underline underline-offset-4" href="/shop/cables">Cables</a>
-	<a class="hover:underline underline-offset-4" href="/shop/chargers">Chargers</a>
-	<a class="hover:underline underline-offset-4" href="/shop/accessories">Accessories</a>
+	<a class="hover:underline underline-offset-4" href="/shop/terassenueberdachungen"
+		>Terassenüberdachungen</a
+	>
+	<a class="hover:underline underline-offset-4" href="/shop/glasgelaender">Glasgeländer</a>
+	<a class="hover:underline underline-offset-4" href="/shop/aluminiumzaeune">Aluminiumzäune</a>
+	<a class="hover:underline underline-offset-4" href="/shop/massivholzmoebel">Massivholzmöbel</a>
+	<a class="hover:underline underline-offset-4" href="/shop/fliesen">Fliesen</a>
 </div>
 
 <hr />

@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>SwiftMarket</title>
+	<title>Kastonia.de</title>
 </svelte:head>
 
 {#if banners.length !== 0}
