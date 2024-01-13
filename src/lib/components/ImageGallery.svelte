@@ -28,7 +28,7 @@
 
 <div class="flex flex-col gap-5">
 	<img
-		class="w-full"
+		class="w-full shadow-lg"
 		src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{active_image}"
 		width="700"
 		height="700"

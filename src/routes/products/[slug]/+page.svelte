@@ -45,7 +45,7 @@
 	<div class="basis-1/2 px-8">
 		<ImageGallery productId={product.id} images={product.images} alt_text={product.name} />
 	</div>
-	<div class="basis-1/2 flex flex-col gap-8 px-8">
+	<div class="basis-1/2 flex flex-col gap-8 px-8 ">
 		<h1 class="font-extrabold text-4xl mt-3">{product.name}</h1>
 		<div class="flex items-end gap-2">
 			{#if product.sale_price === 0}
@@ -68,7 +68,7 @@
 			<QuantityInput bind:count={quantity} />
 		</div>
 		<button
-			class="w-full h-12 px-6 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow hover:bg-yellow-500"
+			class="w-full h-12 px-6 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow shadow-sm hover:bg-yellow-500"
 			on:click={() => prepareToCart()}
 		>
 			Warenkorb hinzufügen
