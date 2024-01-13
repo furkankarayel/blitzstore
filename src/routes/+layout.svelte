@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>SwiftMarket</title>
+	<title>Kastonia.de Shop</title>
 
 	<meta
 		name="description"
