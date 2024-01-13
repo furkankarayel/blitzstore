@@ -1,7 +1,7 @@
 <script>
 	import Cart from '$lib/components/Cart.svelte';
 	import { cartItemsStore } from '$lib/stores';
-	import logo from '$lib/assets/Kastonia_neu_ohne_n_hell.png';
+	import logo from '$lib/assets/Kastonia_Abstrakt_weiss.webp';
 
 	let cartOpened = false;
 </script>
