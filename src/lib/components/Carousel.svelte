@@ -57,7 +57,7 @@
 							class="bg-yellow-300 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
 							href={banner.link}
 						>
-							SEE PRODUCT
+							PRODUKT ANSEHEN
 						</a>
 					</div>
 				</div>
