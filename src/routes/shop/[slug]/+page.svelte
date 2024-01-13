@@ -43,10 +43,10 @@
 	</div>
 	<div class="basis-5/6 flex flex-col">
 		<div class="flex justify-between pb-4">
-			<p>{products.length} products</p>
+			<p>{products.length} Produkte</p>
 			<div>
-				<span class="text-gray-700">Sort by</span>
-				<button>New</button>
+				<span class="text-gray-700">Filtern nach</span>
+				<button>Neu</button>
 			</div>
 		</div>
 

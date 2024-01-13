@@ -35,7 +35,7 @@
 	</section>
 
 	{#each showcase as showsection}
-		<h2 class="text-center font-extrabold text-6xl pt-20 pb-12 uppercase">{showsection.name}</h2>
+		<h2 class="text-center font-extrabold text-4xl pt-20 pb-12 uppercase">{showsection.name}</h2>
 
 		<div class="grid gap-12 grid-cols-2 lg:grid-cols-4">
 			{#each showsection.expand.products as product (product.id)}
