@@ -11,7 +11,7 @@
 		<div class="flex justify-between items-center py-4">
 			<div>
 				<a class="mx-5 font-extrabold text-xl" href="/"
-					><img style="height: 100px" alt="The project logo" src={logo} /></a
+					><img class="xs:h-20 sm:h-24" alt="The project logo" src={logo} /></a
 				>
 			</div>
 

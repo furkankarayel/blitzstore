@@ -46,10 +46,10 @@
 						/>
 					{/if}
 					<div
-						class="absolute inset-0 flex flex-col justify-center gap-5 mx-0 items-center md:mx-16 md:items-start"
+						class="absolute inset-0 flex flex-col justify-center gap-20 mx-0 items-center md:mx-16 md:items-start"
 					>
 						<h1
-							class=" text-5xl font-extrabold text-white uppercase center text-center md:text-left md:text-7xl"
+							class="font-extrabold text-white uppercase center text-center xs:text-3xl sm:text-5xl sm:text-left md:text-left md:text-7xl lg:text-6xl"
 						>
 							{banner.heading}
 						</h1>
