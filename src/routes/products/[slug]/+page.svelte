@@ -57,7 +57,7 @@
 		</div>
 
 		<div class="flex flex-col gap-2">
-			<p>Beschreibung</p>
+			<!-- Not needed <p>Beschreibung</p>-->
 			<p class="text-gray-600">
 				{product.description}
 			</p>

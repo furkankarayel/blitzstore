@@ -7,10 +7,7 @@
 <svelte:head>
 	<title>Kastonia.de Shop</title>
 
-	<meta
-		name="description"
-		content="E-commerce solution built with SvelteKit, a headless CMS integration, uses Stripe for payments, providing better performance and faster development time"
-	/>
+	<meta name="description" content="Kastonia.de Shop" />
 </svelte:head>
 
 <Navbar />
