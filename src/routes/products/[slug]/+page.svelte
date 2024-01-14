@@ -60,9 +60,7 @@
 
 		<div class="flex flex-col gap-2">
 			<!-- Not needed <p>Beschreibung</p>-->
-			<p class="text-gray-600">
-				{product.description}
-			</p>
+			<ProductDetails source={product.details} />
 		</div>
 		{#if PUBLIC_SHOP_MODE != '0'}
 			<div class="flex flex-col gap-2">
@@ -80,10 +78,11 @@
 </div>
 
 <div class="flex flex-col-reverse px-10 gap-20 lg:flex-row">
-	{#if product.details.length !== 0}
-		<ProductDetails source={product.details} />
+	{#if product.description.length !== 0}
+		{product.description}
 	{/if}
 
+	<p class="text-gray-600" />
 	{#if product.related_products.length !== 0}
 		<div class="basis-1/2">
 			<p class="font-medium text-lg uppercase">Ähnliche Produkte</p>
