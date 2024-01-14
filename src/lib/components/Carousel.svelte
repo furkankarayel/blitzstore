@@ -57,7 +57,7 @@
 							class="bg-yellow-300 hover:bg-yellow-500 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] text-black font-bold py-2 px-4 rounded"
 							href={banner.link}
 						>
-							PRODUKT ANSEHEN
+							PRODUKTE ANSEHEN
 						</a>
 					</div>
 				</div>
