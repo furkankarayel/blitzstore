@@ -2,7 +2,7 @@
 	<div class="mx-6 py-10 text-center md:text-left">
 		<div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			<div>
-				<h1 class="uppercase font-semibold mb-4 flex items-center justify-center md:justify-start">
+				<h1 class="uppercase font-bold mb-4 flex items-center justify-center md:justify-start">
 					Kastonia.de
 				</h1>
 				<p>

@@ -11,9 +11,9 @@
 	let hovered = false;
 </script>
 
-<div class="flex flex-col justify-center items-center">
+<!-- <div class="flex flex-col justify-center items-center ">
 	<a
-		class="aspect-square block mb-6 "
+		class="aspect-square block mb-6"
 		href={link}
 		on:mouseenter={() => (hovered = true)}
 		on:mouseleave={() => (hovered = false)}
@@ -30,7 +30,10 @@
 		/>
 	</a>
 	<div class="flex flex-col justify-start flex-grow text-center leading-tight gap-1">
-		<a class="font-light" href={link}>{title}</a>
+		<a
+			class="font-light shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+			href={link}>{title}</a
+		>
 		<div class="flex justify-center gap-3 ">
 			{#if PUBLIC_SHOP_MODE != '0'}
 				{#if salePrice === 0}
@@ -42,4 +45,33 @@
 			{/if}
 		</div>
 	</div>
-</div>
+</div> -->
+<a
+	class="aspect-square block mb-6"
+	href={link}
+	on:mouseenter={() => (hovered = true)}
+	on:mouseleave={() => (hovered = false)}
+	on:touchstart={() => (hovered = true)}
+	on:touchend={() => (hovered = false)}
+>
+	<div
+		class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
+		style="background-image: url('{image}'); height: 300px"
+	>
+		<div
+			class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+			style="background-color: rgba(0, 0, 0, 0.3)"
+		>
+			<div class="flex h-full items-center justify-center">
+				<div class="text-white">
+					<a class="font-light" href={link} />
+					<h2
+						class="mb-4  xs:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+					>
+						{title}
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</a>
