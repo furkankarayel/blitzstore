@@ -2,7 +2,7 @@
 	let status = '';
 	// @ts-ignore
 	const handleSubmit = async (data) => {
-		status = 'Submitting...';
+		status = 'E-Mail wird verschickt...';
 		const formData = new FormData(data.currentTarget);
 		const object = Object.fromEntries(formData);
 		const json = JSON.stringify(object);
