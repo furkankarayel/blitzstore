@@ -3,9 +3,9 @@
 	import MediaQuery from './MediaQuery.svelte';
 	export let title: string;
 	export let image: string;
-	export let hoverImage = '';
-	export let price: number;
-	export let salePrice: number = 0;
+	// export let hoverImage = '';
+	// export let price: number;
+	// export let salePrice: number = 0;
 	export let link: string;
 
 	let hovered = false;
