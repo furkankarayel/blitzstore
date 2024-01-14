@@ -10,7 +10,9 @@
 	let carousel: any; // for calling methods of the carousel instance
 </script>
 
-<div class="w-full aspect-[1.9/3] md:aspect-[16/7.7]">
+<div
+	class="w-full aspect-[1.9/3] xs:aspect-[16/9] xs:mb-10 sm:aspect-[16/9] sm:mb-10 md:aspect-[16/7.7]"
+>
 	{#if browser}
 		<Carousel
 			let:loaded
@@ -38,9 +40,7 @@
 					{#if loaded.includes(imageIndex)}
 						<img
 							src="{PUBLIC_POCKETBASE_URL}/api/files/{banner.collectionName}/{banner.id}/{banner.image}"
-							class="w-full object-cover aspect-[2/3] md:aspect-[16/7]"
-							width="2000"
-							height="1000"
+							class="w-full object-cover aspect-[2/3] xs:aspect-[16/9] sm:aspect-[16/9] md:aspect-[16/9]"
 							draggable="false"
 							alt={banner.heading}
 						/>
@@ -49,7 +49,7 @@
 						class="absolute inset-0 flex flex-col justify-center gap-20 mx-0 items-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:mx-16 md:items-start"
 					>
 						<h1
-							class="font-extrabold text-white uppercase center text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  xs:text-xl sm:text-4xl sm:text-left md:text-left md:text-7xl lg:text-6xl"
+							class="font-extrabold text-white uppercase center text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] xs:text-xl sm:text-4xl sm:text-left md:text-left md:text-7xl lg:text-6xl"
 						>
 							{banner.heading}
 						</h1>
