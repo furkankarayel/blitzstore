@@ -1,3 +1,7 @@
+<script>
+	import { PUBLIC_SHOP_MODE } from '$env/static/public';
+</script>
+
 <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
 	<div class="mx-6 py-10 text-center md:text-left">
 		<div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -11,42 +15,44 @@
 					Massivholztische.
 				</p>
 			</div>
-			<div>
-				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Shop</h1>
-				<p class="mb-4">
-					<a href="/shop/terassenueberdachungen" class="text-gray-600">Terassenüberdachungen</a>
-				</p>
-				<p class="mb-4">
-					<a href="/shop/glasgelaender" class="text-gray-600">Glasgeländer</a>
-				</p>
-				<p class="mb-4">
-					<a href="/shop/aluminiumzaeune" class="text-gray-600">Aluminiumzäune</a>
-				</p>
-				<p class="mb-4">
-					<a href="/shop/massivholzmoebel" class="text-gray-600">Massivholzmöbel</a>
-				</p>
-				<p class="mb-4">
-					<a href="/shop/fliesen" class="text-gray-600">Fliesen</a>
-				</p>
-			</div>
+			{#if PUBLIC_SHOP_MODE != '0'}
+				<div>
+					<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Shop</h1>
+					<p class="mb-4">
+						<a href="/shop/terassenueberdachungen" class="text-gray-600">Terassenüberdachungen</a>
+					</p>
+					<p class="mb-4">
+						<a href="/shop/glasgelaender" class="text-gray-600">Glasgeländer</a>
+					</p>
+					<p class="mb-4">
+						<a href="/shop/aluminiumzaeune" class="text-gray-600">Aluminiumzäune</a>
+					</p>
+					<p class="mb-4">
+						<a href="/shop/massivholzmoebel" class="text-gray-600">Massivholzmöbel</a>
+					</p>
+					<p class="mb-4">
+						<a href="/shop/fliesen" class="text-gray-600">Fliesen</a>
+					</p>
+				</div>
+			{/if}
 			<div>
 				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
 					Informationen
 				</h1>
 				<p>
-					<a href="#!" class="text-gray-600">Über uns</a>
+					<a href="/about" class="text-gray-600">Über uns</a>
 				</p>
 				<p>
-					<a href="#!" class="text-gray-600">AGB</a>
+					<a href="/agb" class="text-gray-600">AGB</a>
 				</p>
 				<p>
-					<a href="#!" class="text-gray-600">Datenschutz</a>
+					<a href="/datenschutz" class="text-gray-600">Datenschutz</a>
 				</p>
 				<p>
-					<a href="#!" class="text-gray-600">Impressum</a>
+					<a href="/impressum" class="text-gray-600">Impressum</a>
 				</p>
 				<p>
-					<a href="#!" class="text-gray-600">Kontakt</a>
+					<a href="/contact" class="text-gray-600">Kontakt</a>
 				</p>
 			</div>
 			<div>
