@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Kastonia.de Kontaktaufnahme</title>
+	<title>Kastonia.de | Datenschutz</title>
 </svelte:head>
 
 <section class="bg-white">

@@ -23,7 +23,7 @@
 </script>
 
 <svelte:head>
-	<title>Kastonia.de Kontaktaufnahme</title>
+	<title>Kastonia.de | Kontaktaufnahme</title>
 </svelte:head>
 
 <section class="bg-white">
