@@ -39,7 +39,7 @@ getEndpoints(tree, baseRoute);
 // YOUR_DOMAIN should be like https://example.com
 const sitemap = getSitemapXML('https://kastonia.de', routes);
 
-// If you use the script in postbuild mode use
+// If you use the script in postbuild mode uses
 // For vercel deployment use:
 fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
 //fs.writeFileSync('.svelte-kit/output/client/sitemap.xml', sitemap);
