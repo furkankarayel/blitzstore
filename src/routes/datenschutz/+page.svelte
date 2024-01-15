@@ -9,7 +9,7 @@
 		>
 			Datenschutz
 		</h2>
-		<p>
+		<p class="w-50">
 			Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders
 			hohen Stellenwert für die Geschäftsleitung der Kastonia.de. Eine Nutzung der Internetseiten
 			der Kastonia.de ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern
