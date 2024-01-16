@@ -15,6 +15,7 @@ function getSitemapXML(domain: string, routes: string[]) {
 	let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
 	sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 	routes.forEach((route) => {
+		console.log(route);
 		sitemap += getSitemapUrl(domain + route);
 	});
 	sitemap += '\n</urlset>';
@@ -47,7 +48,8 @@ async function getCategoryPages() {
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	tree.children!.forEach((child) => {
-		if (child.children != undefined && child.children.length != 0) {
+		console.log(child);
+		if (child.children != undefined && child.children.length != 0 && !child.name.includes('[')) {
 			let childRoute = route + child.name;
 			if (child.children.some((e) => e.name === '+page.svelte')) {
 				routes.push(childRoute);
@@ -68,8 +70,8 @@ getProductPages().then(function (results) {
 
 	// If you use the script in postbuild mode uses
 	// For vercel deployment use:
-	fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
-	//fs.writeFileSync('.svelte-kit/output/client/sitemap.xml', sitemap);
+	//fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
+	fs.writeFileSync('.svelte-kit/output/client/sitemap.xml', sitemap);
 	//fs.writeFileSync('static/sitemap.xml', sitemap);
 });
 
