@@ -4,6 +4,12 @@ import * as fs from 'fs';
 let baseRoute = '/';
 let routes: string[] = [baseRoute];
 let date = new Date().toISOString().split('T')[0];
+let sitemap = '';
+
+import PocketBase from 'pocketbase';
+
+const pb = new PocketBase('https://kastoyeah.pockethost.io');
+const tree = dirTree('./src/routes');
 
 function getSitemapXML(domain: string, routes: string[]) {
 	let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -20,6 +26,25 @@ function getSitemapUrl(location: string) {
 	return url;
 }
 
+// function getSitemapUrlDB(location: string, table: string) {
+// 	let url = '<url>\n' + `<loc>${domain + }</loc>\n` + `<lastmod>${date}</lastmod>\n` + '</url>';
+// 	return url;
+// }
+
+async function getProductPages() {
+	const productsRecords = await pb.collection('products').getFullList();
+	productsRecords.forEach((e) => {
+		routes.push('/products/' + e['slug']);
+	});
+}
+
+async function getCategoryPages() {
+	const productsRecords = await pb.collection('categories').getFullList();
+	productsRecords.forEach((e) => {
+		routes.push('/' + e['slug']);
+	});
+}
+
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	tree.children!.forEach((child) => {
 		if (child.children != undefined && child.children.length != 0) {
@@ -32,16 +57,23 @@ function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	});
 }
 
-const tree = dirTree('./src/routes');
+function getSitemap() {
+	sitemap = getSitemapXML('https://kastonia.de', routes);
+}
 
-getEndpoints(tree, baseRoute);
+getProductPages().then(function (results) {
+	getEndpoints(tree, baseRoute);
+	getSitemap();
+	// YOUR_DOMAIN should be like https://example.com
 
-// YOUR_DOMAIN should be like https://example.com
-const sitemap = getSitemapXML('https://kastonia.de', routes);
+	// If you use the script in postbuild mode uses
+	// For vercel deployment use:
+	fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
+	//fs.writeFileSync('.svelte-kit/output/client/sitemap.xml', sitemap);
+	//fs.writeFileSync('static/sitemap.xml', sitemap);
+});
 
-// If you use the script in postbuild mode uses
-// For vercel deployment use:
-fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
-//fs.writeFileSync('.svelte-kit/output/client/sitemap.xml', sitemap);
-
-//fs.writeFileSync('static/sitemap.xml', sitemap);
+//If you want to put products and categories in the sitemap
+// Promise.all([getCategoryPages(), getProductPages()]).then(function (results) {
+// 	getSitemap();
+// });
