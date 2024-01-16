@@ -15,7 +15,7 @@ function getSitemapXML(domain: string, routes: string[]) {
 	let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
 	sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 	routes.forEach((route) => {
-		console.log(route);
+		//console.log(route);
 		sitemap += getSitemapUrl(domain + route);
 	});
 	sitemap += '\n</urlset>';
@@ -48,7 +48,6 @@ async function getCategoryPages() {
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	tree.children!.forEach((child) => {
-		console.log(child);
 		if (child.children != undefined && child.children.length != 0 && !child.name.includes('[')) {
 			let childRoute = route + child.name;
 			if (child.children.some((e) => e.name === '+page.svelte')) {
@@ -59,23 +58,34 @@ function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	});
 }
 
-function getSitemap() {
+async function getSitemap() {
 	sitemap = getSitemapXML('https://kastonia.de', routes);
 }
-
-getProductPages().then(function (results) {
-	getEndpoints(tree, baseRoute);
-	getSitemap();
-	// YOUR_DOMAIN should be like https://example.com
-
-	// If you use the script in postbuild mode uses
-	// For vercel deployment use:
-	//fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
-	fs.writeFileSync('.svelte-kit/output/client/sitemap.xml', sitemap);
-	//fs.writeFileSync('static/sitemap.xml', sitemap);
-});
 
 //If you want to put products and categories in the sitemap
 // Promise.all([getCategoryPages(), getProductPages()]).then(function (results) {
 // 	getSitemap();
 // });
+console.log(sitemap);
+
+export async function GET() {
+	try {
+		const results = await getProductPages();
+		getEndpoints(tree, baseRoute);
+		getSitemap();
+
+		return new Response(sitemap.trim(), {
+			headers: {
+				'Content-Type': 'application/xml'
+			}
+		});
+	} catch (error) {
+		console.error('Error:', error);
+		return new Response('Internal Server Error', {
+			status: 500, // Internal Server Error
+			headers: {
+				'Content-Type': 'text/plain'
+			}
+		});
+	}
+}
