@@ -5,6 +5,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"postbuild": "npx tsx ./scripts/generate-sitemap.ts",
 		"preview": "vite preview",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -40,7 +41,6 @@
 	"type": "module",
 	"dependencies": {
 		"@stripe/stripe-js": "^1.48.0",
-		"@sveltejs/adapter-vercel": "^4.0.5",
 		"@types/jquery": "^3.5.29",
 		"directory-tree": "^3.5.1",
 		"pocketbase": "^0.12.1",
