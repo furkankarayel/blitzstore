@@ -22,7 +22,7 @@
 	};
 </script>
 
-<!-- <div class="flex flex-col justify-center items-center ">
+<div class="flex flex-col justify-center items-left">
 	<a
 		class="aspect-square block mb-6"
 		href={link}
@@ -31,21 +31,21 @@
 		on:touchstart={() => (hovered = true)}
 		on:touchend={() => (hovered = false)}
 	>
-		<img
-			class="object-cover aspect-square "
-			width="700"
-			height="700"
-			loading="lazy"
-			src={hovered && hoverImage.length !== 0 ? hoverImage : image}
-			alt="{title} image"
-		/>
+		<div class="saturate-150">
+			<img
+				class="object-cover aspect-square"
+				width="700"
+				height="700"
+				loading="lazy"
+				src={hovered && hoverImage.length !== 0 ? hoverImage : image}
+				alt="{title} image"
+			/>
+		</div>
 	</a>
-	<div class="flex flex-col justify-start flex-grow text-center leading-tight gap-1">
-		<a
-			class="font-light shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-			href={link}>{title}</a
-		>
-		<div class="flex justify-center gap-3 ">
+	<div class="flex flex-col justify-start flex-grow leading-tight gap-1">
+		<div class="text-left"><a href={link}> {title}</a></div>
+
+		<div class="flex justify-center gap-3">
 			{#if PUBLIC_SHOP_MODE != '0'}
 				{#if salePrice === 0}
 					<span class="font-medium">€{price}</span>
@@ -56,8 +56,8 @@
 			{/if}
 		</div>
 	</div>
-</div> -->
-<div>
+</div>
+<!-- <div>
 	<MediaQuery query="(min-width: 2000px)" let:matches>
 		{#if matches}
 			<a
@@ -192,4 +192,4 @@
 			</a>
 		{/if}
 	</MediaQuery>
-</div>
+</div> -->

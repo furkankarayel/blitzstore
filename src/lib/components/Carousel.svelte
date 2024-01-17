@@ -34,7 +34,7 @@
 			</div>
 
 			{#each banners as banner, imageIndex (banner)}
-				<div class="relative">
+				<div class="relative saturate-150">
 					{#if loaded.includes(imageIndex)}
 						<img
 							src="{PUBLIC_POCKETBASE_URL}/api/files/{banner.collectionName}/{banner.id}/{banner.image}"

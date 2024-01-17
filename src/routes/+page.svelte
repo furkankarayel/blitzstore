@@ -67,7 +67,7 @@
 		<!-- Section: Design Block -->
 		<section>
 			<div
-				class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('$lib/assets/planning.jpg')] h-[500px]"
+				class="relative overflow-hidden saturate-150 bg-cover bg-no-repeat bg-[50%] bg-[url('$lib/assets/planning.jpg')] h-[500px]"
 			/>
 			<div class="container mx-auto px-6 md:px-12 xl:px-32">
 				<div class="text-center">

@@ -1,13 +1,23 @@
-<script>
+<script lang="ts">
 	import { PUBLIC_SHOP_NAME } from '$env/static/public';
+	import SvelteMarkdown from 'svelte-markdown';
+
+	export let data: any;
+	let page = data;
+	let content = data.content;
+	let original_data = data;
+	$: {
+		if (original_data !== data) {
+			page = data;
+			content = data.content;
+			original_data = data;
+		}
+	}
 </script>
 
 <svelte:head>
-	<title>Über uns | {PUBLIC_SHOP_NAME}</title>
-	<meta
-		name="description"
-		content="Entdecken Sie auf Kastonia.de unsere Geschichte, Philosophie und das Engagement für Qualität. Erfahren Sie mehr über unser Team, unsere Vision und wie wir einzigartige Outdoor-Lösungen für Sie kreieren."
-	/>
+	<title>{data.title} | {PUBLIC_SHOP_NAME}</title>
+	<meta name="description" content={data.seo_description} />
 </svelte:head>
 
 <section class="bg-white">
@@ -15,16 +25,12 @@
 		<h2
 			class="mb-4 text-4xl tracking-tight font-extrabold drop-shadow-lg text-center text-gray-900 dark:text-white"
 		>
-			Über uns
+			{data.header}
 		</h2>
-		<p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-			Willkommen bei Kastonia.de! Wir sind ein führendes Unternehmen in der Other-Branche und bieten
-			Ihnen innovative Lösungen für Ihre Bedürfnisse. Unser engagiertes Team arbeitet daran, Ihnen
-			die besten Produkte und Dienstleistungen anzubieten. Mit unserer langjährigen Erfahrung und
-			unserem Fachwissen sind wir stolz darauf, Ihnen maßgeschneiderte Lösungen zu bieten, die Ihren
-			Anforderungen entsprechen. Wir legen großen Wert auf Kundenzufriedenheit und streben danach,
-			Ihre Erwartungen zu übertreffen. Kontaktieren Sie uns noch heute, um mehr über unsere Produkte
-			und Dienstleistungen zu erfahren.
-		</p>
+		{#if content.length !== 0}
+			<div class="flex flex-col gap-2">
+				<SvelteMarkdown source={content} />
+			</div>
+		{/if}
 	</div>
 </section>
