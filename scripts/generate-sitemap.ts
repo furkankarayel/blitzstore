@@ -9,7 +9,7 @@ let sitemap = '';
 import PocketBase from 'pocketbase';
 
 const pb = new PocketBase('https://kastoyeah.pockethost.io');
-const tree = dirTree('../.');
+const tree = dirTree('./src/routes');
 console.log(tree.path.toString());
 
 function getSitemapXML(domain: string, routes: string[]) {
@@ -48,7 +48,6 @@ async function getCategoryPages() {
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	tree.children!.forEach((child) => {
-		console.log(child);
 		if (child.children != undefined && child.children.length != 0 && !child.name.includes('[')) {
 			let childRoute = route + child.name;
 			if (child.children.some((e) => e.name === '+page.svelte')) {
