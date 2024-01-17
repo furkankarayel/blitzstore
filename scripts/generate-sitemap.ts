@@ -1,4 +1,5 @@
 /* eslint-disable prefer-const */
+import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
 import dirTree from 'directory-tree';
 import * as fs from 'fs';
 
@@ -11,7 +12,7 @@ let sitemap = '';
 
 import PocketBase from 'pocketbase';
 
-const pb = new PocketBase('https://kastoyeah.pockethost.io');
+const pb = new PocketBase(PUBLIC_POCKETBASE_URL);
 const tree = dirTree('./src/routes');
 console.log(tree.path.toString());
 
