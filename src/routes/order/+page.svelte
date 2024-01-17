@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { PUBLIC_SHOP_NAME } from '$env/static/public';
 	import { emptyCart } from '$lib/stores';
 
 	const url = $page.url;
@@ -12,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title>Kastonia.de Bestellung</title>
+	<title>Bestellung | {PUBLIC_SHOP_NAME}</title>
 </svelte:head>
 
 {#if orderSuccess}

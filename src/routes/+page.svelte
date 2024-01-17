@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Carousel from '$lib/components/Carousel.svelte';
 	import ProductItem from '$lib/components/ProductItem.svelte';
-	import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
+	import { PUBLIC_POCKETBASE_URL, PUBLIC_SHOP_NAME } from '$env/static/public';
 	import planning from '$lib/assets/planning.jpg';
 
 	export let data: any;
@@ -10,7 +10,11 @@
 </script>
 
 <svelte:head>
-	<title>Kastonia.de</title>
+	<title>Willkommen bei {PUBLIC_SHOP_NAME}</title>
+	<meta
+		name="description"
+		content="Entdecken Sie bei Kastonia.de exzellentes Outdoor-Design: Elegante Terrassenüberdachungen, maßgeschneiderte Wintergärten, stilvolle Glasgeländer, robuste Aluminiumzäune und edle Massivholztische. Perfektionieren Sie Ihr Zuhause mit unseren Feinsteinzeugfliesen – Qualität, die begeistert."
+	/>
 </svelte:head>
 
 {#if banners.length !== 0}
@@ -71,7 +75,7 @@
 						class="mt-[-170px] block rounded-lg px-6 py-12 bg-white/30 backdrop-blur-xl md:py-16 md:px-12"
 					>
 						<h1
-							class="drop-shadow-lg mb-10 xs:text-3xl sm:text-3xl  md:text-3xl xl:text-5xl lg:text-center font-bold tracking-tight"
+							class="drop-shadow-lg mb-10 xs:text-3xl sm:text-3xl md:text-3xl xl:text-5xl lg:text-center font-bold tracking-tight"
 						>
 							Gute Dinge brauchen Planung
 						</h1>

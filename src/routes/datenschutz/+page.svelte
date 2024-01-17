@@ -1,5 +1,13 @@
+<script>
+	import { PUBLIC_SHOP_NAME } from '$env/static/public';
+</script>
+
 <svelte:head>
-	<title>Kastonia.de | Datenschutz</title>
+	<title>Datenschutz | {PUBLIC_SHOP_NAME}</title>
+	<meta
+		name="description"
+		content="Entdecken Sie die Datenschutzbestimmungen von Kastonia.de – Ihr Vertrauen ist unser Anliegen. Erfahren Sie, wie wir Ihre Daten mit Sorgfalt und Respekt behandeln, um Ihnen ein sicheres Online-Erlebnis zu garantieren."
+	/>
 </svelte:head>
 
 <section class="bg-white">

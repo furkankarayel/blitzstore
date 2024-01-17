@@ -1,5 +1,13 @@
+<script>
+	import { PUBLIC_SHOP_NAME } from '$env/static/public';
+</script>
+
 <svelte:head>
-	<title>Kastonia.de | AGB</title>
+	<title>AGB | {PUBLIC_SHOP_NAME}</title>
+	<meta
+		name="description"
+		content="Lesen Sie die Allgemeinen Geschäftsbedingungen von Kastonia.de, um einen umfassenden Einblick in unsere Nutzungsbedingungen zu erhalten. Transparent und kundenorientiert – wir legen Wert auf Ihre Sicherheit und Zufriedenheit."
+	/>
 </svelte:head>
 
 <section class="bg-white">

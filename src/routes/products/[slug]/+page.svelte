@@ -5,7 +5,7 @@
 	import QuantityInput from '$lib/components/QuantityInput.svelte';
 	import ProductDetails from '$lib/components/ProductDetails.svelte';
 	import ProductItem from '$lib/components/ProductItem.svelte';
-	import { PUBLIC_POCKETBASE_URL, PUBLIC_SHOP_MODE } from '$env/static/public';
+	import { PUBLIC_POCKETBASE_URL, PUBLIC_SHOP_MODE, PUBLIC_SHOP_NAME } from '$env/static/public';
 
 	export let data: any;
 	let original_data = data;
@@ -38,10 +38,12 @@
 </script>
 
 <svelte:head>
-	<title>{product.name} | Kastonia.de</title>
+	<title>{product.name} | {PUBLIC_SHOP_NAME}</title>
+	<meta name="description" content={product.seo_description} />
 </svelte:head>
 
 <div class="flex flex-col mx-3 py-10 gap-5 lg:mx-10 lg:flex-row lg:gap-8">
+	{product.seo_description}
 	<div class="basis-1/2 px-8">
 		<ImageGallery productId={product.id} images={product.images} alt_text={product.name} />
 	</div>

@@ -1,4 +1,6 @@
 <script>
+	import { PUBLIC_SHOP_NAME } from '$env/static/public';
+
 	let status = '';
 	// @ts-ignore
 	const handleSubmit = async (data) => {
@@ -23,7 +25,11 @@
 </script>
 
 <svelte:head>
-	<title>Kastonia.de | Kontaktaufnahme</title>
+	<title>Kontaktaufnahme | {PUBLIC_SHOP_NAME}</title>
+	<meta
+		name="description"
+		content="Kontaktieren Sie uns auf Kastonia.de – Wir sind hier, um Ihre Fragen zu beantworten und Unterstützung zu bieten. Finden Sie unsere Kontaktdaten und wie Sie einfach mit unserem Team in Verbindung treten können."
+	/>
 </svelte:head>
 
 <section class="bg-white">

@@ -1,5 +1,14 @@
+<script>
+	import { PUBLIC_SHOP_NAME } from '$env/static/public';
+</script>
+
 <svelte:head>
-	<title>Kastonia.de | Impressum</title>
+	<title>Impressum | {PUBLIC_SHOP_NAME}</title>
+	<meta
+		name="description"
+		content="Impressum. Dienstanbieter: Gökhan Karayel
+	Inselstr. 15 88074 Meckenbeuren Telefon: +49 176 62969601 E-Mail: goekhan@karayel.email"
+	/>
 </svelte:head>
 
 <section class="bg-white">

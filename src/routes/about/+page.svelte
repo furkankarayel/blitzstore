@@ -1,5 +1,13 @@
+<script>
+	import { PUBLIC_SHOP_NAME } from '$env/static/public';
+</script>
+
 <svelte:head>
-	<title>Kastonia.de | Über uns</title>
+	<title>Über uns | {PUBLIC_SHOP_NAME}</title>
+	<meta
+		name="description"
+		content="Entdecken Sie auf Kastonia.de unsere Geschichte, Philosophie und das Engagement für Qualität. Erfahren Sie mehr über unser Team, unsere Vision und wie wir einzigartige Outdoor-Lösungen für Sie kreieren."
+	/>
 </svelte:head>
 
 <section class="bg-white">

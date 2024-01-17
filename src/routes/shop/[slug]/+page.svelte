@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ProductItem from '$lib/components/ProductItem.svelte';
-	import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
+	import { PUBLIC_POCKETBASE_URL, PUBLIC_SHOP_NAME } from '$env/static/public';
 	import AccordionItem from '$lib/components/AccordionItem.svelte';
 
 	export let data: any;
@@ -8,7 +8,8 @@
 </script>
 
 <svelte:head>
-	<title>Kastonia.de Shop</title>
+	<title>Kategorien | {PUBLIC_SHOP_NAME}</title>
+	<meta name="description" content="" />
 </svelte:head>
 
 <div class="flex justify-center items-center gap-6 m-auto p-5 flex-wrap">
