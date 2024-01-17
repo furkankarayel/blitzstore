@@ -4,33 +4,23 @@
 
 	export let data: any;
 	let page = data;
-	let content = data.content;
-	let original_data = data;
-	$: {
-		if (original_data !== data) {
-			page = data;
-			content = data.content;
-			original_data = data;
-		}
-	}
 </script>
 
 <svelte:head>
-	<title>{data.title} | {PUBLIC_SHOP_NAME}</title>
-	<meta name="description" content={data.seo_description} />
+	<title>{page.title} | {PUBLIC_SHOP_NAME}</title>
+	<meta name="description" content={page.seo_description} />
 </svelte:head>
 
 <section class="bg-white">
 	<div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 		<h2
-			class="mb-4 text-4xl tracking-tight font-extrabold drop-shadow-lg text-center text-gray-900 dark:text-white"
+			class="mb-4 text-4xl tracking-tight font-extrabold drop-shadow-lg text-center text-gray-900"
 		>
-			{data.header}
+			{page.header}
 		</h2>
-		{#if content.length !== 0}
-			<div class="flex flex-col gap-2">
-				<SvelteMarkdown source={content} />
-			</div>
-		{/if}
+
+		<div class="flex flex-col gap-2 break-words">
+			<SvelteMarkdown source={page.content} />
+		</div>
 	</div>
 </section>

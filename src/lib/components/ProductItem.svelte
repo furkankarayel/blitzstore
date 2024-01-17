@@ -23,173 +23,48 @@
 </script>
 
 <div class="flex flex-col justify-center items-left">
-	<a
-		class="aspect-square block mb-6"
-		href={link}
-		on:mouseenter={() => (hovered = true)}
-		on:mouseleave={() => (hovered = false)}
-		on:touchstart={() => (hovered = true)}
-		on:touchend={() => (hovered = false)}
+	<div
+		class="bg-white saturate-150 overflow-hidden rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
 	>
-		<div class="saturate-150">
-			<img
-				class="object-cover aspect-square"
-				width="700"
-				height="700"
-				loading="lazy"
-				src={hovered && hoverImage.length !== 0 ? hoverImage : image}
-				alt="{title} image"
-			/>
-		</div>
-	</a>
-	<div class="flex flex-col justify-start flex-grow leading-tight gap-1 xs:font-sm sm:font-sm">
-		<div class=" xs:text-xs sm:text-md md:text-md lg:text-md"><a href={link}> {title}</a></div>
+		<a
+			class="aspect-square block"
+			href={link}
+			on:mouseenter={() => (hovered = true)}
+			on:mouseleave={() => (hovered = false)}
+			on:touchstart={() => (hovered = true)}
+			on:touchend={() => (hovered = false)}
+		>
+			<div class="relative overflow-hidden bg-cover bg-no-repeat">
+				<img
+					class="object-cover aspect-square rounded-t-lg"
+					width="700"
+					height="700"
+					loading="lazy"
+					src={hovered && hoverImage.length !== 0 ? hoverImage : image}
+					alt="{title} image"
+				/>
+			</div>
 
-		<div class="flex justify-center gap-3">
-			{#if PUBLIC_SHOP_MODE != '0'}
-				{#if salePrice === 0}
-					<span class="font-medium">€{price}</span>
-				{:else}
-					<span class="text-red-600 font-medium">€{salePrice}</span>
-					<span class="text-gray-600 line-through font-light">€{price}</span>
-				{/if}
-			{/if}
-		</div>
+			<div
+				class="flex flex-col justify-start break-words items-center flex-grow leading-tight gap-1 xs:font-sm sm:font-sm"
+			>
+				<div
+					class="p-3 text-base text-neutral-600 xs:text-xxs sm:text-sm md:text-md lg:text-md xl:text-md 2xl:text-xl"
+				>
+					<a href={link}> {title}</a>
+				</div>
+
+				<div class="flex justify-center gap-3">
+					{#if PUBLIC_SHOP_MODE != '0'}
+						{#if salePrice === 0}
+							<span class="font-medium">€{price}</span>
+						{:else}
+							<span class="text-red-600 font-medium">€{salePrice}</span>
+							<span class="text-gray-600 line-through font-light">€{price}</span>
+						{/if}
+					{/if}
+				</div>
+			</div>
+		</a>
 	</div>
 </div>
-<!-- <div>
-	<MediaQuery query="(min-width: 2000px)" let:matches>
-		{#if matches}
-			<a
-				class="aspect-square block mb-6"
-				href={link}
-				on:mouseenter={() => (hovered = true)}
-				on:mouseleave={() => (hovered = false)}
-				on:touchstart={() => (hovered = true)}
-				on:touchend={() => (hovered = false)}
-			>
-				<div
-					class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat xs:h-10 sm:h-10 p-12 text-center"
-					style="background-image: url('{image}'); height: 300px"
-				>
-					<div
-						class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-						style="background-color: rgba(0, 0, 0, 0.3)"
-					>
-						<div class="flex h-full items-center justify-center">
-							<div class="text-white">
-								<a class="font-light" href={link} />
-								<h2
-									class="mb-4 xs:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-5xl font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-								>
-									{title}
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		{/if}
-	</MediaQuery>
-	<MediaQuery query="(min-width: 1281px) and (max-width: 1990px)" let:matches>
-		{#if matches}
-			<a
-				class="aspect-square block mb-6"
-				href={link}
-				on:mouseenter={() => (hovered = true)}
-				on:mouseleave={() => (hovered = false)}
-				on:touchstart={() => (hovered = true)}
-				on:touchend={() => (hovered = false)}
-			>
-				<div
-					class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat xs:h-10 sm:h-10 p-12 text-center"
-					style="background-image: url('{image}'); height: 300px"
-				>
-					<div
-						class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-						style="background-color: rgba(0, 0, 0, 0.3)"
-					>
-						<div class="flex h-full items-center justify-center">
-							<div class="text-white">
-								<a class="font-light" href={link} />
-								<h2
-									class="mb-4 xs:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-								>
-									{title}
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		{/if}
-	</MediaQuery>
-
-	<MediaQuery query="(min-width: 481px) and (max-width: 1280px)" let:matches>
-		{#if matches}
-			<a
-				class="aspect-square block mb-6"
-				href={link}
-				on:mouseenter={() => (hovered = true)}
-				on:mouseleave={() => (hovered = false)}
-				on:touchstart={() => (hovered = true)}
-				on:touchend={() => (hovered = false)}
-			>
-				<div
-					class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat xs:h-10 sm:h-10 p-12 text-center"
-					style="background-image: url('{image}'); height: 300px"
-				>
-					<div
-						class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-						style="background-color: rgba(0, 0, 0, 0.3)"
-					>
-						<div class="flex h-full items-center justify-center">
-							<div class="text-white">
-								<a class="font-light" href={link} />
-								<h2
-									class="mb-4  xs:text-xl sm:text-xl md:text-2xl lg:text-lg xl:text-2xl font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-								>
-									{title}
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		{/if}
-	</MediaQuery>
-
-	<MediaQuery query="(max-width: 480px)" let:matches>
-		{#if matches}
-			<a
-				class="aspect-square block mb-6"
-				href={link}
-				on:mouseenter={() => (hovered = true)}
-				on:mouseleave={() => (hovered = false)}
-				on:touchstart={() => (hovered = true)}
-				on:touchend={() => (hovered = false)}
-			>
-				<div
-					class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat xs:h-10 sm:h-10 p-12 text-center"
-					style="background-image: url('{image}'); height: 150px"
-				>
-					<div
-						class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
-						style="background-color: rgba(0, 0, 0, 0.3)"
-					>
-						<div class="flex h-full items-center justify-center">
-							<div class="text-white">
-								<a class="font-light" href={link} />
-								<h2
-									class="mb-4  xs:text-sm sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-								>
-									{title}
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		{/if}
-	</MediaQuery>
-</div> -->

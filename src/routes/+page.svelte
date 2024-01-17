@@ -63,13 +63,13 @@
 		</div>
 	{/each}
 
-	<div class="container my-24 mx-auto md:px-6 sm:px-0">
+	<div class="my-24 mx-auto md:px-6 sm:px-0">
 		<!-- Section: Design Block -->
 		<section>
 			<div
 				class="relative overflow-hidden saturate-150 bg-cover bg-no-repeat bg-[50%] bg-[url('$lib/assets/planning.jpg')] h-[500px]"
 			/>
-			<div class="container mx-auto px-6 md:px-12 xl:px-32">
+			<div class="mx-auto px-6 md:px-12 xl:px-32">
 				<div class="text-center">
 					<div
 						class="mt-[-170px] block rounded-lg px-6 py-12 bg-white/30 backdrop-blur-xl md:py-16 md:px-12"
