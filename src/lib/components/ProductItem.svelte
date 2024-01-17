@@ -42,8 +42,8 @@
 			/>
 		</div>
 	</a>
-	<div class="flex flex-col justify-start flex-grow leading-tight gap-1">
-		<div class="text-left"><a href={link}> {title}</a></div>
+	<div class="flex flex-col justify-start flex-grow leading-tight gap-1 xs:font-sm sm:font-sm">
+		<div class=" xs:text-xs sm:text-md md:text-md lg:text-md"><a href={link}> {title}</a></div>
 
 		<div class="flex justify-center gap-3">
 			{#if PUBLIC_SHOP_MODE != '0'}

@@ -44,15 +44,15 @@
 						/>
 					{/if}
 					<div
-						class="absolute inset-0 flex flex-col justify-center gap-20 mx-0 items-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:mx-16 md:items-start"
+						class="absolute inset-0 flex flex-col justify-center gap-20 mx-0 items-center md:mx-16 md:items-start"
 					>
 						<h1
-							class="font-extrabold text-white uppercase center text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] xs:text-xl sm:text-4xl sm:text-left md:text-left md:text-7xl lg:text-6xl"
+							class="font-extrabold text-white uppercase center text-center xs:text-xl sm:text-4xl sm:text-left md:text-left md:text-7xl lg:text-6xl"
 						>
 							{banner.heading}
 						</h1>
 						<a
-							class="bg-yellow-300 hover:bg-yellow-500 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] text-black font-bold py-2 px-4 rounded"
+							class="bg-yellow-300 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
 							href={banner.link}
 						>
 							PRODUKTE ANSEHEN
