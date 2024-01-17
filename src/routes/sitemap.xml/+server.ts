@@ -48,6 +48,7 @@ async function getProductPages() {
 // }
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
+	console.log(tree);
 	tree.children.forEach((child) => {
 		if (
 			child.children != undefined &&
