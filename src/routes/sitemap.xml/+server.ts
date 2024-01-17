@@ -13,7 +13,7 @@ const pb = new PocketBase(PUBLIC_POCKETBASE_URL);
 const tree = dirTree('../');
 
 function getSitemapXML(domain: string, routes: string[]) {
-	let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
+	sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
 	sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 	routes.forEach((route) => {
 		//console.log(route);
@@ -48,7 +48,8 @@ async function getProductPages() {
 // }
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
-	tree.children?.forEach((child) => {
+	tree.children.forEach((child) => {
+		console.log(child);
 		if (
 			child.children != undefined &&
 			child.children.length != 0 &&
@@ -72,7 +73,6 @@ async function getSitemap() {
 // Promise.all([getCategoryPages(), getProductPages()]).then(function (results) {
 // 	getSitemap();
 // });
-console.log(sitemap);
 
 export async function GET() {
 	try {
