@@ -10,7 +10,7 @@ let sitemap = '';
 import PocketBase from 'pocketbase';
 
 const pb = new PocketBase(PUBLIC_POCKETBASE_URL);
-const tree = dirTree('./src/routes');
+const tree = dirTree('./src/routes/');
 
 function getSitemapXML(domain: string, routes: string[]) {
 	sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
