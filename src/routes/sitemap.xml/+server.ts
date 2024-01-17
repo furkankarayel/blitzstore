@@ -11,7 +11,6 @@ import PocketBase from 'pocketbase';
 
 const pb = new PocketBase(PUBLIC_POCKETBASE_URL);
 const tree = dirTree('./src/routes');
-console.log(tree);
 
 function getSitemapXML(domain: string, routes: string[]) {
 	sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -50,7 +49,6 @@ async function getProductPages() {
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	tree.children.forEach((child) => {
-		console.log(child);
 		if (
 			child.children != undefined &&
 			child.children.length != 0 &&
