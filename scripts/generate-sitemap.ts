@@ -1,8 +1,11 @@
+/* eslint-disable prefer-const */
 import dirTree from 'directory-tree';
 import * as fs from 'fs';
 
-let baseRoute = '/';
+const baseRoute = '/';
+
 let routes: string[] = [baseRoute];
+
 let date = new Date().toISOString().split('T')[0];
 let sitemap = '';
 
@@ -39,15 +42,15 @@ async function getProductPages() {
 	});
 }
 
-async function getCategoryPages() {
-	const productsRecords = await pb.collection('categories').getFullList();
-	productsRecords.forEach((e) => {
-		routes.push('/' + e['slug']);
-	});
-}
+// async function getCategoryPages() {
+// 	const productsRecords = await pb.collection('categories').getFullList();
+// 	productsRecords.forEach((e) => {
+// 		routes.push('/' + e['slug']);
+// 	});
+// }
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
-	tree.children!.forEach((child) => {
+	tree.children?.forEach((child) => {
 		if (
 			child.children != undefined &&
 			child.children.length != 0 &&
@@ -67,7 +70,7 @@ function getSitemap() {
 	sitemap = getSitemapXML('https://kastonia.de', routes);
 }
 
-getProductPages().then(function (results) {
+getProductPages().then(function () {
 	getEndpoints(tree, baseRoute);
 	getSitemap();
 	// YOUR_DOMAIN should be like https://example.com
