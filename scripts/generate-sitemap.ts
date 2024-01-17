@@ -48,7 +48,12 @@ async function getCategoryPages() {
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	tree.children!.forEach((child) => {
-		if (child.children != undefined && child.children.length != 0 && !child.name.includes('[')) {
+		if (
+			child.children != undefined &&
+			child.children.length != 0 &&
+			!child.name.includes('[') &&
+			!child.name.includes('order')
+		) {
 			let childRoute = route + child.name;
 			if (child.children.some((e) => e.name === '+page.svelte')) {
 				routes.push(childRoute);
