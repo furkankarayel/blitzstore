@@ -9,7 +9,7 @@ let sitemap = '';
 import PocketBase from 'pocketbase';
 
 const pb = new PocketBase('https://kastoyeah.pockethost.io');
-const tree = dirTree('./src/routes');
+const tree = dirTree('.vercel/output/src/routes');
 
 function getSitemapXML(domain: string, routes: string[]) {
 	let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
