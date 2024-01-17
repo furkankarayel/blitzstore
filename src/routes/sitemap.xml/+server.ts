@@ -40,12 +40,12 @@ async function getProductPages() {
 	});
 }
 
-async function getCategoryPages() {
-	const productsRecords = await pb.collection('categories').getFullList();
-	productsRecords.forEach((e) => {
-		routes.push('/' + e['slug']);
-	});
-}
+// async function getCategoryPages() {
+// 	const productsRecords = await pb.collection('categories').getFullList();
+// 	productsRecords.forEach((e) => {
+// 		routes.push('/' + e['slug']);
+// 	});
+// }
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	tree.children?.forEach((child) => {
