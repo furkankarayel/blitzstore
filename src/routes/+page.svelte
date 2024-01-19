@@ -96,24 +96,4 @@
 		</section>
 		<!-- Section: Design Block -->
 	</div>
-	<!-- <section class="text-gray-800 text-center mt-20 lg:text-left lg:px-32 lg:py-5">
-		<div class="grid lg:grid-cols-2 gap-6 xl:gap-12 justify-center">
-			<div class="mb-6 lg:mb-0">
-				<h1
-					class="drop-shadow-lg xs:text-3xl sm:text-3xl  md:text-3xl xl:text-5xl lg:text-right font-bold tracking-tight"
-				>
-					Gute Dinge brauchen Planung
-				</h1>
-			</div>
-			<div class="mb-6 lg:mb-0 flex flex-col justify-center">
-				<p class="text-gray-500 text-lg">
-					Für ein optimales Endergebnis ist eine sorgfältige Planung entscheidend. Wir stehen Ihnen
-					bei der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und Geländern zur Seite.
-					<br />
-					<br />
-					Kontaktieren Sie uns jetzt für eine detaillierte Angebotserstellung.
-				</p>
-			</div>
-		</div>
-	</section> -->
 </div>
