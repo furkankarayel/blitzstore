@@ -39,19 +39,19 @@
 				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
 					Informationen
 				</h1>
-				<p>
+				<p class="xs:py-1 sm:py-1 md:py-0">
 					<a href="/about" class="text-gray-600">Über uns</a>
 				</p>
-				<p>
+				<p class="xs:py-1 sm:py-1 md:py-0">
 					<a href="/agb" class="text-gray-600">AGB</a>
 				</p>
-				<p>
+				<p class="xs:py-1 sm:py-1 md:py-0">
 					<a href="/datenschutz" class="text-gray-600">Datenschutz</a>
 				</p>
-				<p>
+				<p class="xs:py-1 sm:py-1 md:py-0">
 					<a href="/impressum" class="text-gray-600">Impressum</a>
 				</p>
-				<p>
+				<p class="xs:py-1 sm:py-1 md:py-0">
 					<a href="/contact" class="text-gray-600">Kontakt</a>
 				</p>
 			</div>
