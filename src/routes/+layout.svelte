@@ -4,7 +4,6 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import { PUBLIC_SHOP_NAME } from '$env/static/public';
 	import Analytics from '$lib/analytics.svelte';
-	export const prerender = true;
 </script>
 
 <svelte:head>
