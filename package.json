@@ -42,6 +42,7 @@
 	"type": "module",
 	"dependencies": {
 		"@stripe/stripe-js": "^1.48.0",
+		"@sveltejs/adapter-static": "^3.0.1",
 		"@types/jquery": "^3.5.29",
 		"directory-tree": "^3.5.1",
 		"pocketbase": "^0.12.1",
