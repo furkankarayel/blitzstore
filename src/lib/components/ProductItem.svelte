@@ -45,7 +45,7 @@
 
 			<div
 				class="flex flex-col justify-start break-words items-center flex-grow leading-tight gap-1 xs:font-sm sm:font-sm"
-			></div>
+			>
 				<div
 					class="p-3 text-base text-neutral-600 xs:text-xxs sm:text-sm md:text-md lg:text-md xl:text-md 2xl:text-xl"
 				>
