@@ -47,7 +47,7 @@
 				class="flex flex-col justify-start break-words items-center flex-grow leading-tight gap-1 xs:font-sm sm:font-sm"
 			>
 				<div
-					class="p-3 text-base text-neutral-600 xs:text-xxs sm:text-sm md:text-md lg:text-md xl:text-md 2xl:text-xl"
+					class="p-3 text-base text-neutral-600 xs:text-xs sm:text-sm md:text-lg lg:text-lg xl:text-md 2xl:text-xl"
 				>
 					<a href={link}> {title}</a>
 				</div>

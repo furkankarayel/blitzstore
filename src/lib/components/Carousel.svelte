@@ -47,7 +47,7 @@
 						class="absolute inset-0 flex flex-col justify-center gap-20 mx-0 items-center md:mx-16 md:items-start"
 					>
 						<h1
-							class="font-extrabold text-white uppercase center text-center xs:text-xl sm:text-4xl sm:text-left md:text-left md:text-7xl lg:text-6xl"
+							class="font-extrabold text-white uppercase center text-center xs:text-xl sm:text-2xl sm:text-left md:text-left md:text-3xl lg:text-6xl"
 						>
 							{banner.heading}
 						</h1>
