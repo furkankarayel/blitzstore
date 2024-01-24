@@ -9,7 +9,7 @@
 
 <nav class="sticky top-0 z-10 bg-[#282828] text-white">
 	<div class="max-w-7xl mx-auto">
-		<div class="flex justify-between items-center py-4">
+		<div class="flex justify-between items-center py-0">
 			<div>
 				<a class="mx-5 font-extrabold text-xl" href="/"
 					><img class="xs:h-14 sm:h-14 lg:h-20 xl:h-24" alt="Kastonia Logo" src={logo} /></a

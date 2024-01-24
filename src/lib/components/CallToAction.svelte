@@ -13,7 +13,7 @@
 					>
 						Gute Dinge brauchen Planung
 					</h1>
-					<p class="text-gray-500 text-lg xs:text-black sm:text-grey md:text-grey lg:text-grey">
+					<p class="text-black text-base">
 						Für ein optimales Endergebnis ist eine sorgfältige Planung entscheidend. <br />Wir
 						stehen Ihnen bei der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und
 						Geländern zur Seite.

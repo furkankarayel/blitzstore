@@ -9,7 +9,7 @@
 				<h1 class="uppercase font-bold mb-4 flex items-center justify-center md:justify-start">
 					Kastonia.de
 				</h1>
-				<p>
+				<p class="text-base">
 					Ihr Ansprechpartner für exzellentes Outdoor-Design: Elegante Terrassenüberdachungen,
 					maßgeschneiderte Wintergärten, stilvolle Glasgeländer, robuste Aluminiumzäune und edle
 					Massivholztische.
