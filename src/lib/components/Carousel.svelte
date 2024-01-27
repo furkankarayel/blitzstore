@@ -36,7 +36,7 @@
 			{#each banners as banner, imageIndex (banner)}
 				<div class="relative saturate-150">
 					{#if loaded.includes(imageIndex)}
-						<enhanced:img
+						<img
 							src="{PUBLIC_POCKETBASE_URL}/api/files/{banner.collectionName}/{banner.id}/{banner.image}"
 							class="w-full object-cover aspect-[2/3] md:aspect-[16/7]"
 							draggable="false"

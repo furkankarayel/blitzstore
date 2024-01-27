@@ -35,7 +35,7 @@
 			on:touchend={() => (hovered = false)}
 		>
 			<div class="relative overflow-hidden bg-cover bg-no-repeat">
-				<enhanced:img
+				<img
 					class="object-cover aspect-square rounded-t-lg"
 					loading="lazy"
 					src={hovered && hoverImage.length !== 0 ? hoverImage : image}
