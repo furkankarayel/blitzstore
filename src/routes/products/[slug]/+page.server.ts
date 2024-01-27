@@ -22,3 +22,22 @@ export const load = (async ({ params, locals }) => {
 		});
 	}
 }) satisfies PageServerLoad;
+
+import PocketBase from 'pocketbase';
+const pb = new PocketBase('https://app.kastonia.de');
+
+// eslint-disable-next-line prefer-const
+let myObjects = [{ slug: '' }];
+
+const productsRecords = await pb.collection('products').getFullList();
+productsRecords.forEach((e) => {
+	myObjects.push({ slug: e['slug'] });
+});
+myObjects.shift();
+console.log(myObjects);
+
+export function entries() {
+	return myObjects;
+}
+
+export const prerender = true;

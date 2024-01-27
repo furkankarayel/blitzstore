@@ -8,7 +8,12 @@ const config = {
 	preprocess: vitePreprocess(),
 	runtime: 'edge',
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			concurrency: 1, // had to be set to 1 instead of 3
+			crawl: true,
+			handleHttpError: 'ignore'
+		}
 	}
 };
 
