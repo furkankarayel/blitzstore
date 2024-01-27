@@ -34,7 +34,6 @@ productsRecords.forEach((e) => {
 	myObjects.push({ slug: e['slug'] });
 });
 myObjects.shift();
-console.log(myObjects);
 
 export function entries() {
 	return myObjects;
