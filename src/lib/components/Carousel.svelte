@@ -38,21 +38,21 @@
 					{#if loaded.includes(imageIndex)}
 						<img
 							src="{PUBLIC_POCKETBASE_URL}/api/files/{banner.collectionName}/{banner.id}/{banner.image}"
-							class="w-full object-cover aspect-[2/3] md:aspect-[16/9]"
+							class="w-full object-cover aspect-[2/3] md:aspect-[16/7]"
 							draggable="false"
 							alt={banner.heading}
 						/>
 					{/if}
 					<div
-						class="absolute inset-0 flex flex-col justify-center gap-20 mx-0 items-center md:mx-16 md:items-start"
+						class="absolute inset-0 flex flex-col justify-center gap-9 mx-0 items-center md:mx-16 md:items-start"
 					>
 						<h1
-							class="font-extrabold text-white uppercase center text-center xs:text-xl sm:text-2xl sm:text-left md:text-left md:text-3xl lg:text-6xl"
+							class="font-extrabold text-white bg-black drop-shadow-xl bg-opacity-30 rounded-lg p-5 uppercase center text-center xs:text-xl sm:text-2xl sm:text-left md:text-left md:text-xl lg:text-4xl xl:text-6xl"
 						>
 							{banner.heading}
 						</h1>
 						<a
-							class="bg-yellow-300 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
+							class="bg-yellow-300 hover:bg-yellow-500 text-black xs:text-xs md:text-sm font-bold py-2 px-4 rounded"
 							href={banner.link}
 						>
 							PRODUKTE ANSEHEN

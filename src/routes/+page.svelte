@@ -22,7 +22,7 @@
 	<Carousel {banners} />
 {/if}
 
-<div class="mx-3 my-10 md:mx-10">
+<div class="mx-3 my-5 md:mx-10">
 	<section class="text-gray-800 text-center lg:text-left lg:px-32 lg:py-5">
 		<div class="grid lg:grid-cols-2 gap-6 xl:gap-12 justify-center">
 			<div class="mb-6 lg:mb-0">
@@ -44,7 +44,7 @@
 
 	{#each showcase as showsection}
 		<h2
-			class="text-center font-extrabold xs:text-2xl md:text-4xl pt-10 pb-10 uppercase drop-shadow-lg"
+			class="text-center font-extrabold xs:text-2xl md:text-3xl pt-10 pb-10 uppercase drop-shadow-lg"
 		>
 			{showsection.name}
 		</h2>
