@@ -52,7 +52,7 @@
 							{banner.heading}
 						</h1>
 						<a
-							class="bg-yellow-300 hover:bg-yellow-500 text-black xs:text-xs md:text-sm font-bold py-2 px-4 rounded"
+							class="bg-yellow-300 hover:bg-yellow-500 text-black xs:text-xs md:text-sm font-bold py-2 px-4 md:mx-5 rounded"
 							href={banner.link}
 						>
 							PRODUKTE ANSEHEN
