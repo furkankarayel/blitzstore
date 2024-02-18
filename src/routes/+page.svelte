@@ -80,6 +80,5 @@
 			{/each}
 		</div>
 	{/each}
-
 	<CallToAction />
 </div>
