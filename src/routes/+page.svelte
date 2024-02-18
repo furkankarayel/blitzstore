@@ -25,15 +25,15 @@
 <div class="mx-3 my-5 md:mx-10">
 	<section class="text-gray-800 text-center lg:text-left lg:px-32 lg:py-5">
 		<div class="grid lg:grid-cols-2 gap-6 xl:gap-12 justify-center">
-			<div class="mb-6 lg:mb-0">
+			<div class="mb-6 xs:mb-0 lg:mb-0">
 				<h1
-					class="text-4xl drop-shadow-lg md:text-4xl lg:text-4xl xl:text-7xl lg:text-right font-bold tracking-tight"
+					class="text-4xl drop-shadow-lg xs:text-xl md:text-2xl lg:text-4xl xl:text-7xl lg:text-right font-bold tracking-tight"
 				>
 					Beste Qualität & gutes Design
 				</h1>
 			</div>
-			<div class="mb-6 lg:mb-0 flex flex-col justify-center">
-				<p class="text-gray-500 text-base">
+			<div class="mb-3 lg:mb-0 flex flex-col justify-center">
+				<p class="text-gray-500 xs:text-xs md:text-md lg:text-lg">
 					Entdecken Sie hochwertige Outdoor- als auch Indoor Lösungen, die überzeugen.
 					Feinsteinzeugfliesen, Massivholztische, Terassenüberdachungen, Glasgeländer und noch
 					vieles mehr.
@@ -44,12 +44,12 @@
 
 	{#each showcase as showsection}
 		<h2
-			class="text-center font-extrabold xs:text-2xl md:text-3xl pt-10 pb-10 uppercase drop-shadow-lg"
+			class="text-center font-extrabold xs:text-lg md:text-3xl xs:pt-10 xs:pb-6 md:pt-10 md:pb-12 uppercase drop-shadow-lg"
 		>
 			{showsection.name}
 		</h2>
 
-		<div class="grid xs:gap-3 md:gap-9 grid-cols-2 lg:grid-cols-4">
+		<div class="grid xs:gap-5 md:gap-30 md:pb-10 grid-cols-2 lg:grid-cols-4">
 			{#each showsection.expand.products as product (product.id)}
 				<ProductItem
 					title={product.name}

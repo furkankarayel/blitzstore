@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { PUBLIC_SHOP_MODE } from '$env/static/public';
-	import MediaQuery from './MediaQuery.svelte';
+
 	export let title: string;
 	export let image: string;
 	export let hoverImage = '';
@@ -22,7 +22,7 @@
 	};
 </script>
 
-<div class="flex flex-col justify-center items-left">
+<div class="flex flex-col">
 	<div
 		class="bg-white saturate-150 overflow-hidden rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
 	>
@@ -47,7 +47,7 @@
 				class="flex flex-col justify-start break-words items-center flex-grow leading-tight gap-1 xs:font-sm sm:font-sm"
 			>
 				<div
-					class="p-3 text-base text-neutral-600 xs:text-xs sm:text-sm md:text-lg lg:text-lg xl:text-md 2xl:text-xl"
+					class="p-3 text-base text-neutral-600 xs:text-xs sm:text-sm md:text-md lg:text-md xl:text-md 2xl:text-xl"
 				>
 					<a href={link}> {title}</a>
 				</div>

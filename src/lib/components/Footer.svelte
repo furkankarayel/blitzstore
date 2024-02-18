@@ -9,11 +9,7 @@
 				<h1 class="uppercase font-bold mb-4 flex items-center justify-center md:justify-start">
 					Kastonia.de
 				</h1>
-				<p class="text-base">
-					Ihr Ansprechpartner für exzellentes Outdoor-Design: Elegante Terrassenüberdachungen,
-					maßgeschneiderte Wintergärten, stilvolle Glasgeländer, robuste Aluminiumzäune und edle
-					Massivholztische.
-				</p>
+				<p class="text-base xs:text-sm">Ihr Ansprechpartner für exzellentes Outdoor-Design</p>
 			</div>
 			{#if PUBLIC_SHOP_MODE != '0'}
 				<div>
@@ -36,28 +32,30 @@
 				</div>
 			{/if}
 			<div>
-				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+				<h1 class="uppercase font-semibold xs:text-sm mb-4 flex justify-center md:justify-start">
 					Informationen
 				</h1>
 				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/about" class="text-gray-600">Über uns</a>
+					<a href="/about" class="text-gray-600 xs:text-sm">Über uns</a>
 				</p>
 				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/agb" class="text-gray-600">AGB</a>
+					<a href="/agb" class="text-gray-600 xs:text-sm">AGB</a>
 				</p>
 				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/datenschutz" class="text-gray-600">Datenschutz</a>
+					<a href="/datenschutz" class="text-gray-600 xs:text-sm">Datenschutz</a>
 				</p>
 				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/impressum" class="text-gray-600">Impressum</a>
+					<a href="/impressum" class="text-gray-600 xs:text-sm">Impressum</a>
 				</p>
 				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/contact" class="text-gray-600">Kontakt</a>
+					<a href="/contact" class="text-gray-600 xs:text-sm">Kontakt</a>
 				</p>
 			</div>
 			<div>
-				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Kontakt</h1>
-				<p class="flex items-center justify-center md:justify-start mb-4">
+				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start xs:text-sm">
+					Kontakt
+				</h1>
+				<p class="flex items-center justify-center md:justify-start mb-4 xs:text-sm">
 					<svg
 						aria-hidden="true"
 						focusable="false"
@@ -75,7 +73,7 @@
 					</svg>
 					Meckenbeuren, Deutschland
 				</p>
-				<p class="flex items-center justify-center md:justify-start mb-4">
+				<p class="flex items-center justify-center md:justify-start mb-4 xs:text-sm">
 					<svg
 						aria-hidden="true"
 						focusable="false"
@@ -93,7 +91,7 @@
 					</svg>
 					info@kastonia.de
 				</p>
-				<p class="flex items-center justify-center md:justify-start mb-4">
+				<p class="flex items-center justify-center md:justify-start mb-4 xs:text-sm">
 					<svg
 						aria-hidden="true"
 						focusable="false"
@@ -114,7 +112,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="text-center p-6 bg-gray-200">
+	<div class="text-center p-6 bg-gray-200 xs:text-sm">
 		<a href="https://furk4n.com">© 2024, Kastonia.de</a>
 	</div>
 </footer>

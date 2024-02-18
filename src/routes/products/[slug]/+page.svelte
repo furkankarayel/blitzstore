@@ -48,18 +48,18 @@
 	</div>
 	<div class="basis-1/2 flex flex-col gap-8 px-8">
 		<h1 class="font-extrabold text-4xl mt-3 xs:text-xl sm:text-xl">{product.name}</h1>
-		<div class="flex items-end gap-2">
-			{#if PUBLIC_SHOP_MODE != '0'}
+		{#if PUBLIC_SHOP_MODE != '0'}
+			<div class="flex items-end gap-2">
 				{#if product.sale_price === 0}
 					<span class="text-3xl">${product.price}</span>
 				{:else}
 					<span class="text-3xl text-red-600">${product.sale_price}</span>
 					<span class="text-xl text-gray-600 line-through">${product.price}</span>
 				{/if}
-			{/if}
-		</div>
+			</div>
+		{/if}
 
-		<div class="flex flex-col gap-2">
+		<div class="flex flex-col">
 			<!-- Not needed <p>Beschreibung</p>-->
 			<ProductDetails source={product.details} />
 		</div>
