@@ -23,20 +23,35 @@
 {/if}
 
 <div class="mx-3 my-5 md:mx-10">
-	<section class="text-gray-800 text-center lg:text-left lg:px-32 lg:py-5">
-		<div class="grid lg:grid-cols-2 gap-6 xl:gap-12 justify-center">
+	<section class="text-gray-800 text-center lg:text-left lg:px-32 md:py-14">
+		<div class="grid md:grid-cols-2 md:py-14 gap-6 mb-10 xl:gap-12 justify-center">
 			<div class="mb-6 xs:mb-0 lg:mb-0">
 				<h1
-					class="text-4xl drop-shadow-lg xs:text-xl md:text-2xl lg:text-4xl xl:text-7xl lg:text-right font-bold tracking-tight"
+					class="text-4xl drop-shadow-lg xs:text-xl md:text-2xl lg:text-4xl xl:text-7xl md:text-right font-bold tracking-tight"
 				>
-					Beste Qualität & gutes Design
+					Hervorragende Qualität & gutes Design
 				</h1>
 			</div>
 			<div class="mb-3 lg:mb-0 flex flex-col justify-center">
 				<p class="text-gray-500 xs:text-xs md:text-md lg:text-lg">
-					Entdecken Sie hochwertige Outdoor- als auch Indoor Lösungen, die überzeugen.
-					Feinsteinzeugfliesen, Massivholztische, Terassenüberdachungen, Glasgeländer und noch
-					vieles mehr.
+					Entdecken Sie hochwertige Lösungen für den Außen- und Innenbereich, die überzeugen.
+					Feinsteinzeugfliesen, Massivholztische, Terrassenüberdachungen, Glasgeländer und vieles
+					mehr.
+				</p>
+			</div>
+		</div>
+		<div class="grid md:grid-cols-2 md:py-14 gap-6 xl:gap-12 justify-center">
+			<div class="mb-6 xs:mb-0 lg:mb-0 md:order-last lg:order-last">
+				<h1
+					class="text-4xl drop-shadow-lg xs:text-xl md:text-2xl lg:text-4xl xl:text-7xl md:text-left font-bold tracking-tight"
+				>
+					Mehr Individualität
+				</h1>
+			</div>
+			<div class="mb-3 lg:mb-0 flex flex-col justify-center">
+				<p class="text-gray-500 xs:text-xs md:text-md lg:text-lg">
+					Unser Team arbeitet derzeit mit Hochdruck daran, Ihnen eine schnelle und einfache
+					Möglichkeit zu bieten, unsere Produktlinien individuell nach Ihren Wünschen zu gestalten.
 				</p>
 			</div>
 		</div>
