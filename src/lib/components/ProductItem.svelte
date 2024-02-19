@@ -38,6 +38,7 @@
 			<div class="relative overflow-hidden bg-cover bg-no-repeat">
 				<Image
 					class="object-cover aspect-square rounded-t-lg"
+					layout="constrained"
 					loading="lazy"
 					src={hovered && hoverImage.length !== 0 ? hoverImage : image}
 					alt="{title} image"

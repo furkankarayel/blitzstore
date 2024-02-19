@@ -9,11 +9,11 @@
 					class="mt-[-170px] block rounded-lg px-6 py-12 bg-white/30 backdrop-blur-xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12"
 				>
 					<h1
-						class="drop-shadow-lg mb-10 xs:text-xl sm:text-3xl md:text-3xl xl:text-5xl lg:text-center font-bold tracking-tight"
+						class="drop-shadow-lg mb-10 xs:text-3xl sm:text-3xl md:text-3xl xl:text-5xl lg:text-center font-bold tracking-tight"
 					>
 						Gute Dinge brauchen Planung
 					</h1>
-					<p class="text-black text-base xs:text-sm md:text-md">
+					<p class="text-black text-base xs:text-md md:text-md">
 						Für ein optimales Endergebnis ist eine sorgfältige Planung entscheidend. <br />Wir
 						stehen Ihnen bei der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und
 						Geländern zur Seite.
