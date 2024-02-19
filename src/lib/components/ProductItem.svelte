@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { PUBLIC_SHOP_MODE } from '$env/static/public';
+	import { Image } from '@unpic/svelte';
 
 	export let title: string;
 	export let image: string;
@@ -35,7 +36,7 @@
 			on:touchend={() => (hovered = false)}
 		>
 			<div class="relative overflow-hidden bg-cover bg-no-repeat">
-				<img
+				<Image
 					class="object-cover aspect-square rounded-t-lg"
 					loading="lazy"
 					src={hovered && hoverImage.length !== 0 ? hoverImage : image}
