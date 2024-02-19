@@ -48,6 +48,7 @@
 			<button on:click={() => setImage(image)}>
 				<Image
 					layout="constrained"
+					loading="lazy"
 					class={generateStyle(image)}
 					src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{image}"
 					width="700"

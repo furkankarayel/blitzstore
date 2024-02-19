@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Carousel from 'svelte-carousel';
 	import CarouselDot from '$lib/components/CarouselDot.svelte';
-
+	import { Image } from '@unpic/svelte';
 	import { browser } from '$app/environment';
 	import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
 
@@ -36,7 +36,9 @@
 			{#each banners as banner, imageIndex (banner)}
 				<div class="relative saturate-150">
 					{#if loaded.includes(imageIndex)}
-						<img
+						<Image
+							layout="constrained"
+							loading="lazy"
 							src="{PUBLIC_POCKETBASE_URL}/api/files/{banner.collectionName}/{banner.id}/{banner.image}"
 							class="w-full object-cover aspect-[2/3] md:aspect-[16/7]"
 							draggable="false"
