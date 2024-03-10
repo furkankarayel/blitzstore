@@ -1,5 +1,6 @@
 <script>
 	import image from '$lib/assets/planning.jpg';
+	import { PUBLIC_SHOP_URL } from '$env/static/public';
 </script>
 
 <div class="my-10 mx-auto sm:mx-0 sm:my-0">
