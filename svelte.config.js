@@ -1,19 +1,18 @@
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import adapter from '@sveltejs/adapter-node';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-	runtime: 'edge',
 	kit: {
-		adapter: adapter(),
-		prerender: {
-			concurrency: 1, // had to be set to 1 instead of 3
-			crawl: true,
-			handleHttpError: 'ignore'
-		}
+		adapter: adapter({
+			out: 'build',
+			precompress: true,
+			envPrefix: ''
+		}),
+
 	}
 };
 

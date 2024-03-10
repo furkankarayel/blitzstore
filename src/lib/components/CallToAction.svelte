@@ -1,29 +1,35 @@
-<div class="my-10 mx-auto md:px-6 sm:px-0">
+<script>
+	import image from '$lib/assets/planning.jpg';
+</script>
+
+<div class="my-10 mx-auto sm:mx-0 sm:my-0">
 	<section>
 		<div
-			class="relative overflow-hidden saturate-150 bg-cover bg-no-repeat bg-[50%] bg-[url('$lib/assets/planning.jpg')] h-[500px]"
-		/>
-		<div class="mx-auto px-2 md:px-12 xl:px-32">
-			<div class="text-center">
-				<div
-					class="mt-[-170px] block rounded-lg px-6 py-12 bg-white/30 backdrop-blur-xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12"
-				>
-					<h1
-						class="drop-shadow-lg mb-10 xs:text-3xl sm:text-3xl md:text-3xl xl:text-5xl lg:text-center font-bold tracking-tight"
-					>
-						Gute Dinge brauchen Planung
-					</h1>
-					<p class="text-black text-base xs:text-md md:text-md">
-						Für ein optimales Endergebnis ist eine sorgfältige Planung entscheidend. <br />Wir
-						stehen Ihnen bei der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und
-						Geländern zur Seite.
+			class="md:h-64 xs:h-100 mt-10 rounded-md overflow-hidden bg-cover bg-center"
+			style="background-image: url({image})"
+		>
+			<div class="bg-gray-900 bg-opacity-50 flex xs:py-12 md:px-3 items-center h-full">
+				<div class="px-10 xs:px-3 max-w-xl">
+					<h2 class="text-2xl text-white font-semibold">Gute Dinge brauchen Planung</h2>
+					<p class="mt-2 text-gray-300">
+						Für ein optimales Endergebnis ist eine sorgfältige Planung entscheidend. Wir stehen
+						Ihnen bei der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und Geländern zur
+						Seite.
 					</p>
-					<div class="flex justify-center">
-						<a
-							class="bg-yellow-300 mt-10 hover:bg-yellow-500 drop-shadow-sm text-black font-bold py-5 px-5 xs:py-2 xs:px-2 rounded"
-							href="/contact">Jetzt einen Termin vereinbaren</a
+					<button
+						class="flex items-center mt-4 px-3 py-2 bg-green-700 text-white text-sm uppercase font-medium rounded hover:bg-green-500 focus:outline-none focus:bg-green-500"
+					>
+						<span>Termin vereinbaren</span>
+						<svg
+							class="h-5 w-5 mx-2"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg
 						>
-					</div>
+					</button>
 				</div>
 			</div>
 		</div>
