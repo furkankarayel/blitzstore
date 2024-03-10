@@ -59,10 +59,6 @@
 			</div>
 		{/if}
 
-		<div class="flex flex-col">
-			<!-- Not needed <p>Beschreibung</p>-->
-			<ProductDetails source={product.details} />
-		</div>
 		{#if PUBLIC_SHOP_MODE != '0'}
 			<div class="flex flex-col gap-2">
 				<p>Menge</p>
