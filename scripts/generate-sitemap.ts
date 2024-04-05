@@ -11,7 +11,7 @@ let sitemap = '';
 
 import PocketBase from 'pocketbase';
 
-const pb = new PocketBase('https://app.kastonia.de');
+const pb = new PocketBase('https://db.kastonia.de');
 const tree = dirTree('./src/routes');
 console.log(tree.path.toString());
 
