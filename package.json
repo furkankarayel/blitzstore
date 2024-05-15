@@ -43,6 +43,7 @@
 	"dependencies": {
 		"@popperjs/core": "^2.11.8",
 		"@stripe/stripe-js": "^1.48.0",
+		"@sveltejs/adapter-cloudflare": "^4.4.0",
 		"@sveltejs/adapter-node": "^4.0.1",
 		"@sveltejs/adapter-static": "^3.0.1",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",

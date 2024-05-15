@@ -21,6 +21,7 @@
 
 <div class="container mx-auto px-6 xs:px-0 sm:px-0">
 	<div class="mx-3 my-5 xs:mx-0 md:mx-10">
+		<!-- <Carousel /> -->
 		<FeaturedProductFull products={featuredproducts} />
 		<section class="text-gray-800 xs:mt-12 md:mt-0 text-center lg:text-left lg:px-32 md:py-14">
 			<div class="grid md:grid-cols-2 gap-6 mb-10 xl:gap-12 justify-center">

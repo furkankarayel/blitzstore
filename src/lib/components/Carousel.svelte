@@ -1,67 +1,93 @@
-<script lang="ts">
-	import Carousel from 'svelte-carousel';
-	import CarouselDot from '$lib/components/CarouselDot.svelte';
-	import { Image } from '@unpic/svelte';
-	import { browser } from '$app/environment';
-	import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
+<script>
+	// @ts-nocheck
 
-	export let banners: any;
-
-	let carousel: any; // for calling methods of the carousel instance
+	import PrevSvg from '$lib/components/PrevSvg.svelte';
+	import NextSvg from '$lib/components/NextSvg.svelte';
+	export let items;
+	export let duration = 3000;
+	items = [
+		{
+			img: 'https://flowbite.com/docs/images/carousel/carousel-1.svg',
+			alt: 'Slite image item 1'
+		},
+		{
+			img: 'https://flowbite.com/docs/images/carousel/carousel-2.svg',
+			alt: 'Slite image item 2'
+		},
+		{
+			img: 'https://flowbite.com/docs/images/carousel/carousel-3.svg',
+			alt: 'Slite image item 3'
+		}
+	];
+	$: current = 0;
+	setInterval(() => {
+		if (current == items.length - 1) {
+			current = 0;
+		} else {
+			current++;
+		}
+	}, duration);
 </script>
 
-<div class="w-full aspect-[1.9/3] md:aspect-[16/7.7]">
-	{#if browser}
-		<Carousel
-			let:loaded
-			let:currentPageIndex
-			let:pagesCount
-			let:showPage
-			bind:this={carousel}
-			autoplay
-			autoplayDuration={5000}
-			autoplayProgressVisible
-			arrows={false}
-		>
-			<div slot="dots" class="flex flex-wrap items-center justify-center gap-1 p-2">
-				{#each Array(pagesCount) as _, pageIndex (pageIndex)}
-					<CarouselDot
-						active={currentPageIndex === pageIndex}
-						number={pageIndex + 1}
-						on:click={() => showPage(pageIndex)}
-					/>
-				{/each}
+<div class="carousel">
+	<!-- Carousel wrapper -->
+	<div class="wrapper">
+		{#each items as item, index}
+			<div class="item {current == index ? 'z-20' : ''}" data-value={index}>
+				{#if index == 1}
+					<span>{item.alt}</span>
+				{/if}
+				<img src={item.img} alt={item.alt} />
 			</div>
-
-			{#each banners as banner, imageIndex (banner)}
-				<div class="relative saturate-150">
-					{#if loaded.includes(imageIndex)}
-						<Image
-							layout="constrained"
-							loading="lazy"
-							src="{PUBLIC_POCKETBASE_URL}/api/files/{banner.collectionName}/{banner.id}/{banner.image}"
-							class="w-full object-cover aspect-[2/3] md:aspect-[16/7]"
-							draggable="false"
-							alt={banner.heading}
-						/>
-					{/if}
-					<div
-						class="absolute inset-0 flex flex-col justify-center gap-9 mx-0 items-center md:mx-16 md:items-start"
-					>
-						<h1
-							class="font-extrabold text-white bg-black drop-shadow-xl bg-opacity-30 rounded-lg p-5 uppercase center text-center xs:text-xl sm:text-2xl sm:text-left md:text-left md:text-xl lg:text-4xl xl:text-6xl"
-						>
-							{banner.heading}
-						</h1>
-						<a
-							class="bg-yellow-300 hover:bg-yellow-500 text-black xs:text-xs md:text-sm font-bold py-2 px-4 md:mx-5 rounded"
-							href={banner.link}
-						>
-							PRODUKTE ANSEHEN
-						</a>
-					</div>
-				</div>
-			{/each}
-		</Carousel>
-	{/if}
+		{/each}
+	</div>
+	<!-- Slider indicators -->
+	<div class="indicators">
+		{#each items as item, index}
+			<button
+				on:click={() => {
+					current = index;
+				}}
+				type="button"
+				aria-current={current == index ? true : false}
+				aria-label={item.alt}
+				data-value={index}
+			/>
+		{/each}
+	</div>
+	<!-- Slider controls -->
+	<button
+		on:click={() => {
+			if (current == 0) {
+				current = items.length - 1;
+			} else {
+				current--;
+			}
+		}}
+		type="button"
+		class="controls top-0 left-0"
+		data-carousel-prev=""
+	>
+		<span class="item">
+			<PrevSvg />
+			<span class="hidden">Previous</span>
+		</span>
+	</button>
+	<button
+		on:click={() => {
+			if (current == items.length - 1) {
+				current = 0;
+			} else {
+				current++;
+			}
+		}}
+		type="button"
+		class="controls top-0 right-0"
+		data-carousel-next=""
+	>
+		<span class="item">
+			<NextSvg />
+			<span class="hidden">Next</span>
+		</span>
+	</button>
 </div>

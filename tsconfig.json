@@ -14,6 +14,7 @@
 		"./**/*.ts",
 		"./**/*.js",
 		".svelte-kit/ambient.d.ts",
+		"src/node_modules",
 	]
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//
