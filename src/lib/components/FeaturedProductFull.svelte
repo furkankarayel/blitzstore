@@ -18,10 +18,9 @@
 					group.length != 1 ? 'w-full md:w-1/2' : ''
 				} h-64 mt-10 md:mx-4 rounded-md overflow-hidden relative`}
 			>
-				<Image
+				<enhanced:img
 					class="h-64 w-full object-cover object-center"
 					src={`${PUBLIC_POCKETBASE_URL}/api/files/${product.collectionName}/${product.id}/${product.images[0]}`}
-					layout="constrained"
 					alt={product.name}
 				/>
 				<div class="bg-gray-900 bg-opacity-50 flex items-center absolute inset-0">

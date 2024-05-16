@@ -1,14 +1,12 @@
 <script>
 	import image from '$lib/assets/planning.jpg';
-	import { Image } from '@unpic/svelte';
 	import { PUBLIC_SHOP_URL } from '$env/static/public';
 </script>
 
 <div class="my-10 mx-auto sm:mx-0 sm:my-0">
 	<section class="relative mt-10 rounded-md overflow-hidden">
-		<Image
+		<enhanced:img
 			class="md:h-64 xs:h-100 object-cover object-center w-full"
-			layout="constrained"
 			src={image}
 			alt="Termin Vereinbarung"
 			width="1456"

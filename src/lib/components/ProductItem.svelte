@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { PUBLIC_SHOP_MODE } from '$env/static/public';
-	import { Image } from '@unpic/svelte';
 
 	export let title: string;
 	export let image: string;
@@ -20,10 +19,9 @@
 		on:touchstart={() => (hovered = true)}
 		on:touchend={() => (hovered = false)}
 	>
-		<Image
+		<enhanced:img
 			class="h-56 w-full object-cover"
 			src={image}
-			layout="constrained"
 			width={380}
 			height={250}
 			alt="{title}]"
