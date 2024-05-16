@@ -3,7 +3,7 @@ import { enhancedImages } from '@sveltejs/enhanced-img';
 import type { UserConfig } from 'vite';
 
 const config: UserConfig = {
-	plugins: [sveltekit(), enhancedImages()],
+	plugins: [enhancedImages(), sveltekit()],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}

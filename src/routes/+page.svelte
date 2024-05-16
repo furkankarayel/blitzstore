@@ -8,6 +8,7 @@
 	export let data: any;
 	let showcase = data.showcase;
 	let featuredproducts = data.featured.items;
+	let len_featProducts = featuredproducts[0].products.length;
 	//let banners = data.carousels;
 </script>
 
@@ -22,7 +23,21 @@
 <div class="container mx-auto px-6 xs:px-0 sm:px-0">
 	<div class="mx-3 my-5 xs:mx-0 md:mx-10">
 		<!-- <Carousel /> -->
-		<FeaturedProductFull products={featuredproducts} />
+		{#each featuredproducts as products}
+			{#each products.expand.products as product, productIndex}
+				<div class="">
+					<FeaturedProductFull
+						item_index={productIndex}
+						name={product.name}
+						description={product.description}
+						image="{PUBLIC_POCKETBASE_URL}/api/files/{product.collectionName}/{product.id}/{product
+							.images[0]}"
+						link="/products/{product.slug}"
+						action={'Entdecken'}
+					/>
+				</div>
+			{/each}
+		{/each}
 		<section class="text-gray-800 xs:mt-12 md:mt-0 text-center lg:text-left lg:px-32 md:py-14">
 			<div class="grid md:grid-cols-2 gap-6 mb-10 xl:gap-12 justify-center">
 				<div class="mb-1 xs:mb-0 lg:mb-0">

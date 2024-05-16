@@ -19,13 +19,7 @@
 		on:touchstart={() => (hovered = true)}
 		on:touchend={() => (hovered = false)}
 	>
-		<enhanced:img
-			class="h-56 w-full object-cover"
-			src={image}
-			width={380}
-			height={250}
-			alt="{title}]"
-		/>
+		<img class="h-56 w-full object-cover" src={image} alt={title} />
 
 		<div
 			class="p-3 text-base text-neutral-600 xs:text-xs sm:text-sm md:text-md lg:text-md xl:text-md 2xl:text-lg"

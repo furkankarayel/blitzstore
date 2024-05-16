@@ -5,12 +5,10 @@
 
 <div class="my-10 mx-auto sm:mx-0 sm:my-0">
 	<section class="relative mt-10 rounded-md overflow-hidden">
-		<enhanced:img
+		<img
 			class="md:h-64 xs:h-100 object-cover object-center w-full"
 			src={image}
 			alt="Termin Vereinbarung"
-			width="1456"
-			height="256"
 		/>
 
 		<div class="bg-gray-900 bg-opacity-50 flex xs:py-12 md:px-3 items-center absolute inset-0">
