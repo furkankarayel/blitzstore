@@ -15,7 +15,8 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 			fallback: null,
-			precompress: false
+			precompress: false,
+			routes: { include: ['/*'], exclude: ['<all>', '/sitemap.xml'] }
 		})
 	}
 };
