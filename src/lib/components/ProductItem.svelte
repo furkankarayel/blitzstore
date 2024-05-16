@@ -20,9 +20,13 @@
 		on:touchstart={() => (hovered = true)}
 		on:touchend={() => (hovered = false)}
 	>
-		<div
-			class="flex items-end justify-end h-56 w-full bg-cover"
-			style="background-image: url('{image}')"
+		<Image
+			class="h-56 w-full object-cover"
+			src={image}
+			layout="constrained"
+			width={380}
+			height={250}
+			alt="{title}]"
 		/>
 
 		<div

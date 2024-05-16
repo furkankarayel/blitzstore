@@ -12,10 +12,10 @@
 </script>
 
 <svelte:head>
-	<title>Willkommen bei {PUBLIC_SHOP_NAME}</title>
+	<title>{PUBLIC_SHOP_NAME} am Bodensee, Meckenbeuren</title>
 	<meta
 		name="description"
-		content="Entdecken Sie bei Kastonia.de exzellentes Outdoor-Design: Elegante Terrassenüberdachungen, maßgeschneiderte Wintergärten, stilvolle Glasgeländer, robuste Aluminiumzäune und edle Massivholztische. Perfektionieren Sie Ihr Zuhause mit unseren Feinsteinzeugfliesen – Qualität, die begeistert."
+		content="Kastonia.de Bodensee Ihr Partner für Outdoor-Design: Elegante Terrassenüberdachungen, maßgeschneiderte Wintergärten, stilvolle Glasgeländer, robuste Aluminiumzäune und exklusive Pergolas – Qualität, die begeistert."
 	/>
 </svelte:head>
 
