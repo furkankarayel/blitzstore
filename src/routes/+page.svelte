@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { PUBLIC_POCKETBASE_URL, PUBLIC_SHOP_NAME } from '$env/static/public';
-	import Carousel from '$lib/components/Carousel.svelte';
+
 	import ProductItem from '$lib/components/ProductItem.svelte';
 	import CallToAction from '$lib/components/CallToAction.svelte';
 	import FeaturedProductFull from '../lib/components/FeaturedProductFull.svelte';

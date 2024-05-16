@@ -11,8 +11,6 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
-
-	declare module 'svelte-carousel';
 }
 
 export {};
