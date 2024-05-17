@@ -25,17 +25,14 @@
 		<!-- <Carousel /> -->
 		{#each featuredproducts as products}
 			{#each products.expand.products as product, productIndex}
-				<div class="">
-					<FeaturedProductFull
-						item_index={productIndex}
-						name={product.name}
-						description={product.description}
-						image="{PUBLIC_POCKETBASE_URL}/api/files/{product.collectionName}/{product.id}/{product
-							.images[0]}"
-						link="/products/{product.slug}"
-						action={'Entdecken'}
-					/>
-				</div>
+				<FeaturedProductFull
+					name={product.name}
+					description={product.description}
+					image="{PUBLIC_POCKETBASE_URL}/api/files/{product.collectionName}/{product.id}/{product
+						.images[0]}"
+					link="/products/{product.slug}"
+					action={'Entdecken'}
+				/>
 			{/each}
 		{/each}
 		<section class="text-gray-800 xs:mt-12 md:mt-0 text-center lg:text-left lg:px-32 md:py-14">

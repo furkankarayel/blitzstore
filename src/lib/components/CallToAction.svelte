@@ -4,17 +4,13 @@
 </script>
 
 <div class="my-10 mx-auto sm:mx-0 sm:my-0">
-	<section class="relative mt-10 rounded-md overflow-hidden">
-		<img
-			class="md:h-64 xs:h-100 object-cover object-center w-full"
-			src={image}
-			alt="Termin Vereinbarung"
-		/>
+	<section class="relative mt-10 rounded-md overflow-hidden custom-height">
+		<img class="object-cover object-center w-full" src={image} alt="Termin Vereinbarung" />
 
 		<div class="bg-gray-900 bg-opacity-50 flex xs:py-12 md:px-3 items-center absolute inset-0">
 			<div class="px-10 xs:px-3 max-w-xl">
-				<h2 class="text-2xl text-white font-semibold">Gute Dinge brauchen Planung</h2>
-				<p class="mt-2 text-gray-300">
+				<h2 class="text-2xl xs:text-lg text-white font-semibold">Gute Dinge brauchen Planung</h2>
+				<p class="mt-2 xs:text-sm text-gray-300">
 					Für ein optimales Endergebnis ist eine sorgfältige Planung entscheidend. Wir stehen Ihnen
 					bei der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und Geländern zur Seite.
 				</p>
@@ -40,3 +36,13 @@
 		</div>
 	</section>
 </div>
+
+<style>
+	.custom-height {
+		height: 280px;
+	}
+
+	.custom-height img {
+		height: 100%;
+	}
+</style>

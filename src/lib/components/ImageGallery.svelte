@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
-	import { Image } from '@unpic/svelte';
 	export let productId: string;
 	export let images: any;
 	export let alt_text: string;
@@ -33,10 +32,9 @@
 </script>
 
 <div class="flex flex-col gap-5">
-	<Image
+	<img
 		class="w-full shadow-lg"
 		id="top_image"
-		layout="constrained"
 		src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{active_image}"
 		width="700"
 		height="700"
@@ -46,8 +44,7 @@
 	<div class="grid gap-3 grid-cols-2 lg:grid-cols-4">
 		{#each images as image}
 			<button on:click={() => setImage(image)}>
-				<Image
-					layout="constrained"
+				<img
 					loading="lazy"
 					class={generateStyle(image)}
 					src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{image}"
