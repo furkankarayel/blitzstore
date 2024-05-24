@@ -6,7 +6,6 @@
 	let top_image: any;
 
 	let original_image = images[0];
-
 	let active_image = images[0];
 
 	$: {
@@ -22,7 +21,7 @@
 
 	function setImage(src: string) {
 		active_image = src;
-		images = images;
+		images = images; // Trigger reactivity if needed
 		scrollIntoView();
 	}
 
@@ -32,27 +31,45 @@
 </script>
 
 <div class="flex flex-col gap-5">
-	<img
-		class="w-full shadow-lg"
-		id="top_image"
-		src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{active_image}"
-		width="700"
-		height="700"
-		alt={alt_text}
-	/>
+	<!-- Active Image with fixed aspect ratio -->
+	<div class="maintain-aspect">
+		<img
+			class="image"
+			src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{active_image}"
+			alt={alt_text}
+		/>
+	</div>
 
+	<!-- Thumbnail Gallery -->
 	<div class="grid gap-3 grid-cols-2 lg:grid-cols-4">
 		{#each images as image}
-			<button on:click={() => setImage(image)}>
-				<img
-					loading="lazy"
-					class={generateStyle(image)}
-					src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{image}"
-					width="700"
-					height="700"
-					alt={alt_text}
-				/>
-			</button>
+			<div class="maintain-aspect">
+				<button on:click={() => setImage(image)}>
+					<img
+						loading="lazy"
+						class={`image ${generateStyle(image)}`}
+						src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{image}"
+						alt={alt_text}
+					/>
+				</button>
+			</div>
 		{/each}
 	</div>
 </div>
+
+<style>
+	.maintain-aspect {
+		position: relative;
+		width: 100%;
+		padding-top: 75%; /* This percentage adjusts the height relative to the width. 75% will work for a 4:3 aspect ratio */
+		overflow: hidden;
+	}
+	.image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover; /* This ensures the image covers the area without distortion */
+	}
+</style>

@@ -10,7 +10,9 @@
 	let hovered = false;
 </script>
 
-<div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+<div
+	class="w-full max-w-sm mx-auto rounded-md drop-shadow-sm hover:drop-shadow-2xl overflow-hidden"
+>
 	<a
 		class="block"
 		href={link}
@@ -19,12 +21,10 @@
 		on:touchstart={() => (hovered = true)}
 		on:touchend={() => (hovered = false)}
 	>
-		<img class="h-56 w-full object-cover" src={image} alt={title} />
+		<img src={image} alt={title} class="h-56 w-full object-cover" />
 
-		<div
-			class="p-3 text-base text-neutral-600 xs:text-xs sm:text-sm md:text-md lg:text-md xl:text-md 2xl:text-lg"
-		>
-			<a href={link}> {title}</a>
+		<div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-3 text-md">
+			{title}
 		</div>
 
 		<div class="flex justify-center gap-3">

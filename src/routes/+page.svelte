@@ -3,6 +3,7 @@
 
 	import ProductItem from '$lib/components/ProductItem.svelte';
 	import CallToAction from '$lib/components/CallToAction.svelte';
+	import ReachUs from '$lib/components/ReachUs.svelte';
 	import FeaturedProductFull from '../lib/components/FeaturedProductFull.svelte';
 
 	export let data: any;
@@ -37,14 +38,14 @@
 		{/each}
 		<section class="text-gray-800 xs:mt-12 md:mt-0 text-center lg:text-left lg:px-32 md:py-14">
 			<div class="grid md:grid-cols-2 gap-6 mb-10 xl:gap-12 justify-center">
-				<div class="mb-1 xs:mb-0 lg:mb-0">
+				<div class="mb-1 p-3 xs:mb-0 lg:mb-0 lg:p-20">
 					<h1
-						class="text-4xl drop-shadow-lg xs:text-3xl md:text-4xl lg:text-4xl xl:text-7xl md:text-right font-bold tracking-tight"
+						class="text-3xl drop-shadow-sm hover:drop-shadow-2xl xs:text-3xl md:text-3xl lg:text-3xl xl:text-6xl md:text-right font-bold tracking-tight"
 					>
 						Hervorragende Qualität & gutes Design
 					</h1>
 				</div>
-				<div class="mb-3 lg:mb-0 flex flex-col justify-center">
+				<div class="mb-3 lg:mb-0 lg:p-20 flex flex-col justify-center">
 					<p class="text-gray-500 xs:text-md lg:text-lg">
 						Entdecken Sie hochwertige Lösungen für den Außen- und Innenbereich, die überzeugen.
 						Feinsteinzeugfliesen, Massivholztische, Terrassenüberdachungen, Glasgeländer und vieles
@@ -53,14 +54,14 @@
 				</div>
 			</div>
 			<div class="grid md:grid-cols-2 gap-6 xl:gap-12 justify-center">
-				<div class="mb-6 xs:mb-0 lg:mb-0 md:order-last lg:order-last">
+				<div class="mb-6 p-3 lg:p-20 xs:mb-0 lg:mb-0 md:order-last lg:order-last">
 					<h1
-						class="text-4xl drop-shadow-lg xs:text-3xl md:text-4xl lg:text-4xl xl:text-7xl md:text-left font-bold tracking-tight"
+						class="text-4xl drop-shadow-sm hover:drop-shadow-2xl xs:text-3xl md:text-4xl lg:text-4xl xl:text-7xl md:text-left font-bold tracking-tight"
 					>
 						Mehr Individualität
 					</h1>
 				</div>
-				<div class="mb-3 lg:mb-0 flex flex-col justify-center">
+				<div class="mb-3 p-3 lg:p-20 lg:mb-0 flex flex-col justify-center">
 					<p class="text-gray-500 xs:text-md lg:text-lg">
 						Unser Team arbeitet derzeit mit Hochdruck daran, Ihnen eine schnelle und einfache
 						Möglichkeit zu bieten, unsere Produktlinien individuell nach Ihren Wünschen zu
@@ -94,4 +95,5 @@
 		{/each}
 		<CallToAction />
 	</div>
+	<ReachUs />
 </div>

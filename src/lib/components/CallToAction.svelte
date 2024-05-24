@@ -3,7 +3,7 @@
 	import { PUBLIC_SHOP_URL } from '$env/static/public';
 </script>
 
-<div class="my-10 mx-auto sm:mx-0 sm:my-0">
+<div class="my-10 mx-auto sm:mx-0 sm:my-0 lg:my-40">
 	<section class="relative mt-10 rounded-md overflow-hidden custom-height">
 		<img class="object-cover object-center w-full" src={image} alt="Termin Vereinbarung" />
 
