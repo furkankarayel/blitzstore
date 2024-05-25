@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class="w-full max-w-sm mx-auto rounded-md drop-shadow-sm hover:drop-shadow-2xl overflow-hidden"
+	class="w-full max-w-sm mx-auto rounded-md drop-shadow-sm xs:my-3 hover:drop-shadow-2xl overflow-hidden"
 >
 	<a
 		class="block"
