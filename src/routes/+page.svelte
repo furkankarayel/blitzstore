@@ -71,7 +71,7 @@
 			</div>
 		</section>
 
-		<!-- {#each showcase as showsection}
+		{#each showcase as showsection}
 			<h2
 				class="text-center font-extrabold xs:text-lg md:text-3xl xs:pt-10 xs:pb-6 md:pt-10 md:pb-12 uppercase drop-shadow-lg"
 			>
@@ -92,7 +92,7 @@
 					/>
 				{/each}
 			</div>
-		{/each} -->
+		{/each}
 		<CallToAction />
 	</div>
 	<ReachUs />
