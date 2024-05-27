@@ -1,8 +1,8 @@
-<div class="container flex flex-col items-center mx-auto bg-white">
+<div class="container flex flex-col items-center mx-auto bg-white bg-opacity-0">
 	<div class="w-full draggable">
 		<div class="container flex flex-col items-center gap-16 mx-auto lg:mb-32">
 			<div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-				<div class="flex flex-col items-center gap-3 mx-8 my-10 bg-white rounded-3xl shadow-main">
+				<div class="flex flex-col items-center gap-3 mx-8 my-10 rounded-3xl shadow-main">
 					<span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@
 						>info@kastonia.de</a
 					>
 				</div>
-				<div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
+				<div class="flex flex-col items-center gap-3 px-8 py-10 rounded-3xl shadow-main">
 					<span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@
 						>+49-176-62969601</a
 					>
 				</div>
-				<div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
+				<div class="flex flex-col items-center gap-3 px-8 py-10 rounded-3xl shadow-main">
 					<span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

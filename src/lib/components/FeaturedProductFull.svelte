@@ -14,7 +14,7 @@
 >
 	<img class="h-64 w-full object-cover object-center" src={image} alt={name} />
 	<div
-		class="bg-gray-900 bg-opacity-50 flex items-center absolute inset-0 bg-gradient-to-r from-black/40"
+		class="bg-gray-900 bg-opacity-50 flex items-center absolute inset-0 bg-gradient-to-r from-black/60"
 	>
 		<div class="px-10 xs:px-3 max-w-xl">
 			<h2 class="text-2xl text-white font-semibold">{name}</h2>

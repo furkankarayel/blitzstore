@@ -1,118 +1,97 @@
 <script>
 	import { PUBLIC_SHOP_MODE } from '$env/static/public';
+	import logo from '$lib/assets/Kastonia_Abstrakt_weiss.webp';
 </script>
 
-<footer class="text-center lg:text-left bg-gray-100 text-gray-600">
-	<div class="mx-6 py-10 text-center md:text-left">
-		<div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-			<div>
-				<h1 class="uppercase font-bold mb-4 flex items-center justify-center md:justify-start">
-					Kastonia.de
-				</h1>
-				<p class="text-base xs:text-sm">Ihr Ansprechpartner für exzellentes Outdoor-Design</p>
-			</div>
-			{#if PUBLIC_SHOP_MODE != '0'}
-				<div>
-					<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">Shop</h1>
-					<p class="mb-4">
-						<a href="/shop/terassenueberdachungen" class="text-gray-600">Terassenüberdachungen</a>
+<footer class="text-center lg:text-left bg-gray-500 text-black-600">
+	<div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+		<div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+			<div class="sm:col-span-2">
+				<a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+					<img class="h-10" alt="Kastonia Logo" src={logo} />
+				</a>
+				<div class="mt-6 lg:max-w-sm">
+					<p class="text-sm text-gray-200">
+						Ihr Ansprechparter für ihr In- und Outdoor Design am Bodensee.
 					</p>
-					<p class="mb-4">
-						<a href="/shop/glasgelaender" class="text-gray-600">Glasgeländer</a>
-					</p>
-					<p class="mb-4">
-						<a href="/shop/aluminiumzaeune" class="text-gray-600">Aluminiumzäune</a>
-					</p>
-					<p class="mb-4">
-						<a href="/shop/massivholzmoebel" class="text-gray-600">Massivholzmöbel</a>
-					</p>
-					<p class="mb-4">
-						<a href="/shop/fliesen" class="text-gray-600">Fliesen</a>
+					<p class="mt-4 text-sm text-gray-200">
+						Von Terassenüberdachungen bis hin zu hochwertigem Massivholzmöbel und luxuriösen Fliesen
+						für Ihr Bad - wir finden für Sie immer das Passende!
 					</p>
 				</div>
-			{/if}
-			<div>
-				<h1 class="uppercase font-semibold xs:text-sm mb-4 flex justify-center md:justify-start">
-					Informationen
-				</h1>
-				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/about" class="text-gray-600 xs:text-sm">Über uns</a>
-				</p>
-				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/agb" class="text-gray-600 xs:text-sm">AGB</a>
-				</p>
-				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/datenschutz" class="text-gray-600 xs:text-sm">Datenschutz</a>
-				</p>
-				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/impressum" class="text-gray-600 xs:text-sm">Impressum</a>
-				</p>
-				<p class="xs:py-1 sm:py-1 md:py-0">
-					<a href="/contact" class="text-gray-600 xs:text-sm">Kontakt</a>
-				</p>
+			</div>
+			<div class="space-y-2 text-sm">
+				<p class="text-base font-bold tracking-wide text-gray-200">Kontakt</p>
+				<div class="flex xs:justify-center md:justify-start">
+					<p class="mr-1 text-gray-200">Telefon:</p>
+					<a
+						href="tel:+49-176-62969601"
+						aria-label="Unsere Telefonnummer"
+						title="Unsere Telefonnummer"
+						class="text-gray-200">+49-176-62969601</a
+					>
+				</div>
+				<div class="flex xs:justify-center md:justify-start">
+					<p class="mr-1 text-gray-200">Email:</p>
+					<a
+						href="mailto:info@kastonia.de"
+						aria-label="Unsere E-Mail"
+						title="Unsere E-Mail"
+						class="text-gray-200">info@kastonia.de</a
+					>
+				</div>
+				<div class="flex xs:justify-center md:justify-start">
+					<a
+						href="https://www.google.com/maps"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Our address"
+						title="Our address"
+						class="text-gray-200"
+					>
+						Meckenbeuren am Bodensee, Deutschland
+					</a>
+				</div>
 			</div>
 			<div>
-				<h1 class="uppercase font-semibold mb-4 flex justify-center md:justify-start xs:text-sm">
-					Kontakt
-				</h1>
-				<p class="flex items-center justify-center md:justify-start mb-4 xs:text-sm">
-					<svg
-						aria-hidden="true"
-						focusable="false"
-						data-prefix="fas"
-						data-icon="home"
-						class="w-4 mr-4"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 576 512"
+				<span class="text-base font-bold tracking-wide text-gray-200">Soziale Medien</span>
+				<div class="flex xs:justify-center md:justify-start mt-1 space-x-3">
+					<a
+						href="https://www.instagram.com/kastonia.de"
+						class="text-gray-900 transition-colors duration-300 hover:text-deep-purple-accent-400"
 					>
-						<path
-							fill="currentColor"
-							d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
-						/>
-					</svg>
-					Meckenbeuren, Deutschland
-				</p>
-				<p class="flex items-center justify-center md:justify-start mb-4 xs:text-sm">
-					<svg
-						aria-hidden="true"
-						focusable="false"
-						data-prefix="fas"
-						data-icon="envelope"
-						class="w-4 mr-4"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="currentColor"
-							d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
-						/>
-					</svg>
-					info@kastonia.de
-				</p>
-				<p class="flex items-center justify-center md:justify-start mb-4 xs:text-sm">
-					<svg
-						aria-hidden="true"
-						focusable="false"
-						data-prefix="fas"
-						data-icon="phone"
-						class="w-4 mr-4"
-						role="img"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="currentColor"
-							d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
-						/>
-					</svg>
-					+49 176 62969601
+						<svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+							<circle cx="15" cy="15" r="4" />
+							<path
+								d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
+							/>
+						</svg>
+					</a>
+				</div>
+				<p class="mt-4 text-sm text-gray-200">
+					Unsere Präsenz in den sozialen Medien ist aktuell in Arbeit
 				</p>
 			</div>
 		</div>
-	</div>
-	<div class="text-center p-6 bg-gray-200 xs:text-sm">
-		<a href="https://furk4n.com">© 2024, Kastonia.de</a>
+		<div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+			<p class="text-sm text-gray-300 my-5">© Copyright 2024, Kastonia.de All rights reserved.</p>
+			<ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+				<li>
+					<a href="/about" class="text-gray-200 xs:text-sm">Über uns</a>
+				</li>
+				<li>
+					<a href="/agb" class="text-gray-200 xs:text-sm">AGB</a>
+				</li>
+				<li>
+					<a href="/datenschutz" class="text-gray-200 xs:text-sm">Datenschutz</a>
+				</li>
+				<li>
+					<a href="/impressum" class="text-gray-200 xs:text-sm">Impressum</a>
+				</li>
+				<li>
+					<a href="/contact" class="text-gray-200 xs:text-sm">Kontakt</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </footer>

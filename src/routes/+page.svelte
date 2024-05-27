@@ -23,30 +23,31 @@
 
 <div class="container mx-auto px-6 xs:px-0 sm:px-0">
 	<div class="mx-3 my-5 xs:mx-0 md:mx-10">
-		<!-- <Carousel /> -->
-		{#each featuredproducts as products}
-			{#each products.expand.products as product, productIndex}
-				<FeaturedProductFull
-					name={product.name}
-					description={product.description}
-					image="{PUBLIC_POCKETBASE_URL}/api/files/{product.collectionName}/{product.id}/{product
-						.images[0]}"
-					link="/products/{product.slug}"
-					action={'Entdecken'}
-				/>
+		<div class="grid lg:grid-cols-3 gap-10">
+			{#each featuredproducts as products}
+				{#each products.expand.products as product, productIndex}
+					<FeaturedProductFull
+						name={product.name}
+						description={product.description}
+						image="{PUBLIC_POCKETBASE_URL}/api/files/{product.collectionName}/{product.id}/{product
+							.images[1]}"
+						link="/products/{product.slug}"
+						action={'Entdecken'}
+					/>
+				{/each}
 			{/each}
-		{/each}
-		<section class="text-gray-800 xs:mt-12 md:mt-0 text-center lg:text-left lg:px-32 md:py-14">
-			<div class="grid md:grid-cols-2 gap-6 mb-10 xl:gap-12 justify-center">
-				<div class="mb-1 p-3 xs:mb-0 lg:mb-0 lg:p-20">
+		</div>
+		<section class="text-gray xs:mt-12 md:mt-0 lg:px-32 lg:my-10 md:py-14">
+			<div class="grid md:grid-cols-2 mb-10 xl:gap-10 justify-center rounded">
+				<div class="my-10 xs:my-0 xs:mb-0">
 					<h1
-						class="text-3xl drop-shadow-sm hover:drop-shadow-2xl xs:text-3xl md:text-3xl lg:text-3xl xl:text-6xl md:text-right font-bold tracking-tight"
+						class="text-3xl p-3 drop-shadow-sm hover:drop-shadow-2xl xs:text-3xl md:text-3xl xl:text-6xl font-bold tracking-tight bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text"
 					>
 						Hervorragende Qualität & gutes Design
 					</h1>
 				</div>
-				<div class="mb-3 lg:mb-0 lg:p-20 flex flex-col justify-center">
-					<p class="text-gray-500 xs:text-md lg:text-lg">
+				<div class="mb-3 p-3 lg:mb-0 lg:p-20 flex flex-col justify-center">
+					<p class="text-gray-800 xs:text-md lg:text-md">
 						Entdecken Sie hochwertige Lösungen für den Außen- und Innenbereich, die überzeugen.
 						Feinsteinzeugfliesen, Massivholztische, Terrassenüberdachungen, Glasgeländer und vieles
 						mehr.
@@ -54,15 +55,15 @@
 				</div>
 			</div>
 			<div class="grid md:grid-cols-2 gap-6 xl:gap-12 justify-center">
-				<div class="mb-6 p-3 lg:p-20 xs:mb-0 lg:mb-0 md:order-last lg:order-last">
+				<div class="p-3 lg:p-20 xs:mb-0 lg:mb-0 md:order-last lg:order-last">
 					<h1
-						class="text-4xl drop-shadow-sm hover:drop-shadow-2xl xs:text-3xl md:text-4xl lg:text-4xl xl:text-7xl md:text-left font-bold tracking-tight"
+						class="text-4xl my-10 xs:my-0 drop-shadow-sm hover:drop-shadow-2xl xs:text-3xl md:text-4xl lg:text-4xl xl:text-7xl md:text-left font-bold tracking-tight bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text"
 					>
 						Mehr Individualität
 					</h1>
 				</div>
 				<div class="mb-3 p-3 lg:p-20 lg:mb-0 flex flex-col justify-center">
-					<p class="text-gray-500 xs:text-md lg:text-lg">
+					<p class="text-gray-800 xs:text-md lg:text-md p-10 xs:p-0">
 						Unser Team arbeitet derzeit mit Hochdruck daran, Ihnen eine schnelle und einfache
 						Möglichkeit zu bieten, unsere Produktlinien individuell nach Ihren Wünschen zu
 						gestalten.
@@ -77,7 +78,7 @@
 			>
 				{showsection.name}
 			</h2>
-			<div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+			<div class="grid gap-6 mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
 				{#each showsection.expand.products as product (product.id)}
 					<ProductItem
 						title={product.name}
@@ -93,6 +94,7 @@
 				{/each}
 			</div>
 		{/each}
+
 		<CallToAction />
 	</div>
 	<ReachUs />

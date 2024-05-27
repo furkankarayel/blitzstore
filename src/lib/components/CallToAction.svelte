@@ -3,43 +3,40 @@
 	import { PUBLIC_SHOP_URL } from '$env/static/public';
 </script>
 
-<div class="my-10 mx-auto sm:mx-0 sm:my-0 lg:my-40">
-	<section class="relative mt-10 rounded-md overflow-hidden custom-height">
-		<img class="object-cover object-center w-full" src={image} alt="Termin Vereinbarung" />
-
-		<div class="bg-gray-900 bg-opacity-50 flex xs:py-12 md:px-3 items-center absolute inset-0">
-			<div class="px-10 xs:px-3 max-w-xl">
-				<h2 class="text-2xl xs:text-lg text-white font-semibold">Gute Dinge brauchen Planung</h2>
-				<p class="mt-2 xs:text-sm text-gray-300">
-					Für ein optimales Endergebnis ist eine sorgfältige Planung entscheidend. Wir stehen Ihnen
-					bei der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und Geländern zur Seite.
-				</p>
-				<a href="{PUBLIC_SHOP_URL}/contact">
-					<button
-						class="flex items-center mt-4 px-3 py-2 bg-green-700 text-white text-sm uppercase font-medium rounded hover:bg-green-500 focus:outline-none focus:bg-green-500"
-					>
-						<span>Termin vereinbaren</span>
-						<svg
-							class="h-5 w-5 mx-2"
-							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path d="M17 8l4 4m0 0l-4 4m4-4H3" />
-						</svg>
-					</button>
-				</a>
-			</div>
+<div
+	class="my-20 lg:px-10 max-w-10xl mx-auto flex flex-col gap-y-10 lg:flex-row items-center gap-x-20 justify-center py-10 lg:py-14"
+>
+	<div
+		class="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative isolate z-10"
+	>
+		<img class="rounded-3xl w-full" src={image} alt="" />
+	</div>
+	<div class="lg:w-[650px] lg:px-5 flex flex-col gap-y-5">
+		<h1
+			class="text-4xl md:text-5xl xl:text-[50px] leading-[1.2] md:max-w-xl md:mx-auto md:text-center lg:text-left lg:mx-0 lg:max-w-full font-semibold"
+		>
+			Gestalten Sie ihre Vision, <br />wir verwirklichen sie.
+		</h1>
+		<p
+			class="text-sm md:max-w-xl md:mx-auto lg:mx-0 lg:max-w-full md:text-center lg:text-left dark:text-gray-300"
+		>
+			Mit unserer sorgfältigen Planung erzielen Sie optimale Ergebnisse. Wir unterstützen Sie bei
+			der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und Geländern, um Ihre Wünsche zu
+			verwirklichen.
+		</p>
+		<div class="flex gap-x-5 flex-col gap-y-2.5 lg:flex-row">
+			<a
+				href="{PUBLIC_SHOP_URL}/contact"
+				class="flex w-full lg:w-fit items-center text-white justify-center rounded-lg bg-[#15803d] px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200"
+				><span>Jetzt Termin sichern </span>
+			</a>
 		</div>
-	</section>
+	</div>
 </div>
 
 <style>
 	.custom-height {
-		height: 280px;
+		height: 400px;
 	}
 
 	.custom-height img {

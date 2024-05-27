@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
