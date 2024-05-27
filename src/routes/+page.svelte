@@ -74,7 +74,7 @@
 
 		{#each showcase as showsection}
 			<h2
-				class="text-center font-extrabold xs:text-lg md:text-3xl xs:pt-10 xs:pb-6 md:pt-10 md:pb-12 uppercase drop-shadow-lg bg-gradient-to-b from-black text-transparent to-gray-900 bg-clip-text"
+				class="text-center font-extrabold xs:text-lg md:text-3xl xs:pt-10 xs:pb-6 md:pt-10 uppercase drop-shadow-lg bg-gradient-to-b from-black text-transparent to-gray-900 bg-clip-text"
 			>
 				{showsection.name}
 			</h2>
