@@ -56,10 +56,7 @@
 			<div>
 				<span class="text-base font-bold tracking-wide text-gray-200">Soziale Medien</span>
 				<div class="flex xs:justify-center md:justify-start mt-1 space-x-3">
-					<a
-						href="https://www.instagram.com/kastonia.de"
-						class="text-gray-900 transition-colors duration-300 hover:text-deep-purple-accent-400"
-					>
+					<a href="https://www.instagram.com/kastonia.de" class="text-gray-200">
 						<svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
 							<circle cx="15" cy="15" r="4" />
 							<path
