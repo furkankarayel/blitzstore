@@ -25,10 +25,10 @@
 				<div class="flex xs:justify-center md:justify-start">
 					<p class="mr-1 text-gray-200">Telefon:</p>
 					<a
-						href="tel:+49-176-62969601"
+						href="tel:+4917662969601"
 						aria-label="Unsere Telefonnummer"
 						title="Unsere Telefonnummer"
-						class="text-gray-200">+49-176-62969601</a
+						class="text-gray-200">+49 176-62969601</a
 					>
 				</div>
 				<div class="flex xs:justify-center md:justify-start">
