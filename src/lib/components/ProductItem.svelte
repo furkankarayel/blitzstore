@@ -24,7 +24,7 @@
 		<img src={image} alt={title} class="h-56 w-full object-cover rounded-3xl" />
 
 		<div
-			class="absolute bottom-0 w-full bg-gradient-to-r from-black text-transparent to-transparent text-white p-3 text-md"
+			class="rounded-b-3xl absolute bottom-0 w-full bg-gradient-to-r from-black text-transparent to-transparent text-white p-3 text-md"
 		>
 			{title}
 		</div>
