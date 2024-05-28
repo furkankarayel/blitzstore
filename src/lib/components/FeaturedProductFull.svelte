@@ -12,7 +12,7 @@
 <div
 	class={'w-full h-64 mt-10 md:mx-2 rounded-3xl overflow-hidden relative drop-shadow-custom hover:drop-shadow-customhov'}
 >
-	<img class="h-64 w-full object-cover object-center" src={image} alt={name} />
+	<img class="h-64 w-full object-cover rounded-3xl object-center" src={image} alt={name} />
 	<div
 		class="bg-gray-900 bg-opacity-50 flex items-center absolute inset-0 bg-gradient-to-r from-black/60"
 	>
