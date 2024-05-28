@@ -37,7 +37,7 @@
 				{/each}
 			{/each}
 		</div>
-		<section class="text-gray xs:mt-12 lg:my-10">
+		<section class="text-gray xs:mt-12 lg:my-10 gap-10">
 			<div class="grid md:grid-cols-2 xs:p-0 mb-3 gap-6">
 				<div>
 					<h1
