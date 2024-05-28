@@ -38,7 +38,7 @@
 			{/each}
 		</div>
 		<section class="text-gray xs:mt-12 lg:my-10">
-			<div class="grid md:grid-cols-2 p-20 mb-3">
+			<div class="grid md:grid-cols-2 xs:p-0 mb-3">
 				<div>
 					<h1
 						class="text-3xl xs:text-3xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-b drop-shadow-custom hover:drop-shadow-customhov from-black text-transparent to-gray-400 bg-clip-text"
@@ -54,7 +54,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="grid md:grid-cols-2 justify-center p-20 mb-3 gap-6">
+			<div class="grid md:grid-cols-2 justify-center p-20 xs:p-0 mb-3 gap-6">
 				<div class="md:order-last lg:order-last">
 					<h1
 						class="text-3xl xs:text-3xl lg:text-5xl xl:text-6xl drop-shadow-custom hover:drop-shadow-customhov md:text-left font-bold tracking-tight bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text"
