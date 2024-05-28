@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class={'w-full  h-64 mt-10 md:mx-2 rounded-md overflow-hidden relative drop-shadow-sm hover:drop-shadow-2xl'}
+	class={'w-full  h-64 mt-10 md:mx-2 rounded-3xl overflow-hidden relative drop-shadow-sm hover:drop-shadow-2xl'}
 >
 	<img class="h-64 w-full object-cover object-center" src={image} alt={name} />
 	<div
