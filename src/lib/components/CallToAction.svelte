@@ -18,7 +18,7 @@
 			Gestalten Sie ihre Vision, <br />wir verwirklichen sie.
 		</h1>
 		<p
-			class="text-sm md:max-w-xl md:mx-auto lg:mx-0 lg:max-w-full md:text-center lg:text-left text-gray-800"
+			class="xs:text-md lg:text-md md:max-w-xl md:mx-auto lg:mx-0 lg:max-w-full md:text-center lg:text-left text-gray-800"
 		>
 			Mit unserer sorgfältigen Planung erzielen Sie optimale Ergebnisse. Wir unterstützen Sie bei
 			der Gestaltung von Terrassenüberdachungen, Kaltwintergärten und Geländern, um Ihre Wünsche zu
