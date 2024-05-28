@@ -41,7 +41,7 @@
 					<p class="text-2xl font-extrabold text-dark-grey-900">Telefon</p>
 					<p class="text-base leading-7 text-dark-grey-600">Erreichen Sie uns telefonisch</p>
 					<a class="text-lg font-bold text-purple-blue-500" href="tel:+49-176-62969601"
-						>+49-176-62969601</a
+						>+49 176-62969601</a
 					>
 				</div>
 				<div class="flex flex-col items-center gap-3 px-8 py-10 rounded-3xl shadow-main">
