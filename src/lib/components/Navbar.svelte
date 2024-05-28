@@ -7,13 +7,11 @@
 	let cartOpened = false;
 </script>
 
-<nav class="top-0 z-10 bg-gray-500 text-white">
+<nav class="top-0 z-10 bg-black bg-opacity-50 text-white">
 	<div class="max-w-7xl mx-auto">
 		<div class="flex justify-between items-center py-0">
-			<div>
-				<a class="mx-5 font-extrabold text-xl" href="/"
-					><img class="xs:h-14 sm:h-14 lg:h-20 xl:h-24" alt="Kastonia Logo" src={logo} /></a
-				>
+			<div class="my-3">
+				<a href="/"><img class="w-60" alt="Kastonia Logo" src={logo} /></a>
 			</div>
 			{#if PUBLIC_SHOP_MODE != '0'}
 				<div class="flex mx-5 gap-6">

@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    justify-content: center;
-    font-family: Arial, sans-serif;
+.footer-gradient {
+    background-image: radial-gradient(circle at top, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
