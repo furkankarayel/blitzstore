@@ -78,7 +78,9 @@
 			>
 				{showsection.name}
 			</h2>
-			<div class="grid gap-6 mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+			<div
+				class="grid gap-6 mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6 overflow-hidden rounded-3xl"
+			>
 				{#each showsection.expand.products as product (product.id)}
 					<ProductItem
 						title={product.name}

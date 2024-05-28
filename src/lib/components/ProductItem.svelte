@@ -21,7 +21,7 @@
 		on:touchstart={() => (hovered = true)}
 		on:touchend={() => (hovered = false)}
 	>
-		<img src={image} alt={title} class="h-56 w-full object-cover rounded-3xl" />
+		<img src={image} alt={title} class="h-56 w-full object-cover" />
 
 		<div
 			class="absolute bottom-0 w-full bg-gradient-to-r from-black text-transparent to-transparent text-white p-3 text-md"
