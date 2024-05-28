@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class="w-full max-w-sm mx-auto rounded-3xl drop-shadow-sm xs:my-3 hover:drop-shadow-2xl overflow-hidden relative"
+	class="w-full max-w-sm mx-auto rounded-3xl drop-shadow-sm xs:my-3 hover:drop-shadow-2xl overflow-hidden relative drop-shadow-custom hover:drop-shadow-customhov"
 >
 	<a
 		class="block"
@@ -23,7 +23,9 @@
 	>
 		<img src={image} alt={title} class="h-56 w-full object-cover rounded-3xl" />
 
-		<div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white p-3 text-md">
+		<div
+			class="absolute bottom-0 w-full bg-gradient-to-r from-black text-transparent to-transparent text-white p-3 text-md"
+		>
 			{title}
 		</div>
 

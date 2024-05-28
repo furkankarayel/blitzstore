@@ -41,7 +41,7 @@
 			<div class="grid md:grid-cols-2 mb-10 xl:gap-10 justify-center rounded">
 				<div class="my-10 xs:my-0 xs:mb-0">
 					<h1
-						class="text-3xl p-3 drop-shadow-sm hover:drop-shadow-2xl xs:text-3xl md:text-3xl xl:text-6xl font-bold tracking-tight bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text"
+						class="text-3xl p-3 xs:text-3xl md:text-3xl xl:text-6xl font-bold tracking-tight bg-gradient-to-b drop-shadow-custom hover:drop-shadow-customhov from-black text-transparent to-gray-400 bg-clip-text"
 					>
 						Hervorragende Qualität & gutes Design
 					</h1>
@@ -57,7 +57,7 @@
 			<div class="grid md:grid-cols-2 gap-6 xl:gap-12 justify-center">
 				<div class="p-3 lg:p-20 xs:mb-0 lg:mb-0 md:order-last lg:order-last">
 					<h1
-						class="text-4xl my-10 xs:my-0 drop-shadow-sm hover:drop-shadow-2xl xs:text-3xl md:text-4xl lg:text-4xl xl:text-7xl md:text-left font-bold tracking-tight bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text"
+						class="text-4xl my-10 xs:my-0 drop-shadow-custom hover:drop-shadow-customhov xs:text-3xl md:text-4xl lg:text-4xl xl:text-7xl md:text-left font-bold tracking-tight bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text"
 					>
 						Mehr Individualität
 					</h1>
@@ -74,7 +74,7 @@
 
 		{#each showcase as showsection}
 			<h2
-				class="text-center font-extrabold xs:text-lg md:text-3xl xs:pt-10 xs:pb-6 md:pt-10 uppercase drop-shadow-lg bg-gradient-to-b from-black text-transparent to-gray-900 bg-clip-text"
+				class="text-center font-extrabold xs:text-lg md:text-3xl xs:pt-10 xs:pb-6 md:pt-10 uppercase bg-gradient-to-b from-black text-transparent to-gray-300 bg-clip-text"
 			>
 				{showsection.name}
 			</h2>

@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class={'w-full  h-64 mt-10 md:mx-2 rounded-3xl overflow-hidden relative drop-shadow-sm hover:drop-shadow-2xl'}
+	class={'w-full h-64 mt-10 md:mx-2 rounded-3xl overflow-hidden relative drop-shadow-custom hover:drop-shadow-customhov'}
 >
 	<img class="h-64 w-full object-cover object-center" src={image} alt={name} />
 	<div
@@ -23,7 +23,7 @@
 			</p>
 			<a href={`${PUBLIC_SHOP_URL}${link}`}>
 				<button
-					class="flex items-center mt-4 px-3 py-2 bg-green-700 text-white text-sm uppercase font-medium rounded hover:bg-green-500 focus:outline-none focus:bg-green-500"
+					class="flex items-center mt-4 px-3 py-2 bg-green-700 text-white text-sm uppercase font-medium rounded-lg hover:bg-green-500 focus:outline-none focus:bg-green-500"
 				>
 					<span>{action}</span>
 					<svg class="h-5 w-5 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

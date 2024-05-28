@@ -13,3 +13,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.drop-shadow-custom {
+    filter: drop-shadow(0 40px 40px rgba(0, 0, 0, 0.3));
+
+}
+
+.hover\:drop-shadow-customhov:hover {
+    filter: drop-shadow(0 40px 40px rgba(0, 0, 0, 0.504));
+}
