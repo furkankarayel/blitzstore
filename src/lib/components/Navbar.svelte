@@ -7,7 +7,7 @@
 	let cartOpened = false;
 </script>
 
-<nav class="sticky top-0 z-10 bg-[#4F4F4F] text-white header-gradient">
+<nav class="top-0 z-10 bg-[#4F4F4F] text-white header-gradient">
 	<div class="max-w-7xl mx-auto">
 		<div class="flex justify-between items-center py-0">
 			<div class="my-3">
