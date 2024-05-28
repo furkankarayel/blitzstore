@@ -7,7 +7,7 @@
 	class="my-20 lg:px-10 max-w-10xl mx-auto flex flex-col gap-y-10 lg:flex-row items-center gap-x-20 justify-center py-10 lg:py-14"
 >
 	<div
-		class="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative isolate z-10"
+		class="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 rounded-3xl md:pt-2 lg:pt-0 relative isolate"
 	>
 		<img class="rounded-3xl w-full" src={image} alt="" />
 	</div>
