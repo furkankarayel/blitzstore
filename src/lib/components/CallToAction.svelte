@@ -9,7 +9,7 @@
 	<div
 		class="hero-image md:px-5 lg:px-0 w-full lg:w-1/2 md:pt-2 lg:pt-0 drop-shadow-custom hover:drop-shadow-customhov"
 	>
-		<img class="w-full" src={image} alt="" />
+		<img class="rounded-3xl w-full" src={image} alt="" />
 	</div>
 	<div class="lg:w-[650px] lg:px-5 flex flex-col gap-y-5">
 		<h1
