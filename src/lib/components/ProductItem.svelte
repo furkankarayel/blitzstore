@@ -2,6 +2,7 @@
 	import { PUBLIC_SHOP_MODE } from '$env/static/public';
 
 	export let title: string;
+	export let description: string;
 	export let image: string;
 	export let price: number;
 	export let salePrice: number = 0;
@@ -21,7 +22,7 @@
 		on:touchstart={() => (hovered = true)}
 		on:touchend={() => (hovered = false)}
 	>
-		<img src={image} alt={title} class="h-56 w-full object-cover rounded-3xl" />
+		<img src={image} alt={description} class="h-56 w-full object-cover rounded-3xl" />
 
 		<div
 			class="rounded-b-3xl absolute bottom-0 w-full bg-gradient-to-r from-black text-transparent to-transparent text-white p-3 text-md"

@@ -37,33 +37,33 @@
 				{/each}
 			{/each}
 		</div>
-		<section class="text-gray xs:mt-12 md:mt-0 lg:px-32 lg:my-10 md:py-14">
-			<div class="grid md:grid-cols-2 mb-10 xl:gap-10 justify-center rounded">
-				<div class="my-10 xs:my-0 xs:mb-0">
+		<section class="text-gray xs:mt-12 lg:my-10">
+			<div class="grid md:grid-cols-2 p-20 mb-3">
+				<div>
 					<h1
-						class="text-3xl p-3 xs:text-3xl md:text-3xl xl:text-6xl font-bold tracking-tight bg-gradient-to-b drop-shadow-custom hover:drop-shadow-customhov from-black text-transparent to-gray-400 bg-clip-text"
+						class="text-3xl xs:text-3xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-b drop-shadow-custom hover:drop-shadow-customhov from-black text-transparent to-gray-400 bg-clip-text"
 					>
-						Hervorragende Qualität & gutes Design
+						Hervorragende <br /> Qualität & <br /> gutes Design
 					</h1>
 				</div>
-				<div class="mb-3 p-3 lg:mb-0 lg:p-20 flex flex-col justify-center">
-					<p class="text-gray-800 xs:text-md lg:text-md">
+				<div class="flex flex-col justify-center">
+					<p class="text-gray-800 xs:text-md lg:text-md xl:text-xl">
 						Entdecken Sie hochwertige Lösungen für den Außen- und Innenbereich, die überzeugen.
 						Feinsteinzeugfliesen, Massivholztische, Terrassenüberdachungen, Glasgeländer und vieles
 						mehr.
 					</p>
 				</div>
 			</div>
-			<div class="grid md:grid-cols-2 gap-6 xl:gap-12 justify-center">
-				<div class="p-3 lg:p-20 xs:mb-0 lg:mb-0 md:order-last lg:order-last">
+			<div class="grid md:grid-cols-2 justify-center p-20 mb-3 gap-6">
+				<div class="md:order-last lg:order-last">
 					<h1
-						class="text-4xl my-10 xs:my-0 drop-shadow-custom hover:drop-shadow-customhov xs:text-3xl md:text-4xl lg:text-4xl xl:text-7xl md:text-left font-bold tracking-tight bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text"
+						class="text-3xl xs:text-3xl lg:text-5xl xl:text-6xl drop-shadow-custom hover:drop-shadow-customhov md:text-left font-bold tracking-tight bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text"
 					>
-						Mehr Individualität
+						Mehr <br /> Individualität
 					</h1>
 				</div>
-				<div class="mb-3 p-3 lg:p-20 lg:mb-0 flex flex-col justify-center">
-					<p class="text-gray-800 xs:text-md lg:text-md p-10 xs:p-0">
+				<div class="flex flex-col justify-center">
+					<p class="text-gray-800 xs:text-md lg:text-md xl:text-xl">
 						Unser Team arbeitet derzeit mit Hochdruck daran, Ihnen eine schnelle und einfache
 						Möglichkeit zu bieten, unsere Produktlinien individuell nach Ihren Wünschen zu
 						gestalten.
@@ -74,7 +74,7 @@
 
 		{#each showcase as showsection}
 			<h2
-				class="text-center font-extrabold xs:text-lg md:text-3xl xs:pt-10 xs:pb-6 md:pt-10 uppercase bg-gradient-to-b from-black text-transparent to-gray-300 bg-clip-text"
+				class="text-center font-extrabold xs:text-lg md:text-xl lg:text-2xl xl:text-3xl xs:pt-10 xs:pb-6 md:pt-10 uppercase bg-gradient-to-b from-black text-transparent to-gray-300 bg-clip-text"
 			>
 				{showsection.name}
 			</h2>
@@ -87,6 +87,7 @@
 						hoverImage={product.images.length > 1
 							? `${PUBLIC_POCKETBASE_URL}/api/files/${product.collectionName}/${product.id}/${product.images[1]}`
 							: ''}
+						description={product.seo_description}
 						price={product.price}
 						salePrice={product.sale_price}
 						link="/products/{product.slug}"
