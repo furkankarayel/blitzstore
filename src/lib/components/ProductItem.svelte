@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="w-full max-w-sm mx-auto drop-shadow-sm xs:my-3 hover:drop-shadow-2xl relative drop-shadow-custom hover:drop-shadow-customhov"
+	class="w-full max-w-sm mx-auto xs:my-3 relative drop-shadow-custom hover:drop-shadow-customhov"
 >
 	<a
 		class="block"
