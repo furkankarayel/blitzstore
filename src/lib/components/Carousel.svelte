@@ -30,7 +30,6 @@
 </script>
 
 <div class="carousel">
-	<!-- Carousel wrapper -->
 	<div class="wrapper">
 		{#each items as item, index}
 			<div class="item {current == index ? 'z-20' : ''}" data-value={index}>
@@ -55,7 +54,6 @@
 			/>
 		{/each}
 	</div>
-	<!-- Slider controls -->
 	<button
 		on:click={() => {
 			if (current == 0) {

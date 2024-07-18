@@ -11,33 +11,33 @@
 					<img class="h-10" alt="Kastonia Logo" src={logo} />
 				</a>
 				<div class="mt-6 lg:max-w-sm">
-					<p class="text-sm text-gray-200 drop-shadow-sm">
+					<p class="text-sm text-gray-800 drop-shadow-sm">
 						Ihr Ansprechparter für ihr In- und Outdoor Design am Bodensee.
 					</p>
-					<p class="mt-4 text-sm text-gray-200 drop-shadow-sm">
+					<p class="mt-4 text-sm text-gray-800 drop-shadow-sm">
 						Von Terassenüberdachungen bis hin zu hochwertigem Massivholzmöbel und luxuriösen Fliesen
 						für Ihr Bad - wir finden für Sie immer das Passende!
 					</p>
 				</div>
 			</div>
 			<div class="space-y-2 text-sm">
-				<p class="text-base font-bold tracking-wide text-gray-200 drop-shadow-sm">Kontakt</p>
+				<p class="text-base font-bold tracking-wide text-green-700 drop-shadow-sm">Kontakt</p>
 				<div class="flex xs:justify-center md:justify-start">
-					<p class="mr-1 text-gray-200 drop-shadow-sm">Telefon:</p>
+					<p class="mr-1 text-gray-800 drop-shadow-sm">Telefon:</p>
 					<a
 						href="tel:+4917662969601"
 						aria-label="Unsere Telefonnummer"
 						title="Unsere Telefonnummer"
-						class="text-gray-200 drop-shadow-sm">+49 176-62969601</a
+						class="text-gray-800 drop-shadow-sm">+49 176-62969601</a
 					>
 				</div>
 				<div class="flex xs:justify-center md:justify-start">
-					<p class="mr-1 text-gray-200 drop-shadow-sm">Email:</p>
+					<p class="mr-1 text-gray-800 drop-shadow-sm">Email:</p>
 					<a
 						href="mailto:info@kastonia.de"
 						aria-label="Unsere E-Mail"
 						title="Unsere E-Mail"
-						class="text-gray-200 drop-shadow-sm">info@kastonia.de</a
+						class="text-gray-800 drop-shadow-sm">info@kastonia.de</a
 					>
 				</div>
 				<div class="flex xs:justify-center md:justify-start">
@@ -47,18 +47,18 @@
 						rel="noopener noreferrer"
 						aria-label="Our address"
 						title="Our address"
-						class="text-gray-200 drop-shadow-sm"
+						class="text-gray-800 drop-shadow-sm"
 					>
 						Meckenbeuren am Bodensee, Deutschland
 					</a>
 				</div>
 			</div>
 			<div>
-				<span class="text-base font-bold tracking-wide text-gray-200 drop-shadow-sm"
+				<span class="text-base font-bold tracking-wide text-green-700 drop-shadow-sm"
 					>Soziale Medien</span
 				>
 				<div class="flex xs:justify-center md:justify-start mt-1 space-x-3">
-					<a href="https://www.instagram.com/kastonia.de" class="text-gray-200 drop-shadow-sm">
+					<a href="https://www.instagram.com/kastonia.de" class="text-gray-800 drop-shadow-sm">
 						<svg viewBox="0 0 30 30" fill="currentColor" class="h-10">
 							<circle cx="15" cy="15" r="4" />
 							<path
@@ -67,30 +67,30 @@
 						</svg>
 					</a>
 				</div>
-				<p class="mt-4 text-sm text-gray-200 drop-shadow-sm">
+				<p class="mt-4 text-sm text-gray-800 drop-shadow-sm">
 					Unsere Präsenz in den sozialen Medien ist aktuell in Arbeit
 				</p>
 			</div>
 		</div>
 		<div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-			<p class="text-sm text-gray-300 drop-shadow-sm my-5">
+			<p class="text-sm text-gray-800 drop-shadow-sm my-5">
 				© Copyright 2024, Kastonia.de All rights reserved.
 			</p>
 			<ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
 				<li>
-					<a href="/about" class="text-gray-200 xs:text-sm drop-shadow-sm">Über uns</a>
+					<a href="/about" class="text-gray-800 xs:text-sm drop-shadow-sm">Über uns</a>
 				</li>
 				<li>
-					<a href="/agb" class="text-gray-200 xs:text-sm drop-shadow-sm">AGB</a>
+					<a href="/agb" class="text-gray-800 xs:text-sm drop-shadow-sm">AGB</a>
 				</li>
 				<li>
-					<a href="/datenschutz" class="text-gray-200 xs:text-sm drop-shadow-sm">Datenschutz</a>
+					<a href="/datenschutz" class="text-gray-800 xs:text-sm drop-shadow-sm">Datenschutz</a>
 				</li>
 				<li>
-					<a href="/impressum" class="text-gray-200 xs:text-sm drop-shadow-sm">Impressum</a>
+					<a href="/impressum" class="text-gray-800 xs:text-sm drop-shadow-sm">Impressum</a>
 				</li>
 				<li>
-					<a href="/contact" class="text-gray-200 xs:text-sm drop-shadow-sm">Kontakt</a>
+					<a href="/contact" class="text-gray-800 xs:text-sm drop-shadow-sm">Kontakt</a>
 				</li>
 			</ul>
 		</div>

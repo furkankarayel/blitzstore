@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { PUBLIC_SHOP_URL, PUBLIC_POCKETBASE_URL } from '$env/static/public';
 
-	export let item_index: number;
 	export let name: string;
 	export let image: string;
 	export let description: string;
@@ -23,7 +22,7 @@
 			</p>
 			<a href={`${PUBLIC_SHOP_URL}${link}`}>
 				<button
-					class="flex items-center mt-4 px-3 py-2 bg-green-700 text-white text-sm uppercase font-medium rounded-lg hover:bg-green-500 focus:outline-none focus:bg-green-500"
+					class="flex items-center mt-4 px-3 py-2 bg-green-700 text-white text-sm uppercase font-medium rounded-lg hover:bg-green-500 focus:outline-none focus:bg-green-500 duration-300"
 				>
 					<span>{action}</span>
 					<svg class="h-5 w-5 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

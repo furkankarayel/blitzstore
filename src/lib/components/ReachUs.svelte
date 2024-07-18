@@ -1,4 +1,6 @@
-<div class="container flex flex-col items-center mx-auto bg-white bg-opacity-0">
+<div
+	class="container flex flex-col items-center mx-auto bg-white bg-opacity-0 relative overflow-hidden"
+>
 	<div class="w-full draggable">
 		<div class="container flex flex-col items-center gap-16 mx-auto lg:mb-32">
 			<div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -60,7 +62,7 @@
 						</svg>
 					</span>
 					<p class="text-2xl font-extrabold text-dark-grey-900">Standort</p>
-					<p class="text-base leading-7 text-dark-grey-600">Wir bedienen Kunden</p>
+					<p class="text-base leading-7 text-dark-grey-600">Wir arbeiten mit Kunden</p>
 					<a
 						class="text-lg font-bold text-purple-blue-500"
 						target="_blank"
@@ -70,4 +72,23 @@
 			</div>
 		</div>
 	</div>
+	<svg
+		viewBox="0 0 1024 1024"
+		class="absolute left-1/2 z-10 md:top-1/4 xs: top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+		aria-hidden="true"
+	>
+		<circle
+			cx="512"
+			cy="512"
+			r="512"
+			fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
+			fill-opacity="0.7"
+		/>
+		<defs>
+			<radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+				<stop stop-color="#15803d" />
+				<stop offset="1" stop-color="#15803d" />
+			</radialGradient>
+		</defs>
+	</svg>
 </div>

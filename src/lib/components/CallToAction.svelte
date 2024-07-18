@@ -13,7 +13,7 @@
 	</div>
 	<div class="lg:w-[650px] lg:px-5 flex flex-col gap-y-5">
 		<h1
-			class="text-4xl md:text-5xl xl:text-[50px] leading-[1.2] md:max-w-xl md:mx-auto md:text-center lg:text-left lg:mx-0 lg:max-w-full font-semibold bg-gradient-to-b from-black text-transparent to-gray-400 bg-clip-text drop-shadow-custom hover:drop-shadow-customhov"
+			class="text-4xl md:text-5xl xl:text-[50px] leading-[1.2] md:max-w-xl md:mx-auto md:text-center lg:text-left lg:mx-0 lg:max-w-full font-semibold bg-gradient-to-b text-green-700 bg-clip-text drop-shadow-custom hover:drop-shadow-customhov"
 		>
 			Gestalten Sie ihre Vision, <br />wir verwirklichen sie.
 		</h1>
