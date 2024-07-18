@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="space-y-2 text-sm">
-				<p class="text-base font-bold tracking-wide text-green-700 drop-shadow-sm">Kontakt</p>
+				<p class="text-base font-bold tracking-wide text-gray-800 drop-shadow-sm">Kontakt</p>
 				<div class="flex xs:justify-center md:justify-start">
 					<p class="mr-1 text-gray-800 drop-shadow-sm">Telefon:</p>
 					<a
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 			<div>
-				<span class="text-base font-bold tracking-wide text-green-700 drop-shadow-sm"
+				<span class="text-base font-bold tracking-wide text-gray-800 drop-shadow-sm"
 					>Soziale Medien</span
 				>
 				<div class="flex xs:justify-center md:justify-start mt-1 space-x-3">
