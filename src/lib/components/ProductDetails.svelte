@@ -9,6 +9,11 @@
 </div>
 
 <style>
+	:global(#markdown-container p) {
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+		font-weight: 500;
+	}
 	:global(#markdown-container h1) {
 		font-size: 2.25rem;
 		line-height: 2.5rem;

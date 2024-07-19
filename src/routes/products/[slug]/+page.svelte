@@ -48,7 +48,7 @@
 		<ImageGallery productId={product.id} images={product.images} alt_text={product.name} />
 	</div>
 	<div class="basis-1/2 flex flex-col gap-8 px-8">
-		<h1 class="font-extrabold text-4xl mt-3 xs:text-xl sm:text-xl">{product.name}</h1>
+		<h1 class="font-extrabold text-4xl mt-3 xs:text-2xl sm:text-3xl">{product.name}</h1>
 		{#if PUBLIC_SHOP_MODE != '0'}
 			<div class="flex items-end gap-2">
 				{#if product.sale_price === 0}
