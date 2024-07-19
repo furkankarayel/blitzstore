@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ImageGallery from '$lib/components/ImageGallery.svelte';
+
 	import { addToCart } from '$lib/stores';
 	import type { CartItem } from '$lib/stores';
 	import QuantityInput from '$lib/components/QuantityInput.svelte';
