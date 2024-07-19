@@ -7,7 +7,9 @@
 	const iconsArray = Object.entries(iconsProvider);
 </script>
 
-<div class="md:p-8 lg:p-14 flex flex-col justify-center items-center">
+<div
+	class="md:p-8 lg:p-14 flex flex-col justify-center items-center border border-green-700 rounded-2xl hover:shadow-xl hover:shadow-gray-50 p-10 mx-5"
+>
 	<div class="w-24 h-24 p-4 rounded-full bg-green-700 flex justify-center items-center">
 		{@html iconsArray[Number(icon) - 1][1]}
 	</div>

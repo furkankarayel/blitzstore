@@ -20,7 +20,7 @@
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-lg leading-6 font-semibold text-gray-900">Erstberatung</h4>
+							<h4 class="text-xl leading-6 font-semibold text-gray-900">Erstberatung</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
 								In einem ersten Gespräch klären wir Ihre Wünsche und Anforderungen. Unsere Experten
 								beraten Sie umfassend und zeigen Ihnen die besten Möglichkeiten auf.
@@ -39,7 +39,7 @@
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-lg leading-6 font-semibold text-gray-900">Individuelle Planung</h4>
+							<h4 class="text-xl leading-6 font-semibold text-gray-900">Individuelle Planung</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
 								Wir erstellen einen individuellen Plan, der genau auf Ihre Bedürfnisse abgestimmt
 								ist. Dabei berücksichtigen wir Ihre Vorstellungen und die Gegebenheiten vor Ort.
@@ -58,7 +58,7 @@
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-lg leading-6 font-semibold text-gray-900">Angebotserstellung</h4>
+							<h4 class="text-xl leading-6 font-semibold text-gray-900">Angebotserstellung</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
 								Auf Basis der Planung erhalten Sie ein detailliertes Angebot, das alle Kosten
 								transparent aufschlüsselt.
@@ -77,7 +77,7 @@
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-lg leading-6 font-semibold text-gray-900">Montage</h4>
+							<h4 class="text-xl leading-6 font-semibold text-gray-900">Montage</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
 								Unsere erfahrenen Handwerker fertigen Ihre Terrassenüberdachung, Glasgeländer oder
 								Pergola präzise an und montieren alles fachgerecht.
@@ -96,7 +96,7 @@
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-lg leading-6 font-semibold text-gray-900">Abnahme und Betreuung</h4>
+							<h4 class="text-xl leading-6 font-semibold text-gray-900">Abnahme und Betreuung</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
 								Nach Abschluss der Arbeiten prüfen wir gemeinsam das Ergebnis und stehen Ihnen auch
 								nach der Fertigstellung für Fragen und Serviceleistungen zur Verfügung.
