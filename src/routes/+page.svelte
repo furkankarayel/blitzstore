@@ -9,10 +9,6 @@
 	import ProductFeatures from '../lib/components/ProductFeatures.svelte';
 
 	export let data: any;
-	let showcase = data.showcase;
-	let tuFeatures = data.features.items;
-
-	let featuredproducts = data.featured.items;
 
 	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
@@ -26,13 +22,6 @@
 </script>
 
 <svelte:head>
-	<title>{PUBLIC_SHOP_NAME} am Bodensee, Meckenbeuren</title>
-	<meta
-		name="description"
-		content="Kastonia.de Bodensee Ihr Partner für Outdoor-Design: Elegante Terrassenüberdachungen, maßgeschneiderte Wintergärten, stilvolle Glasgeländer, robuste Aluminiumzäune und exklusive Pergolas – Qualität, die begeistert."
-	/>
-	<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-	/>
+	<title>{PUBLIC_SHOP_NAME}</title>
+	<meta name="description" content="FM-Felgentechnik.de" />
 </svelte:head>
