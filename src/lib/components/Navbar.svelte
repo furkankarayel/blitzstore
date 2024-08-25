@@ -1,13 +1,13 @@
 <script>
 	import Cart from '$lib/components/Cart.svelte';
 	import { cartItemsStore } from '$lib/stores';
-	import logo from '$lib/assets/Kastonia_Abstrakt_weiss.webp';
+	import logo from '$lib/assets/logo.png';
 	import { PUBLIC_SHOP_MODE } from '$env/static/public';
 
 	let cartOpened = false;
 </script>
 
-<nav class="top-0 z-10 bg-[#4F4F4F] text-white header-gradient">
+<nav class="top-0 z-10 bg-[#441c24] text-white">
 	<div class="max-w-7xl mx-auto">
 		<div class="flex justify-between items-center py-0">
 			<div class="my-3">
