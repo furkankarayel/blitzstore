@@ -38,7 +38,7 @@
 						title="Our address"
 						class="text-white drop-shadow-sm"
 					>
-						Meckenbeuren am Bodensee, Deutschland
+						Baienfurt, Deutschland
 					</a>
 				</div>
 			</div>
