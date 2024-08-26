@@ -71,7 +71,7 @@
 						<a
 							href="#steps"
 							on:click|preventDefault={scrollIntoView}
-							class="inline-block bg-[#441c24] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#441c24] transition duration-300"
+							class="inline-block bg-[#441c24] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#70313E] transition duration-300"
 							>Mehr erfahren</a
 						>
 					</div>
@@ -166,12 +166,12 @@
 							<a
 								href="#appointment"
 								on:click|preventDefault={scrollIntoView}
-								class="block text-center bg-[#441c24] text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300"
+								class="block text-center bg-[#441c24] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#70313E] transition duration-300"
 								>Loslegen</a
 							>
 							<a
 								href="{PUBLIC_SHOP_URL}/contact"
-								class="block text-center border border-[#441c24] text-[#441c24] font-semibold px-6 py-3 rounded-lg hover:bg-green-50 transition duration-300"
+								class="block text-center border border-[#441c24] text-[#441c24] font-semibold px-6 py-3 rounded-lg hover:bg-[#FFECF0] transition duration-300"
 								>Berater kontaktieren</a
 							>
 						</div>

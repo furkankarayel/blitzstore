@@ -49,7 +49,7 @@
 	</div>
 	<div class="basis-1/2 flex flex-col gap-8 px-8">
 		<h1 class="font-extrabold text-4xl mt-3 xs:text-3xl sm:text-5xl">{product.name}</h1>
-		{#if PUBLIC_SHOP_MODE != '0'}
+		{#if PUBLIC_SHOP_MODE != '0' && product.price != 0}
 			<div class="flex items-end gap-2">
 				{#if product.sale_price === 0}
 					<span class="text-3xl">{product.price} €</span>
@@ -70,7 +70,7 @@
 				<QuantityInput bind:count={quantity} />
 			</div>
 			<button
-				class="w-full h-12 px-6 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow shadow-sm hover:bg-yellow-500"
+				class="w-full h-12 px-6 text-white font-bold transition-colors duration-150 bg-[#441c24] focus:shadow shadow-sm hover:bg-[#70313E]"
 				on:click={() => prepareToCart()}
 			>
 				Warenkorb hinzufügen

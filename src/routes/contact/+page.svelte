@@ -34,7 +34,7 @@
 	<title>Kontaktaufnahme | {PUBLIC_SHOP_NAME}</title>
 	<meta
 		name="description"
-		content="Kontaktieren Sie uns auf Kastonia.de – Wir sind hier, um Ihre Fragen zu beantworten und Unterstützung zu bieten. Finden Sie unsere Kontaktdaten und wie Sie einfach mit unserem Team in Verbindung treten können."
+		content="Kontaktieren Sie uns auf FM-Felgentechnik.de – Wir sind hier, um Ihre Fragen zu beantworten und Unterstützung zu bieten. "
 	/>
 </svelte:head>
 
@@ -50,7 +50,7 @@
 			Fragen über unser Kontaktformular mit
 		</p>
 		<form on:submit|preventDefault={handleSubmit} class="space-y-8">
-			<input type="hidden" name="access_key" value="36766029-f272-4f5b-a7b9-664e011c5182" />
+			<input type="hidden" name="access_key" value="36766029-sss-4f5b-a7b9-664e011c5182" />
 			<input type="hidden" name="subject" value="Kontaktaufnahme durch das Formular" />
 			<div>
 				<label for="Name" class="block mb-2 text-sm font-medium text-gray-900">Ihr Name</label>
