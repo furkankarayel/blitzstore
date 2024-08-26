@@ -6,9 +6,13 @@ const pb = new PocketBase(PUBLIC_POCKETBASE_URL);
 
 // eslint-disable-next-line prefer-const
 let myObjects = [{ slug: '' }];
+const shop = await pb.collection(`shops`).getFirstListItem(`name = '${PUBLIC_SHOP_DB_NAME}'`);
+const productsRecords = await pb.collection('products').getList(1, 50, {
+	filter: `shop="${shop.id}"`,
+	sort: '-created'
+});
 
-const productsRecords = await pb.collection('products').getFullList();
-productsRecords.forEach((e) => {
+productsRecords.items.forEach((e) => {
 	myObjects.push({ slug: e['slug'] });
 });
 myObjects.shift();

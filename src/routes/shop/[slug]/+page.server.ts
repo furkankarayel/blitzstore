@@ -18,7 +18,7 @@ export const load = (async ({ params, locals }) => {
 
 		const category = await locals.pb
 			.collection('categories')
-			.getFirstListItem(`slug="${params.slug}"`);
+			.getFirstListItem(`slug="${params.slug}" && shop="${shop.id}"`);
 
 		const productsRecords = await locals.pb.collection('products').getList(1, 50, {
 			filter: `categories ~ "${category.id}" && shop="${shop.id}"`,
