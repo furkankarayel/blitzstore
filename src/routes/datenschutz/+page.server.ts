@@ -1,6 +1,7 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from '../about/$types';
 import { URL } from 'url';
+import { PUBLIC_SHOP_DB_NAME } from '$env/static/public';
 
 const absoluteDirPath = new URL('.', import.meta.url).pathname;
 const currentFolderName = absoluteDirPath.split('/').slice(-2, -1)[0];
