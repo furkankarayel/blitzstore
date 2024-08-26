@@ -43,6 +43,7 @@
 		"@stripe/stripe-js": "^1.48.0",
 		"@sveltejs/adapter-cloudflare": "^4.4.0",
 		"@sveltejs/adapter-node": "^5.2.2",
+		"@sveltejs/adapter-vercel": "^5.4.3",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",
 		"@types/jquery": "^3.5.29",
 		"@types/node": "^22.5.0",
