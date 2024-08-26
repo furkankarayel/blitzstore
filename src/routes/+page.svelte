@@ -54,11 +54,12 @@
 
 		<section class="container mx-auto px-4 py-12 md:py-24">
 			<div class="flex flex-col md:flex-row items-center justify-between sm:justify-center">
-				<div class="w-full md:w-1/2 mb-8 md:mb-0">
+				<div class="xs:w-full md:w-1/2 mb-8 md:mb-0 p-10">
 					<h1
-						class="text-4xl md:text-5xl xs:text-center md:text-left font-bold text-[#441c24] mb-5"
+						class="text-4xl md:text-5xl xs:text-xl xs:text-center md:text-left font-bold text-[#441c24] mb-5"
 					>
-						Willkommen bei {PUBLIC_SHOP_NAME}
+						Willkommen bei <br />
+						{PUBLIC_SHOP_NAME}
 					</h1>
 					<p
 						class=" xs:text-center md:text-left xs:text-md lg:text-lg xl:text-xl text-gray-800 mb-6"
@@ -76,7 +77,7 @@
 					</div>
 				</div>
 
-				<div class="w-full md:w-1/2">
+				<div class="xs:w-full md:w-1/2">
 					<div class="bg-white rounded-lg shadow-lg p-6">
 						<h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">Warum uns wählen?</h2>
 						<ul class="space-y-2 mb-6 xs:text-sm lg:text-md xl:text-lg">
