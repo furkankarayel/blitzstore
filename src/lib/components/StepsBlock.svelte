@@ -77,7 +77,7 @@
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
 							<h4 class="text-xl leading-6 font-semibold text-gray-900 break-words">
-								Instandsetzung/Veredelung
+								Instandsetzung
 							</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500 break-words">
 								Die Felge wird von unserem professionellen Team instandgesetzt und nach Wunsch
