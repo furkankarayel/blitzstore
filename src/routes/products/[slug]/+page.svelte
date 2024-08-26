@@ -52,9 +52,9 @@
 		{#if PUBLIC_SHOP_MODE != '0'}
 			<div class="flex items-end gap-2">
 				{#if product.sale_price === 0}
-					<span class="text-3xl">${product.price}</span>
+					<span class="text-3xl">{product.price} €</span>
 				{:else}
-					<span class="text-3xl text-red-600">${product.sale_price}</span>
+					<span class="text-3xl text-red-600">{product.sale_price} €</span>
 					<span class="text-xl text-gray-600 line-through">${product.price}</span>
 				{/if}
 			</div>
@@ -82,10 +82,10 @@
 <div class="flex flex-col-reverse px-10 gap-20 lg:flex-row">
 	<p class="text-gray-600" />
 	{#if product.related_products.length !== 0}
-		<div class="basis-1/2">
-			<p class="font-medium text-lg uppercase">Ähnliche Produkte</p>
+		<div class="basis">
+			<p class="font-bold text-xl uppercase">Ähnliche Produkte</p>
 
-			<div class="grid gap-12 pr-5 py-5 grid-cols-2">
+			<div class="grid gap-12 pr-5 py-5 md:grid-cols-4 xs:grid-cols-2">
 				{#each product.expand.related_products as relatedProduct (relatedProduct.id)}
 					<ProductItem
 						title={relatedProduct.name}

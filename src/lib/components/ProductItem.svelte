@@ -11,9 +11,7 @@
 	let hovered = false;
 </script>
 
-<div
-	class="w-full max-w-sm mx-auto xs:my-3 relative drop-shadow-custom hover:drop-shadow-customhov"
->
+<div class="w-full max-w-sm mx-auto xs:my-3 relative">
 	<a
 		class="block"
 		href={link}
@@ -25,16 +23,14 @@
 		<img src={image} alt={description} class="h-56 w-full object-cover rounded-3xl" />
 
 		<div
-			class="rounded-b-3xl absolute bottom-0 w-full bg-gradient-to-r from-black text-transparent to-transparent text-white p-3 text-md"
+			class="rounded-b-xl absolute bottom-0 w-full bg-gradient-to-r from-[#441c24] text-transparent to-transparent text-white p-3 text-md"
 		>
 			{title}
 		</div>
 
 		<div class="flex justify-center gap-3">
 			{#if PUBLIC_SHOP_MODE != '0'}
-				{#if salePrice === 0}
-					<span class="font-medium">€{price}</span>
-				{:else}
+				{#if salePrice === 0}{:else}
 					<span class="text-red-600 font-medium">€{salePrice}</span>
 					<span class="text-gray-600 line-through font-light">€{price}</span>
 				{/if}

@@ -9,7 +9,7 @@
 	import ProductFeatures from '../lib/components/ProductFeatures.svelte';
 
 	export let data: any;
-	let showcase = data.showcase;
+	let showcase = data.showcase.items;
 	let featuredproducts = data.featured.items;
 
 	function scrollIntoView({ target }) {
@@ -56,7 +56,7 @@
 			<div class="flex flex-col md:flex-row items-center justify-between sm:justify-center">
 				<div class="xs:w-full md:w-1/2 mb-8 md:mb-0 p-10">
 					<h1
-						class="text-4xl md:text-5xl xs:text-xl xs:text-center md:text-left font-bold text-[#441c24] mb-5"
+						class="text-4xl md:text-2xl xs:text-xl xs:text-center md:text-left font-bold text-[#441c24] mb-5"
 					>
 						Willkommen bei <br />
 						{PUBLIC_SHOP_NAME}
@@ -182,11 +182,11 @@
 
 		{#each showcase as showsection}
 			<h2
-				class="text-center font-extrabold xs:text-lg md:text-xl lg:text-2xl xl:text-3xl xs:pt-10 xs:pb-6 md:pt-10 uppercase bg-gradient-to-b text-green-700 bg-clip-text"
+				class="text-center font-extrabold xs:text-lg md:text-xl lg:text-2xl xl:text-3xl xs:pt-10 xs:pb-6 md:pt-10 uppercase bg-gradient-to-b text-[#441c24] bg-clip-text"
 			>
 				{showsection.name}
 			</h2>
-			<div class="grid gap-6 mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+			<div class="grid gap-6 mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mt-6">
 				{#each showsection.expand.products as product (product.id)}
 					<ProductItem
 						title={product.name}
