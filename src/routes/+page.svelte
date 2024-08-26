@@ -52,7 +52,7 @@
 			</svg>
 		</section>
 
-		<section class="container mx-auto px-4 py-12 md:py-24">
+		<section class="container mx-auto py-12 md:py-24">
 			<div class="flex flex-col md:flex-row items-center justify-between sm:justify-center">
 				<div class="xs:w-full md:w-1/2 mb-8 md:mb-0 p-10">
 					<h1
