@@ -4,7 +4,7 @@
 	<div class="w-full draggable">
 		<div class="container flex flex-col items-center gap-16 mx-auto lg:mb-32">
 			<div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-				<div class="flex flex-col items-center mx-20 my-20 sm:my-10 xs:mx-8 xs:my-20 gap-3">
+				<div class="flex flex-col items-center mx-20 my-20 sm:my-10 xs:mx-8 xs:my-5 gap-3">
 					<span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
 						>info@fm-felgentechnik.de</a
 					>
 				</div>
-				<div class="flex flex-col items-center mx-20 my-20 sm:my-10 xs:mx-8 xs:my-20 gap-3">
+				<div class="flex flex-col items-center mx-20 my-20 sm:my-10 xs:mx-8 xs:my-5 gap-3">
 					<span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@
 						>+49 155-66294176</a
 					>
 				</div>
-				<div class="flex flex-col items-center mx-20 my-20 sm:my-10 xs:mx-8 xs:my-20 gap-3">
+				<div class="flex flex-col items-center mx-20 my-20 sm:my-10 xs:mx-8 xs:my-5 gap-3">
 					<span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
