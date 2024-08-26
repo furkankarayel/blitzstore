@@ -1,5 +1,5 @@
 <div class="bg-white">
-	<div class="max-w-screen-md mx-auto sm:px-6 lg:px-8 flex flex-col justify-between">
+	<div class="max-w-screen-md mx-auto flex flex-col justify-between">
 		<div class="text-center">
 			<p class="mt-4 text-sm leading-7 text-gray-500 font-regular">SCHRITT FÜR SCHRITT</p>
 			<h3 class="text-3xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
@@ -76,7 +76,7 @@
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-xl leading-6 font-semibold text-gray-900">
+							<h4 class="text-xl leading-6 font-semibold text-gray-900 break-words">
 								Instandsetzung/Veredelung
 							</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
