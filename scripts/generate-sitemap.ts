@@ -85,9 +85,9 @@ getProductPages().then(function () {
 
 	// If you use the script in postbuild mode uses
 	// For vercel deployment use:
-	//fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
+	fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
 	//fs.writeFileSync('.svelte-kit/cloudflare/sitemap.xml', sitemap);
-	fs.writeFileSync('../static/sitemap.xml', sitemap);
+	//fs.writeFileSync('../static/sitemap.xml', sitemap);
 });
 
 //If you want to put products and categories in the sitemap
