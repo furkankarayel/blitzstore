@@ -9,7 +9,7 @@
 
 		<div class="mt-20">
 			<ul class="">
-				<li class="text-left mb-10">
+				<li class="text-left mb-10 break-words">
 					<div class="flex flex-row items-start">
 						<div class="flex flex-col items-center justify-center mr-5">
 							<div
@@ -57,8 +57,8 @@
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-xl leading-6 font-semibold text-gray-900">Versand</h4>
-							<p class="mt-2 text-base leading-6 text-gray-500">
+							<h4 class="text-xl leading-6 font-semibold text-gray-900 break-words">Versand</h4>
+							<p class="mt-2 text-base leading-6 text-gray-500 break-words">
 								Sie senden uns Ihre Felgen per Versand zu oder bringen sie bei uns persönlich ab.
 								Auf Wunsch senden wir Ihnen ein Felgenkarton und ein Versand-Etikett.
 							</p>
@@ -79,7 +79,7 @@
 							<h4 class="text-xl leading-6 font-semibold text-gray-900 break-words">
 								Instandsetzung/Veredelung
 							</h4>
-							<p class="mt-2 text-base leading-6 text-gray-500">
+							<p class="mt-2 text-base leading-6 text-gray-500 break-words">
 								Die Felge wird von unserem professionellen Team instandgesetzt und nach Wunsch
 								veredelt.
 							</p>
