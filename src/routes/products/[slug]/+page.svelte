@@ -85,7 +85,7 @@
 		<div class="basis">
 			<p class="font-bold text-xl uppercase">Ähnliche Produkte</p>
 
-			<div class="grid gap-12 pr-5 py-5 md:grid-cols-4 xs:grid-cols-2">
+			<div class="grid gap-12 pr-5 py-5 md:grid-cols-4 xs:grid-cols-1">
 				{#each product.expand.related_products as relatedProduct (relatedProduct.id)}
 					<ProductItem
 						title={relatedProduct.name}
