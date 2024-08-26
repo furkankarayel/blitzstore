@@ -7,9 +7,12 @@ const currentFolderName = absoluteDirPath.split('/').slice(-2, -1)[0];
 
 export const load = (async ({ locals }) => {
 	try {
+		const shop = await locals.pb
+			.collection(`shops`)
+			.getFirstListItem(`name = '${PUBLIC_SHOP_DB_NAME}'`);
 		const staticPageRecord = await locals.pb
 			.collection('static_pages')
-			.getFirstListItem(`slug="${currentFolderName}"`);
+			.getFirstListItem(`slug="${currentFolderName}" && shop="${shop.id}"`);
 		return structuredClone(staticPageRecord);
 	} catch (e) {
 		console.log(e);
