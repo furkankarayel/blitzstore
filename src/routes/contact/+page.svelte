@@ -50,7 +50,7 @@
 			Fragen über unser Kontaktformular mit
 		</p>
 		<form on:submit|preventDefault={handleSubmit} class="space-y-8">
-			<input type="hidden" name="access_key" value="36766029-sss-4f5b-a7b9-664e011c5182" />
+			<input type="hidden" name="access_key" value="74fe9400-951f-456c-b4d7-d6921891dd3f" />
 			<input type="hidden" name="subject" value="Kontaktaufnahme durch das Formular" />
 			<div>
 				<label for="Name" class="block mb-2 text-sm font-medium text-gray-900">Ihr Name</label>
