@@ -14,7 +14,11 @@
 					<p class="text-sm text-white drop-shadow-sm">
 						Ihr zuverlässiger Ansprechpartner für Felgenaufbereitung!
 					</p>
-					<p class="mt-4 text-sm text-white drop-shadow-sm" />
+					<p class="mt-4 text-sm text-white drop-shadow-sm">
+						Montag 08:00–17:00 <br /> Dienstag 08:00–17:00 <br /> Mittwoch 08:00–17:00 <br />
+						Donnerstag 08:00–17:00 <br />
+						Freitag 08:00–17:00 <br /> Samstag 09:00–14:00 <br /> Sonntag Geschlossen
+					</p>
 				</div>
 			</div>
 			<div class="space-y-2 text-sm">
@@ -38,7 +42,7 @@
 						title="Our address"
 						class="text-white drop-shadow-sm"
 					>
-						Baienfurt, Deutschland
+						Trauben 2, 88255 Baienfurt, Deutschland
 					</a>
 				</div>
 			</div>

@@ -23,7 +23,7 @@
 		<img src={image} alt={description} class="h-56 w-full object-cover rounded-3xl" />
 
 		<div
-			class="rounded-b-xl absolute bottom-0 w-full bg-gradient-to-r from-[#441c24] text-transparent to-transparent text-white p-3 text-md"
+			class="rounded-b-xl absolute bottom-0 w-full bg-gradient-to-r from-[#441c24] text-transparent to-transparent text-white p-3 lg:text-md md:text-sm break-words"
 		>
 			{title}
 		</div>
