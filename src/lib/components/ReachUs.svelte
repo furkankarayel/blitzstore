@@ -19,7 +19,7 @@
 							/>
 						</svg>
 					</span>
-					<p class="text-2xl font-extrabold text-dark-grey-900">E-mail</p>
+					<p class="md:text-2xl xs:text-xl font-extrabold text-dark-grey-900">E-mail</p>
 					<p class="text-base leading-7 text-dark-grey-600">Kontaktieren Sie uns unter</p>
 					<a class="text-lg font-bold text-purple-blue-500" href="mailto:info@kastonia.de"
 						>info@fm-felgentechnik.de</a
@@ -48,7 +48,9 @@
 							></svg
 						>
 					</span>
-					<p class="text-2xl font-extrabold text-dark-grey-900">Telefon oder Whatsapp</p>
+					<p class="md:text-2xl xs:text-xl font-extrabold text-dark-grey-900">
+						Telefon oder Whatsapp
+					</p>
 					<p class="text-base leading-7 text-dark-grey-600">
 						Schreiben oder rufen Sie uns direkt an um Zeit zu sparen!
 					</p>
@@ -73,7 +75,7 @@
 							/>
 						</svg>
 					</span>
-					<p class="text-2xl font-extrabold text-dark-grey-900">Standort</p>
+					<p class="md:text-2xl xs:text-xl font-extrabold text-dark-grey-900">Standort</p>
 					<p>Trauben 2, 88255 Baienfurt</p>
 					<p class="text-base leading-7 text-dark-grey-600">Wir arbeiten mit Kunden</p>
 					<a
