@@ -9,7 +9,7 @@
 
 		<div class="mt-20">
 			<ul class="">
-				<li class="text-left mb-10 break-words">
+				<li class="text-left mb-10">
 					<div class="flex flex-row items-start">
 						<div class="flex flex-col items-center justify-center mr-5">
 							<div
@@ -19,7 +19,7 @@
 							</div>
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
-						<div class="bg-gray-100 p-5 pb-10">
+						<div class="bg-gray-100 p-5 pb-10 w-full">
 							<h4 class="text-xl leading-6 font-semibold text-gray-900">Angebotserstellung</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
 								Sie erhalten von unserem Team ein für Sie individuell erstelltes Angebot.
@@ -37,7 +37,7 @@
 							</div>
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
-						<div class="bg-gray-100 p-5 pb-10">
+						<div class="bg-gray-100 p-5 pb-10 w-full">
 							<h4 class="text-xl leading-6 font-semibold text-gray-900 break-words">Versand</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500 break-words">
 								Sie senden uns Ihre Felgen per Versand zu oder bringen sie bei uns persönlich ab.
@@ -56,7 +56,7 @@
 							</div>
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
-						<div class="bg-gray-100 p-5 pb-10">
+						<div class="bg-gray-100 p-5 pb-10 w-full">
 							<h4 class="text-xl leading-6 font-semibold text-gray-900 break-words">
 								Instandsetzung
 							</h4>
@@ -76,7 +76,7 @@
 							</div>
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
-						<div class="bg-gray-100 p-5 pb-10">
+						<div class="bg-gray-100 p-5 pb-10 w-full">
 							<h4 class="text-xl leading-6 font-semibold text-gray-900">Rückversand</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
 								Die reparierte und veredelte Felge wird Ihnen zurückgeschickt oder wir geben Ihnen
