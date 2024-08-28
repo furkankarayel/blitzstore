@@ -14,7 +14,8 @@
 					<p class="text-sm text-white drop-shadow-sm">
 						Ihr zuverlässiger Ansprechpartner für Felgenaufbereitung!
 					</p>
-					<p class="mt-4 text-sm text-white drop-shadow-sm">
+					<h2 class="text-white font-bold mt-4">Öffnungszeiten</h2>
+					<p class="mt-2 text-sm text-white drop-shadow-sm">
 						Montag 08:00–17:00 <br /> Dienstag 08:00–17:00 <br /> Mittwoch 08:00–17:00 <br />
 						Donnerstag 08:00–17:00 <br />
 						Freitag 08:00–17:00 <br /> Samstag 09:00–14:00 <br /> Sonntag Geschlossen
