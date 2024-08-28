@@ -20,10 +20,9 @@
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
 						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-xl leading-6 font-semibold text-gray-900">Erstberatung</h4>
+							<h4 class="text-xl leading-6 font-semibold text-gray-900">Angebotserstellung</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
-								Sie senden uns ihr Bildmaterial der Beschädigungen der Felge oder Ihre Wünsche über
-								des neuen Designs der Felge zu.
+								Sie erhalten von unserem Team ein für Sie individuell erstelltes Angebot.
 							</p>
 						</div>
 					</div>
@@ -35,24 +34,6 @@
 								class="flex items-center justify-center h-20 w-20 rounded-full bg-[#441c24] text-white border-4 border-white text-xl font-semibold"
 							>
 								2
-							</div>
-							<span class="text-gray-500">SCHRITT</span>
-						</div>
-						<div class="bg-gray-100 p-5 pb-10">
-							<h4 class="text-xl leading-6 font-semibold text-gray-900">Angeboterstellung</h4>
-							<p class="mt-2 text-base leading-6 text-gray-500">
-								Sie erhalten von unserem Team ein für Sie individuell erstelltes Angebot zugesendet.
-							</p>
-						</div>
-					</div>
-				</li>
-				<li class="text-left mb-10">
-					<div class="flex flex-row items-start">
-						<div class="flex flex-col items-center justify-center mr-5">
-							<div
-								class="flex items-center justify-center h-20 w-20 rounded-full bg-[#441c24] text-white border-4 border-white text-xl font-semibold"
-							>
-								3
 							</div>
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
@@ -71,7 +52,7 @@
 							<div
 								class="flex items-center justify-center h-20 w-20 rounded-full bg-[#441c24] text-white border-4 border-white text-xl font-semibold"
 							>
-								4
+								3
 							</div>
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
@@ -80,8 +61,7 @@
 								Instandsetzung
 							</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500 break-words">
-								Die Felge wird von unserem professionellen Team instandgesetzt und nach Wunsch
-								veredelt.
+								Die Felge wird von uns professionell instand gesetzt und nach Wunsch veredelt.
 							</p>
 						</div>
 					</div>
@@ -92,7 +72,7 @@
 							<div
 								class="flex items-center justify-center h-20 w-20 rounded-full bg-[#441c24] text-white border-4 border-white text-xl font-semibold"
 							>
-								5
+								4
 							</div>
 							<span class="text-gray-500">SCHRITT</span>
 						</div>
@@ -100,7 +80,7 @@
 							<h4 class="text-xl leading-6 font-semibold text-gray-900">Rückversand</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
 								Die reparierte und veredelte Felge wird Ihnen zurückgeschickt oder wir geben Ihnen
-								Bescheid und sie können vor Ort abgeholt werden.
+								Bescheid und sie können die Felge vor Ort abholen.
 							</p>
 						</div>
 					</div>

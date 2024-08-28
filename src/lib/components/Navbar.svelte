@@ -10,7 +10,7 @@
 <nav class="top-0 z-10 bg-[#441c24] text-white">
 	<div class="max-w-7xl mx-auto">
 		<div class="flex justify-between items-center py-0">
-			<div class="my-3">
+			<div class="my-3 mx-auto">
 				<a href="/"><img class="w-60" alt="Kastonia Logo" src={logo} /></a>
 			</div>
 			{#if PUBLIC_SHOP_MODE != '0'}
