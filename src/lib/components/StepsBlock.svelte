@@ -22,8 +22,8 @@
 						<div class="bg-gray-100 p-5 pb-10">
 							<h4 class="text-xl leading-6 font-semibold text-gray-900">Erstberatung</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500">
-								Sie senden uns ihr Bildmaterial der Beschädigungen der Felge oder Ihre Wünsche über
-								des neuen Designs der Felge zu.
+								Zusendung von Bildmaterial der Beschädigungen sowie der Wünsche für das neue
+								Felgendesign.
 							</p>
 						</div>
 					</div>

@@ -24,7 +24,15 @@
 			</div>
 			<div class="space-y-2 text-sm">
 				<p class="text-base font-bold tracking-wide text-white drop-shadow-sm">Kontakt</p>
-
+				<div class="flex xs:justify-center md:justify-start">
+					<p class="mr-1 text-white drop-shadow-sm">Whatsapp/Telefon:</p>
+					<a
+						href="https://wa.me/4915566294176"
+						aria-label="Unsere E-Mail"
+						title="Unsere E-Mail"
+						class="text-white drop-shadow-sm">+49 155-66294176</a
+					>
+				</div>
 				<div class="flex xs:justify-center md:justify-start">
 					<p class="mr-1 text-white drop-shadow-sm">Email:</p>
 					<a
@@ -52,7 +60,7 @@
 					>Soziale Medien</span
 				>
 				<div class="flex xs:justify-center md:justify-start mt-1 space-x-3">
-					<a href="https://www.instagram.com/" class="text-white drop-shadow-sm">
+					<a href="https://www.instagram.com/fm_felgentechnik" class="text-white drop-shadow-sm">
 						<svg viewBox="0 0 30 30" fill="currentColor" class="h-10">
 							<circle cx="15" cy="15" r="4" />
 							<path
