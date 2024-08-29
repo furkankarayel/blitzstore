@@ -30,6 +30,7 @@
 
 		<div class="flex justify-center gap-3">
 			{#if PUBLIC_SHOP_MODE != '0'}
+				<!-- svelte-ignore empty-block -->
 				{#if salePrice === 0}{:else}
 					<span class="text-red-600 font-medium">€{salePrice}</span>
 					<span class="text-gray-600 line-through font-light">€{price}</span>
