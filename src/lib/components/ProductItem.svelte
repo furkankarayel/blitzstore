@@ -20,7 +20,11 @@
 		on:touchstart={() => (hovered = true)}
 		on:touchend={() => (hovered = false)}
 	>
-		<img src={image} alt={description} class="h-56 w-full object-cover rounded-3xl" />
+		<img
+			src={`${image}?thumb=400x250`}
+			alt={description}
+			class="h-56 w-full object-cover rounded-3xl"
+		/>
 
 		<div
 			class="rounded-b-xl absolute bottom-0 w-full bg-gradient-to-r from-[#441c24] text-transparent to-transparent text-white p-3 lg:text-md md:text-sm break-words"

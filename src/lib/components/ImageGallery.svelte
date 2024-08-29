@@ -36,7 +36,7 @@
 		<img
 			id="activeImage"
 			class="image rounded-lg"
-			src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{active_image}"
+			src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{active_image}?thumb=1000x600"
 			alt={alt_text}
 		/>
 	</div>
@@ -49,7 +49,7 @@
 					<img
 						loading="lazy"
 						class="thumbnail image rounded-lg brightness-50"
-						src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{image}"
+						src="{PUBLIC_POCKETBASE_URL}/api/files/products/{productId}/{image}?thumb=90x70"
 						alt={alt_text}
 					/>
 				</button>
