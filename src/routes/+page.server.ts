@@ -9,18 +9,15 @@ export const load = (async ({ locals }) => {
 			.getFirstListItem(`name = '${PUBLIC_SHOP_DB_NAME}'`);
 		
 
-		const [showcaseRecords, featuresRecords, carouselsRecords, featuredRecords] = await Promise.all(
+		const [showcaseRecords, carouselsRecords, featuredRecords] = await Promise.all(
 			[
 				locals.pb.collection('showcase').getList(1, 50, {
 					filter: `shop="${shop.id}"`,
 					expand: 'products',
 					sort: 'created'
 				}),
-				locals.pb.collection('features').getList(1, 50, {
-					filter: `products="${terassenueberdachungen.id}"`,
-					expand: 'products',
-					sort: 'created'
-				}),
+				
+			
 				locals.pb.collection('carousels').getFullList({
 					sort: 'created'
 				}),
