@@ -10,7 +10,7 @@
 		<div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
 			<div class="sm:col-span-2">
 				<a href="/" aria-label="Go home" title="FM-Felgentechnik" class="inline-flex items-center">
-					<h4 class="text-md font-extrabold text-white drop-shadow-sm">FM-Felgentechnik</h4>
+					<h4 class="text-md font-extrabold text-white drop-shadow-sm">FM-Felgentechnik.de</h4>
 				</a>
 				<div class="mt-6 lg:max-w-sm">
 					<p class="text-sm text-white drop-shadow-sm">
