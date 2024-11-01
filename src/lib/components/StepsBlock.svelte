@@ -65,8 +65,8 @@
 								Versand
 							</h4>
 							<p class="mt-2 text-base leading-6 text-gray-500 break-words">
-								Sie senden uns Ihre Felgen per Versand zu oder bringen sie bei uns persönlich ab.
-								Auf Wunsch senden wir Ihnen ein Felgenkarton und ein Versand-Etikett.
+								Sie senden uns Ihre Felgen per Versand zu oder geben sie bei uns persönlich ab.
+								Auf Wunsch senden wir Ihnen ein Felgenkarton und ein Versandetikett.
 							</p>
 						</div>
 					</div>
