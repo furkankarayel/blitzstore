@@ -11,7 +11,7 @@
 	<div class="max-w-7xl mx-auto">
 		<div class="flex justify-between items-center py-0">
 			<div class="my-3 mx-auto">
-				<a href="/"><img class="w-60" alt="FM-Felgentechnik.de Logo" src={logo} /></a>
+				<a href="/"><img class="w-60" alt="FM-Felgentechnik Logo" src={logo} /></a>
 			</div>
 			{#if PUBLIC_SHOP_MODE != '0'}
 				<div class="flex mx-5 gap-6">
