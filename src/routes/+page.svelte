@@ -25,7 +25,10 @@
 
 <svelte:head>
 	<title>{PUBLIC_SHOP_NAME} - Perfektion für Ihre Felgen – Qualität, die glänzt.</title>
-	<meta name="description" content="`{PUBLIC_SHOP_NAME}`" />
+	<meta
+		name="description"
+		content="`FM-Felgentechnik.de – Ihr Experte für professionelle Felgenreparatur, Lackierung und Veredelung. Perfektion für Ihre Felgen – lassen Sie Ihre Räder in neuem Glanz erstrahlen. Jetzt Termin sichern!`"
+	/>
 </svelte:head>
 
 <div class="container mx-auto px-6 xs:px-0 sm:px-0">
