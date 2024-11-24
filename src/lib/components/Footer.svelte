@@ -9,7 +9,13 @@
 	<div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
 		<div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
 			<div class="sm:col-span-2">
-				<a href="/" aria-label="Go home" title="FM-Felgentechnik" class="inline-flex items-center">
+				<a
+					href="/"
+					aria-label="Go home"
+					title="FM-Felgentechnik"
+					alt="FM-Felgentechnik"
+					class="inline-flex items-center"
+				>
 					<h4 class="text-md font-extrabold text-white drop-shadow-sm">FM-Felgentechnik.de</h4>
 				</a>
 				<div class="mt-6 lg:max-w-sm">
@@ -28,8 +34,9 @@
 					<p class="mr-1 text-white drop-shadow-sm">Whatsapp/Telefon:</p>
 					<a
 						href="https://wa.me/4915566294176"
-						aria-label="Unsere E-Mail"
-						title="Unsere E-Mail"
+						aria-label="Unsere Kontaktnummer"
+						title="Unsere Kontaktnummer"
+						alt="Unsere Kontaktnummer"
 						class="text-white drop-shadow-sm">+49 155-66294176</a
 					>
 				</div>
@@ -39,6 +46,7 @@
 						href="mailto:info@fm-felgentechnik.de"
 						aria-label="Unsere E-Mail"
 						title="Unsere E-Mail"
+						alt="Unsere E-Mail"
 						class="text-white drop-shadow-sm">info@fm-felgentechnik.de</a
 					>
 				</div>
@@ -47,9 +55,10 @@
 						href="https://www.google.com/maps"
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label="Our address"
-						title="Our address"
+						aria-label="Unsere Adresse"
+						title="Unsere Adresse"
 						class="text-white drop-shadow-sm"
+						alt="Unsere Adresse"
 					>
 						Trauben 2, 88255 Baienfurt, Deutschland
 					</a>
