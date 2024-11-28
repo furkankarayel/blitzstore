@@ -14,7 +14,6 @@
 	<title>Home | {PUBLIC_SHOP_NAME}</title>
 </svelte:head>
 
-<Analytics />
 <Navbar />
 <slot />
 <Footer />
