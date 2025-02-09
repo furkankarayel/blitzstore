@@ -32,10 +32,6 @@ function getSitemapUrl(location: string) {
 	return url;
 }
 
-// function getSitemapUrlDB(location: string, table: string) {
-// 	let url = '<url>\n' + `<loc>${domain + }</loc>\n` + `<lastmod>${date}</lastmod>\n` + '</url>';
-// 	return url;
-// }
 
 async function getProductPages() {
 	const shop = await pb
@@ -49,13 +45,6 @@ async function getProductPages() {
 		routes.push('/products/' + e['slug']);
 	});
 }
-
-// async function getCategoryPages() {
-// 	const productsRecords = await pb.collection('categories').getFullList();
-// 	productsRecords.forEach((e) => {
-// 		routes.push('/' + e['slug']);
-// 	});
-// }
 
 function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 	tree?.children?.forEach((child) => {
@@ -81,16 +70,9 @@ function getSitemap() {
 getProductPages().then(function () {
 	getEndpoints(tree, baseRoute);
 	getSitemap();
-	// YOUR_DOMAIN should be like https://example.com
 
-	// If you use the script in postbuild mode uses
-	// For vercel deployment use:
 	fs.writeFileSync('.vercel/output/static/sitemap.xml', sitemap);
 	//fs.writeFileSync('.svelte-kit/cloudflare/sitemap.xml', sitemap);
 	//fs.writeFileSync('../static/sitemap.xml', sitemap);
 });
 
-//If you want to put products and categories in the sitemap
-// Promise.all([getCategoryPages(), getProductPages()]).then(function (results) {
-// 	getSitemap();
-// });
