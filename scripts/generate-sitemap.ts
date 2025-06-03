@@ -52,7 +52,10 @@ function getEndpoints(tree: dirTree.DirectoryTree, route: string) {
 			child.children != undefined &&
 			child.children.length != 0 &&
 			!child.name.includes('[') &&
-			!child.name.includes('order')
+			!child.name.includes('order') &&
+   !child.name.includes('agb') &&
+   !child.name.includes('datenschutz') &&
+   !child.name.includes('impressum')
 		) {
 			let childRoute = route + child.name;
 			if (child.children.some((e) => e.name === '+page.svelte')) {
