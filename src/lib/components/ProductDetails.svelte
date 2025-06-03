@@ -10,7 +10,7 @@
 
 <style>
 	:global(#markdown-container p) {
-		font-size: 1.3rem;
+		font-size: 1rem;
 		line-height: 1.7rem;
 		font-weight: 500;
 	}
