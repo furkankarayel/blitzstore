@@ -11,23 +11,23 @@
 <style>
 	:global(#markdown-container p) {
 		font-size: 1rem;
-		line-height: 1.7rem;
+		line-height: 1.5rem;
 		font-weight: 500;
 	}
 	:global(#markdown-container h1) {
-		font-size: 2.25rem;
+		font-size: 1.95rem;
 		line-height: 2.5rem;
 		font-weight: 700;
 	}
 
 	:global(#markdown-container h2) {
-		font-size: 1.875rem;
+		font-size: 1.575rem;
 		line-height: 2.25rem;
 		font-weight: 700;
 	}
 
 	:global(#markdown-container h3) {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		line-height: 2rem;
 		font-weight: 700;
 	}
